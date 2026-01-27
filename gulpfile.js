@@ -29,10 +29,6 @@ uswds.paths.dist.js = distFolderLocation + '/uswds/js';
 // 
 let buildConfiguration = {
   "@fpac/style": {
-    components: {
-      src: "src/components/**",
-      dest: "fpac-style/components"
-    },
     docs: {
       src: "src/docs/**",
       dest: "fpac-style/docs"
@@ -44,10 +40,6 @@ let buildConfiguration = {
     images: {
       src: "src/images/**",
       dest: "fpac-style/images"
-    },
-    js: {
-      src: "src/js/**",
-      dest: "fpac-style/js"
     },
     styles: {
       // don't copy direct from src folder
