@@ -30,7 +30,7 @@
 // Path to your image files, relative to your compiled CSS.
 // -------------------------------------------------------------------------------------------------
 
-$theme-image-path: "/dist/uswds/images";
+$theme-image-path: "/dist/uswds/img";
     // Default: "../img"
     // Use a path relative to the location of the final compiled CSS
 
@@ -109,7 +109,7 @@ $theme-show-notifications: true;
 // Customize the appearance of focus outlines for accessibility.
 // -------------------------------------------------------------------------------------------------
 
-$theme-focus-color: "primary";
+$theme-focus-color: "blue-40v";
     // Default: "blue-40v"
     // The color of the focus outline
 

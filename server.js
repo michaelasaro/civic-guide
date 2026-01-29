@@ -18,12 +18,8 @@ const app = express();
 const path = require('path');
 const port = 3000;
 
-// Redirect root URL to the documentation homepage
-app.get('/', (req, res) => {
-    res.redirect('/site/pages/home.html');
-});
-
 // Serve static files from the project root
+// index.html at root will be served automatically for /
 app.use(express.static(path.join(__dirname, './')));
 
 // Start the server

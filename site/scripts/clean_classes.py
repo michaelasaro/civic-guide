@@ -1,8 +1,8 @@
 import re
 import sys
 
-css_path = r"C:\SoftwareDistribution\fpacdev\workspaces\FPAC-design-system\fpac-design-system\dist\fpac-design-system.css"
-html_path = r"c:\SoftwareDistribution\fpacdev\workspaces\FPAC-design-system\fpac-design-system\fpac-website\pages\2-style-guide\layout\layout-grid.html"
+css_path = r"./dist/civic/styles/civic.css"
+html_path = r"./site/pages/2-style-guide/layout/layout-grid.html"
 out_path = html_path + ".cleaned"
 
 # Read CSS

@@ -1,5 +1,6 @@
-// fpac-color-luminance.js
-// Compute WCAG relative luminance (%) from an RGB triplet and add a single "Luminance" column to each .usa-table
+// color-luminance-contrast.js
+// Compute WCAG relative luminance (%) from an RGB triplet and add Luminance + Contrast columns to each .usa-table
+// This script mirrors the previous inline implementation from color-theme.html
 
 (function () {
   'use strict';
@@ -36,28 +37,55 @@
     return false;
   }
 
-  function addLuminanceColumn(table) {
+  var inkR = 27, inkG = 27, inkB = 27;
+  var inkL = 0.2126 * srgbToLinear(inkR) + 0.7152 * srgbToLinear(inkG) + 0.0722 * srgbToLinear(inkB);
+
+  function contrastRatio(l1, l2) {
+    var light = Math.max(l1, l2);
+    var dark = Math.min(l1, l2);
+    return (light + 0.05) / (dark + 0.05);
+  }
+
+  function addColumnsToTable(table) {
     // If the table does not contain any RGB-like values, do not modify it.
     if (!tableContainsRgb(table)) return;
     var theadRow = table.querySelector('thead tr');
     if (theadRow) {
-      if (!theadRow.querySelector('th[data-fpac-lum-only]')) {
+      var existing = theadRow.querySelector('th[data-civic-lum]');
+      if (!existing) {
         var thLum = document.createElement('th');
         thLum.setAttribute('scope', 'col');
-        thLum.setAttribute('data-fpac-lum-only', '1');
+        thLum.setAttribute('data-civic-lum', '1');
         thLum.className = 'text-center';
         thLum.style.width = '15%';
         thLum.textContent = 'Luminance';
+
+        var thCW = document.createElement('th');
+        thCW.setAttribute('scope', 'col');
+        thCW.className = 'text-center';
+        thCW.style.width = '12%';
+        thCW.textContent = 'Contrast vs white';
+
+        var thCI = document.createElement('th');
+        thCI.setAttribute('scope', 'col');
+        thCI.className = 'text-center';
+        thCI.style.width = '12%';
+        thCI.textContent = 'Contrast vs ink';
+
         theadRow.appendChild(thLum);
+        theadRow.appendChild(thCW);
+        theadRow.appendChild(thCI);
       }
     }
 
     var rows = table.querySelectorAll('tbody tr');
     rows.forEach(function (row) {
-      if (row.querySelector('td[data-fpac-lum-only]')) return;
+      if (row.querySelector('td[data-civic-lum]')) return;
       var cells = Array.prototype.slice.call(row.querySelectorAll('th, td'));
       var rgbCell = cells[2];
       var lumDisplay = '—';
+      var contrastWhiteDisplay = '—';
+      var contrastInkDisplay = '—';
 
       if (rgbCell) {
         var txt = rgbCell.textContent || rgbCell.innerText || '';
@@ -72,16 +100,35 @@
             var bl = srgbToLinear(b);
             var lum = 0.2126 * rl + 0.7152 * gl + 0.0722 * bl;
             lumDisplay = (lum * 100).toFixed(2) + '%';
+            var cw = contrastRatio(lum, 1);
+            contrastWhiteDisplay = cw.toFixed(2) + ':1';
+            var ci = contrastRatio(lum, inkL);
+            contrastInkDisplay = ci.toFixed(2) + ':1';
           }
         }
       }
 
       var tdLum = document.createElement('td');
       tdLum.className = 'text-center';
-      tdLum.setAttribute('data-fpac-lum-only', '1');
+      tdLum.setAttribute('data-civic-lum', '1');
       tdLum.textContent = lumDisplay;
       tdLum.setAttribute('aria-label', 'Luminance ' + (lumDisplay === '—' ? 'unknown' : lumDisplay));
+
+      var tdCW = document.createElement('td');
+      tdCW.className = 'text-center';
+      tdCW.setAttribute('data-civic-cw', '1');
+      tdCW.textContent = contrastWhiteDisplay;
+      tdCW.setAttribute('aria-label', 'Contrast versus white ' + (contrastWhiteDisplay === '—' ? 'unknown' : contrastWhiteDisplay));
+
+      var tdCI = document.createElement('td');
+      tdCI.className = 'text-center';
+      tdCI.setAttribute('data-civic-ci', '1');
+      tdCI.textContent = contrastInkDisplay;
+      tdCI.setAttribute('aria-label', 'Contrast versus ink ' + (contrastInkDisplay === '—' ? 'unknown' : contrastInkDisplay));
+
       row.appendChild(tdLum);
+      row.appendChild(tdCW);
+      row.appendChild(tdCI);
     });
   }
 
@@ -89,9 +136,9 @@
     var tables = document.querySelectorAll('table.usa-table');
     tables.forEach(function (table) {
       try {
-        addLuminanceColumn(table);
+        addColumnsToTable(table);
       } catch (e) {
-        console.error('FPAC luminance-only script error for table', table, e);
+        console.error('Civic luminance script error for table', table, e);
       }
     });
   });

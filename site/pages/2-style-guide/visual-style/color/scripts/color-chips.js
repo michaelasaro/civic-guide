@@ -1,8 +1,8 @@
-// fpac-color-chips.js
-// Moves USDA chip generation and interaction out of color.html
+// color-chips.js
+// Moves chip generation and interaction out of color.html
 //
 // This script finds rows in the color utility tables on the documentation
-// pages and creates a small interactive "USDA" chip for each text color row.
+// pages and creates a small interactive chip for each text color row.
 // The chip shows how the text color will appear on either a light (white)
 // or dark (ink) background; clicking or pressing Enter/Space toggles that
 // background so you can quickly check contrast. The script reads the hex
@@ -106,12 +106,12 @@
       var luminance = relativeLuminance(rgb);
 
       // --- Create the chip element ---
-      // We build a small <div> that looks like a button and shows the word "USDA".
+      // We build a small <div> that looks like a button and shows the word "Civic".
       // The script will set the chip's CSS color to the text color from the table so
       // you can preview how that text would appear on light/dark backgrounds.
       var chip = document.createElement('div');
-      chip.className = 'utility-value-color-chip usda-chip';
-      chip.textContent = 'USDA';
+      chip.className = 'utility-value-color-chip civic-chip';
+      chip.textContent = 'Civic';
       // Inline styles to match the existing visual size/shape used in the docs
       chip.style.display = 'inline-flex';
       chip.style.alignItems = 'center';

@@ -1,13 +1,6 @@
 /*
-  _    _  _____ _____            ______ _____        _____ 
- | |  | |/ ____|  __ \   /\     |  ____|  __ \ /\   / ____|
- | |  | | (___ | |  | | /  \    | |__  | |__) /  \ | |     
- | |  | |\___ \| |  | |/ /\ \   |  __| |  ___/ /\ \| |     
- | |__| |____) | |__| / ____ \  | |    | |  / ____ \ |____ 
-  \____/|_____/|_____/_/    \_\ |_|    |_| /_/    \_\_____|
-
 ------------------------------------------------------------------------------------------------------
-fpac-code-copy-button.js
+civic-code-copy-button.js
 This is the JS for the copy button that shows up in code blocks.
 From: https://www.roboleary.net/2022/01/13/copy-code-to-clipboard-blog
 ------------------------------------------------------------------------------------------------------
@@ -15,10 +8,10 @@ Description:
 It looks for all <pre><code> blocks and adds a button to copy the code text to clipboard.
 
 Include the following stylesheet in the CSS Links section of your HTML:
-    <link rel="stylesheet" href="/fpac-website/styles/fpac-code-copy-button.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
 
 Include this script at the bottom in the Scripts section of your HTML:
-  <script src="/fpac-website/scripts/fpac-code-copy-button.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
 */
 
 const copyButtonLabel = "Copy Code";
@@ -31,11 +24,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   blocks.forEach((block) => {
     // reuse existing button if present (by class) otherwise create one
-    let button = block.querySelector('button.fpac-code-copy-button');
+    let button = block.querySelector('button.civic-code-copy-button');
     if (!button) {
       button = document.createElement('button');
       button.type = 'button';
-      button.className = 'fpac-code-copy-button';
+      button.className = 'civic-code-copy-button';
       button.textContent = copyButtonLabel;
       button.setAttribute('aria-label', 'Copy code to clipboard');
 
@@ -44,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // attach click handler (avoid attaching multiple handlers if script runs twice)
-    if (!button.__fpac_handler_attached) {
+    if (!button.__civic_handler_attached) {
       button.addEventListener('click', async () => {
         try {
           const code = block.querySelector('code');
@@ -60,16 +53,16 @@ window.addEventListener('DOMContentLoaded', () => {
             button.innerText = copyButtonLabel;
           }, 700);
         } catch (err) {
-          console.error('fpac-code-copy: copy failed', err);
+          console.error('civic-code-copy: copy failed', err);
         }
       });
-      button.__fpac_handler_attached = true;
+      button.__civic_handler_attached = true;
     }
   });
 });
 
 /*
-  FPAC: Accordion content width helper (generalized)
+  Civic: Accordion content width helper (generalized)
   --------------------------------------------------
   This version applies the same conservative width/wrapping behavior to any
   accordion button that has an `aria-controls` attribute and a matching
@@ -96,7 +89,7 @@ window.addEventListener('DOMContentLoaded', () => {
       function ensureWrapper() {
         if (content._innerWrapper) return content._innerWrapper;
         var wrapper = document.createElement('div');
-        wrapper.className = 'fpac-accordion-inner-wrapper';
+        wrapper.className = 'civic-accordion-inner-wrapper';
         // move existing children into wrapper (only runs once)
         while (content.firstChild) wrapper.appendChild(content.firstChild);
         content.appendChild(wrapper);

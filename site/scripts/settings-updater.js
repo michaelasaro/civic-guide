@@ -1,8 +1,8 @@
 // settings-updater.js
 // Clean generalized updater for *-settings.responsive and *-settings.state
 // This file was extracted from inline scripts used on several documentation pages.
-// It fetches the fpac-uswds-styles.scss file to parse the current settings values from
-// \fpac-design-system\dist\fpac-uswds-styles.scss
+// It fetches the civic-uswds-styles.scss file to parse the current settings values from
+// dist/civic/styles/civic-uswds-styles.scss
 
 // To use, include this script on a page that has a table with rows for the settings to update.
 // Each row should have a first cell with the setting name (e.g. $button-settings.responsive)
@@ -11,7 +11,7 @@
 // and update the corresponding value cells based on the parsed SCSS settings.
 
 // Include this script in your HTML as follows:
-// <script src="/fpac-website/scripts/settings-updater.js"></script>
+// <script src="/site/scripts/settings-updater.js"></script>
 
 // Note to self: update this script to include output tables once those exist.
 
@@ -60,9 +60,9 @@
   }
 
   var possiblePaths = [
-    '/dist/fpac-uswds-styles.scss?ts=' + Date.now(),
-    '/dist/fpac-uswds-styles.scss',
-    '/fpac-design-system/dist/fpac-uswds-styles.scss'
+    '/dist/civic/styles/civic-uswds-styles.scss?ts=' + Date.now(),
+    '/dist/civic/styles/civic-uswds-styles.scss',
+    '/civic-design-system/dist/civic-uswds-styles.scss'
   ];
 
   function parseAllSettings(text) {

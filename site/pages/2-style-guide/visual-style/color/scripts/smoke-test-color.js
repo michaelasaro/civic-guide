@@ -5,14 +5,13 @@ const { JSDOM } = require('jsdom');
 
 // Paths
 const htmlPath = path.resolve(__dirname, 'color-background.html');
-const chipScriptPath = path.resolve(__dirname, 'fpac-color-chips.js');
+const chipScriptPath = path.resolve(__dirname, 'color-chips.js');
 
 // Candidate CSS locations to make computed styles accurate
 const cssCandidates = [
-  path.resolve(__dirname, '..', '..', 'fpac-style', 'work', 'fpac-design-system.css'),
-  path.resolve(__dirname, '..', '..', 'work', 'fpac-design-system.css'),
-  path.resolve(__dirname, '..', 'fpac-documentation-website.css'),
-  path.resolve(__dirname, '..', '..', 'fpac-style', 'src', 'styles', 'index.scss') // fallback (not compiled)
+  path.resolve(__dirname, '..', '..', '..', '..', '..', '..', 'dist', 'civic', 'styles', 'civic.css'),
+  path.resolve(__dirname, '..', '..', '..', '..', 'styles', 'civic-documentation-website.css'),
+  path.resolve(__dirname, '..', '..', '..', '..', '..', '..', 'src', 'styles', 'index.scss') // fallback (not compiled)
 ];
 
 function hexToRgb(hex) {
@@ -92,7 +91,7 @@ function hexToRgb(hex) {
       const hex = (hexCell.textContent || '').trim();
       if (!hex) return;
 
-      const chip = exampleCell.querySelector('.usda-chip, .utility-value-color-chip');
+      const chip = exampleCell.querySelector('.civic-chip, .utility-value-color-chip');
       const compColor = chip ? window.getComputedStyle(chip).color : null;
       const inlineStyle = chip ? (chip.getAttribute('style') || '') : '';
 

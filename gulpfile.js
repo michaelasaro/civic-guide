@@ -254,7 +254,8 @@ function copyFiles(folder, group) {
   let srcFiles = folder + '/' + group.src
   let target = distFolderLocation + '/' + group.dest
   log(colors.blue, `        ${srcFiles} → ${target}`);
-  return src(`${srcFiles}`.replace("//", "/")).pipe(
+  // encoding: false is required in Gulp 5.x to preserve binary files (images, fonts)
+  return src(`${srcFiles}`.replace("//", "/"), { encoding: false }).pipe(
     dest(target)
   );
 }
