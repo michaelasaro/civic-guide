@@ -1,0 +1,726 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Select a Language | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2" class="usa-current">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html" class="usa-current">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Select a Language</h1>
+                  <p class="usa-intro">The select a language pattern provides a dedicated page or prominent interface for users to select their preferred language, typically used as a landing page or primary language selection experience.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Overview -->
+                  <h2>Overview</h2>
+                  <p>The select a language pattern creates a full-page language selection experience where users can choose their preferred language from all available options. Unlike the language selector component (which appears in headers or footers), this pattern is designed for prominent, primary language selection scenarios.</p>
+                  <p>This pattern is particularly useful when:</p>
+                  <ul>
+                    <li>Users first arrive at a multilingual site and need to choose their language</li>
+                    <li>A site offers many language options that would be difficult to display in a compact selector</li>
+                    <li>Language selection is a critical first step in the user journey</li>
+                  </ul>
+
+                  <br>
+                  <hr>
+
+                  <!-- Key Elements -->
+                  <h2>Key Elements</h2>
+
+                  <h3>Language selection page</h3>
+                  <p>A full page dedicated to language selection, presenting all available languages in a clear, organized layout. This page typically serves as an entry point to the site or as a dedicated settings page.</p>
+
+                  <h3 class="margin-top-5">Large, clear language options</h3>
+                  <p>Each language option is displayed prominently, with the language name shown in its native script. For example, Spanish appears as "Español" and Chinese as "中文". This ensures users can identify their language regardless of their current language settings.</p>
+
+                  <h3 class="margin-top-5">Visual hierarchy</h3>
+                  <p>Languages are organized in a logical manner, whether alphabetically, by region, or by usage frequency. Clear visual grouping helps users quickly locate their preferred language.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Language Selection Page Example -->
+                  <h2>Language Selection Page</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border-1px border-base-lighter padding-4 radius-md bg-base-lightest">
+                    <h2 class="margin-top-0 text-center">Select your language</h2>
+                    <p class="text-center text-base">Choose your preferred language to continue</p>
+
+                    <div class="grid-row grid-gap-lg margin-top-4">
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="en">English</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="es">Español</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="zh">中文</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="vi">Tiếng Việt</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="ko">한국어</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="tl">Tagalog</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="ru">Русский</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="ar" dir="rtl">العربية</a>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2">
+                        <a href="#" class="usa-button usa-button--outline width-full text-center" lang="fr">Français</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="sal-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="sal-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="border-1px border-base-lighter padding-4 radius-md bg-base-lightest"&gt;
+  &lt;h2 class="margin-top-0 text-center"&gt;Select your language&lt;/h2&gt;
+  &lt;p class="text-center text-base"&gt;Choose your preferred language to continue&lt;/p&gt;
+
+  &lt;div class="grid-row grid-gap-lg margin-top-4"&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="en"&gt;English&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="es"&gt;Español&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="zh"&gt;中文&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="vi"&gt;Tiếng Việt&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="ko"&gt;한국어&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="tl"&gt;Tagalog&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="ru"&gt;Русский&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="ar" dir="rtl"&gt;العربية&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2"&gt;
+      &lt;a href="#" class="usa-button usa-button--outline width-full text-center" lang="fr"&gt;Français&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Card-based Language Selection -->
+                  <h2 class="margin-top-4">Card-based Language Selection</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="padding-4">
+                    <h2 class="margin-top-0">Choose a language</h2>
+
+                    <ul class="usa-card-group">
+                      <li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                        <div class="usa-card__container">
+                          <div class="usa-card__body">
+                            <a href="#" class="usa-link text-no-underline" lang="en">
+                              <span class="text-bold font-heading-lg">English</span>
+                              <span class="display-block text-base-dark margin-top-1">United States</span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                        <div class="usa-card__container">
+                          <div class="usa-card__body">
+                            <a href="#" class="usa-link text-no-underline" lang="es">
+                              <span class="text-bold font-heading-lg">Español</span>
+                              <span class="display-block text-base-dark margin-top-1">Spanish</span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                        <div class="usa-card__container">
+                          <div class="usa-card__body">
+                            <a href="#" class="usa-link text-no-underline" lang="zh">
+                              <span class="text-bold font-heading-lg">中文</span>
+                              <span class="display-block text-base-dark margin-top-1">Chinese</span>
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="sal-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="sal-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="padding-4"&gt;
+  &lt;h2 class="margin-top-0"&gt;Choose a language&lt;/h2&gt;
+
+  &lt;ul class="usa-card-group"&gt;
+    &lt;li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4"&gt;
+      &lt;div class="usa-card__container"&gt;
+        &lt;div class="usa-card__body"&gt;
+          &lt;a href="#" class="usa-link text-no-underline" lang="en"&gt;
+            &lt;span class="text-bold font-heading-lg"&gt;English&lt;/span&gt;
+            &lt;span class="display-block text-base-dark margin-top-1"&gt;United States&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4"&gt;
+      &lt;div class="usa-card__container"&gt;
+        &lt;div class="usa-card__body"&gt;
+          &lt;a href="#" class="usa-link text-no-underline" lang="es"&gt;
+            &lt;span class="text-bold font-heading-lg"&gt;Español&lt;/span&gt;
+            &lt;span class="display-block text-base-dark margin-top-1"&gt;Spanish&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-card grid-col-12 tablet:grid-col-6 desktop:grid-col-4"&gt;
+      &lt;div class="usa-card__container"&gt;
+        &lt;div class="usa-card__body"&gt;
+          &lt;a href="#" class="usa-link text-no-underline" lang="zh"&gt;
+            &lt;span class="text-bold font-heading-lg"&gt;中文&lt;/span&gt;
+            &lt;span class="display-block text-base-dark margin-top-1"&gt;Chinese&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Pattern Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the select a language pattern</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Entry points to multilingual sites.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use this pattern when language selection is the first action users should take upon arriving at your site, such as a splash page or landing page.</dd>
+
+                        <dt class="margin-bottom-05"><strong>When many languages are available.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If your site supports numerous languages that would be difficult to display in a compact dropdown or menu, a dedicated selection page provides better usability.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Settings or preferences pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use this pattern on a dedicated language settings page where users can view and change their language preference.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>If you only support a few languages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For sites with two to four language options, consider using the language selector component in the header or footer instead of a dedicated page.</dd>
+
+                        <dt class="margin-bottom-05"><strong>If language detection is reliable.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you can accurately detect the user's preferred language from browser settings, you may not need a prominent selection page. Provide a language selector in the header for users who wish to change.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Best practices</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Display language names in their native script.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Always show language names in their own language (e.g., "Español" not "Spanish", "中文" not "Chinese"). Users should be able to identify their language without understanding the site's current language.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Consider alphabetical or regional grouping.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Organize languages in a logical order. Alphabetical ordering (by native name) works well for diverse audiences. Regional grouping may be appropriate if your user base is geographically concentrated.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide clear visual feedback.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Indicate the currently selected language if applicable. Use hover and focus states to make interactive elements clearly identifiable.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the <code class="font-mono-xs">lang</code> attribute on each option.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Apply the appropriate <code class="font-mono-xs">lang</code> attribute to each language option element (e.g., <code class="font-mono-xs">lang="es"</code> for Spanish). This ensures screen readers pronounce language names correctly.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility considerations</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use proper <code class="font-mono-xs">lang</code> attributes on each option.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The <code class="font-mono-xs">lang</code> attribute tells assistive technologies which language the text is in, allowing screen readers to switch pronunciation. Apply it to each language link or button element.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Support right-to-left languages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For languages like Arabic and Hebrew, include the <code class="font-mono-xs">dir="rtl"</code> attribute to ensure proper text direction within the option element.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Ensure keyboard navigation.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">All language options must be accessible via keyboard navigation. Users should be able to tab through options and activate them with Enter or Space.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide sufficient color contrast.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Ensure text and interactive elements meet WCAG 2.1 AA contrast requirements (4.5:1 for normal text, 3:1 for large text).</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use descriptive link text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Each language option should be a clear, descriptive link. The language name itself serves as the link text, making it understandable out of context.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/patterns/select-a-language/" target="_blank" rel="noopener noreferrer">USWDS Select a Language Pattern Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

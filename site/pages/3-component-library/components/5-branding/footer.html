@@ -1,0 +1,1304 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Footer | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html" class="usa-current">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Footer</h1>
+                  <p class="usa-intro">A footer serves site visitors who arrive at the bottom of a page without finding what they want.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Topic -->
+
+                  <!-- Slim Footer -->
+                  <h2>Slim Footer</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border-1px border-base-lighter padding-2 radius-md bg-base-lightest">
+                    <footer class="usa-footer usa-footer--slim">
+                      <div class="grid-container usa-footer__return-to-top">
+                        <a href="#">Return to top</a>
+                      </div>
+                      <div class="usa-footer__primary-section">
+                        <div class="usa-footer__primary-container grid-row">
+                          <div class="mobile-lg:grid-col-8">
+                            <nav class="usa-footer__nav" aria-label="Footer navigation">
+                              <ul class="grid-row grid-gap">
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                  <a class="usa-footer__primary-link" href="#">Primary link</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                  <a class="usa-footer__primary-link" href="#">Primary link</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                  <a class="usa-footer__primary-link" href="#">Primary link</a>
+                                </li>
+                                <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
+                                  <a class="usa-footer__primary-link" href="#">Primary link</a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                          <div class="mobile-lg:grid-col-4">
+                            <address class="usa-footer__address">
+                              <div class="grid-row grid-gap">
+                                <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                                  <div class="usa-footer__contact-info">
+                                    <a href="tel:1-800-555-5555">(800) 555-5555</a>
+                                  </div>
+                                </div>
+                                <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                                  <div class="usa-footer__contact-info">
+                                    <a href="mailto:info@agency.gov">info@agency.gov</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </address>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="usa-footer__secondary-section">
+                        <div class="grid-container">
+                          <div class="usa-footer__logo grid-row grid-gap-2">
+                            <div class="grid-col-auto">
+                              <img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/>
+                            </div>
+                            <div class="grid-col-auto">
+                              <p class="usa-footer__logo-heading">Name of Agency</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="slim-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="slim-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;footer class="usa-footer usa-footer--slim"&gt;
+  &lt;div class="grid-container usa-footer__return-to-top"&gt;
+    &lt;a href="#"&gt;Return to top&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__primary-section"&gt;
+    &lt;div class="usa-footer__primary-container grid-row"&gt;
+      &lt;div class="mobile-lg:grid-col-8"&gt;
+        &lt;nav class="usa-footer__nav" aria-label="Footer navigation"&gt;
+          &lt;ul class="grid-row grid-gap"&gt;
+            &lt;li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content"&gt;
+              &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content"&gt;
+              &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content"&gt;
+              &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content"&gt;
+              &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+      &lt;div class="mobile-lg:grid-col-4"&gt;
+        &lt;address class="usa-footer__address"&gt;
+          &lt;div class="grid-row grid-gap"&gt;
+            &lt;div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto"&gt;
+              &lt;div class="usa-footer__contact-info"&gt;
+                &lt;a href="tel:1-800-555-5555"&gt;(800) 555-5555&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto"&gt;
+              &lt;div class="usa-footer__contact-info"&gt;
+                &lt;a href="mailto:info@agency.gov"&gt;info@agency.gov&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/address&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__secondary-section"&gt;
+    &lt;div class="grid-container"&gt;
+      &lt;div class="usa-footer__logo grid-row grid-gap-2"&gt;
+        &lt;div class="grid-col-auto"&gt;
+          &lt;img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/&gt;
+        &lt;/div&gt;
+        &lt;div class="grid-col-auto"&gt;
+          &lt;p class="usa-footer__logo-heading"&gt;Name of Agency&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Medium Footer -->
+                  <h2 class="margin-top-4">Medium Footer</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border-1px border-base-lighter padding-2 radius-md bg-base-lightest">
+                    <footer class="usa-footer">
+                      <div class="grid-container usa-footer__return-to-top">
+                        <a href="#">Return to top</a>
+                      </div>
+                      <div class="usa-footer__primary-section">
+                        <nav class="usa-footer__nav" aria-label="Footer navigation">
+                          <ul class="grid-row grid-gap">
+                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                              <a class="usa-footer__primary-link" href="#">Primary link</a>
+                            </li>
+                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                              <a class="usa-footer__primary-link" href="#">Primary link</a>
+                            </li>
+                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                              <a class="usa-footer__primary-link" href="#">Primary link</a>
+                            </li>
+                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                              <a class="usa-footer__primary-link" href="#">Primary link</a>
+                            </li>
+                            <li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                              <a class="usa-footer__primary-link" href="#">Primary link</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="usa-footer__secondary-section">
+                        <div class="grid-container">
+                          <div class="grid-row grid-gap">
+                            <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+                              <div class="grid-col-auto">
+                                <img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/>
+                              </div>
+                              <div class="grid-col-auto">
+                                <p class="usa-footer__logo-heading">Name of Agency</p>
+                              </div>
+                            </div>
+                            <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                              <div class="usa-footer__social-links grid-row grid-gap-1">
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/facebook.svg" alt="Facebook"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/twitter.svg" alt="Twitter"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/youtube.svg" alt="YouTube"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/instagram.svg" alt="Instagram"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/rss_feed.svg" alt="RSS"/>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="usa-footer__contact-heading">Agency Contact Center</p>
+                              <address class="usa-footer__address">
+                                <div class="usa-footer__contact-info grid-row grid-gap">
+                                  <div class="grid-col-auto">
+                                    <a href="tel:1-800-555-5555">(800) 555-5555</a>
+                                  </div>
+                                  <div class="grid-col-auto">
+                                    <a href="mailto:info@agency.gov">info@agency.gov</a>
+                                  </div>
+                                </div>
+                              </address>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="margin-top-5 padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="medium-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="medium-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;footer class="usa-footer"&gt;
+  &lt;div class="grid-container usa-footer__return-to-top"&gt;
+    &lt;a href="#"&gt;Return to top&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__primary-section"&gt;
+    &lt;nav class="usa-footer__nav" aria-label="Footer navigation"&gt;
+      &lt;ul class="grid-row grid-gap"&gt;
+        &lt;li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"&gt;
+          &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"&gt;
+          &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"&gt;
+          &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"&gt;
+          &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"&gt;
+          &lt;a class="usa-footer__primary-link" href="#"&gt;Primary link&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__secondary-section"&gt;
+    &lt;div class="grid-container"&gt;
+      &lt;div class="grid-row grid-gap"&gt;
+        &lt;div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"&gt;
+          &lt;div class="grid-col-auto"&gt;
+            &lt;img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/&gt;
+          &lt;/div&gt;
+          &lt;div class="grid-col-auto"&gt;
+            &lt;p class="usa-footer__logo-heading"&gt;Name of Agency&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="usa-footer__contact-links mobile-lg:grid-col-6"&gt;
+          &lt;div class="usa-footer__social-links grid-row grid-gap-1"&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/facebook.svg" alt="Facebook"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/twitter.svg" alt="Twitter"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/youtube.svg" alt="YouTube"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/instagram.svg" alt="Instagram"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/rss_feed.svg" alt="RSS"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class="usa-footer__contact-heading"&gt;Agency Contact Center&lt;/p&gt;
+          &lt;address class="usa-footer__address"&gt;
+            &lt;div class="usa-footer__contact-info grid-row grid-gap"&gt;
+              &lt;div class="grid-col-auto"&gt;
+                &lt;a href="tel:1-800-555-5555"&gt;(800) 555-5555&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="grid-col-auto"&gt;
+                &lt;a href="mailto:info@agency.gov"&gt;info@agency.gov&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/address&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Big Footer -->
+                  <h2 class="margin-top-4">Big Footer</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border-1px border-base-lighter padding-2 radius-md bg-base-lightest">
+                    <footer class="usa-footer usa-footer--big">
+                      <div class="grid-container usa-footer__return-to-top">
+                        <a href="#">Return to top</a>
+                      </div>
+                      <div class="usa-footer__primary-section">
+                        <div class="grid-container">
+                          <div class="grid-row grid-gap">
+                            <div class="tablet:grid-col-8">
+                              <nav class="usa-footer__nav" aria-label="Footer navigation">
+                                <div class="grid-row grid-gap-4">
+                                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                      <h4 class="usa-footer__primary-link">Topic</h4>
+                                      <ul class="usa-list usa-list--unstyled">
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                      </ul>
+                                    </section>
+                                  </div>
+                                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                      <h4 class="usa-footer__primary-link">Topic</h4>
+                                      <ul class="usa-list usa-list--unstyled">
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                      </ul>
+                                    </section>
+                                  </div>
+                                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                      <h4 class="usa-footer__primary-link">Topic</h4>
+                                      <ul class="usa-list usa-list--unstyled">
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                      </ul>
+                                    </section>
+                                  </div>
+                                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                    <section class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                                      <h4 class="usa-footer__primary-link">Topic</h4>
+                                      <ul class="usa-list usa-list--unstyled">
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                        <li class="usa-footer__secondary-link">
+                                          <a href="#">Secondary link</a>
+                                        </li>
+                                      </ul>
+                                    </section>
+                                  </div>
+                                </div>
+                              </nav>
+                            </div>
+                            <div class="tablet:grid-col-4">
+                              <div class="usa-sign-up">
+                                <h4 class="usa-sign-up__heading">Sign up for updates</h4>
+                                <form class="usa-form" action="#">
+                                  <label class="usa-label" for="email">Your email address</label>
+                                  <input class="usa-input" id="email" name="email" type="email"/>
+                                  <button class="usa-button" type="submit">Sign up</button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="usa-footer__secondary-section">
+                        <div class="grid-container">
+                          <div class="grid-row grid-gap">
+                            <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+                              <div class="grid-col-auto">
+                                <img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/>
+                              </div>
+                              <div class="grid-col-auto">
+                                <p class="usa-footer__logo-heading">Name of Agency</p>
+                              </div>
+                            </div>
+                            <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                              <div class="usa-footer__social-links grid-row grid-gap-1">
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/facebook.svg" alt="Facebook"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/twitter.svg" alt="Twitter"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/youtube.svg" alt="YouTube"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/instagram.svg" alt="Instagram"/>
+                                  </a>
+                                </div>
+                                <div class="grid-col-auto">
+                                  <a class="usa-social-link" href="#">
+                                    <img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/rss_feed.svg" alt="RSS"/>
+                                  </a>
+                                </div>
+                              </div>
+                              <p class="usa-footer__contact-heading">Agency Contact Center</p>
+                              <address class="usa-footer__address">
+                                <div class="usa-footer__contact-info grid-row grid-gap">
+                                  <div class="grid-col-auto">
+                                    <a href="tel:1-800-555-5555">(800) 555-5555</a>
+                                  </div>
+                                  <div class="grid-col-auto">
+                                    <a href="mailto:info@agency.gov">info@agency.gov</a>
+                                  </div>
+                                </div>
+                              </address>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="margin-top-5 padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="big-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="big-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;footer class="usa-footer usa-footer--big"&gt;
+  &lt;div class="grid-container usa-footer__return-to-top"&gt;
+    &lt;a href="#"&gt;Return to top&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__primary-section"&gt;
+    &lt;div class="grid-container"&gt;
+      &lt;div class="grid-row grid-gap"&gt;
+        &lt;div class="tablet:grid-col-8"&gt;
+          &lt;nav class="usa-footer__nav" aria-label="Footer navigation"&gt;
+            &lt;div class="grid-row grid-gap-4"&gt;
+              &lt;div class="mobile-lg:grid-col-6 desktop:grid-col-3"&gt;
+                &lt;section class="usa-footer__primary-content usa-footer__primary-content--collapsible"&gt;
+                  &lt;h4 class="usa-footer__primary-link"&gt;Topic&lt;/h4&gt;
+                  &lt;ul class="usa-list usa-list--unstyled"&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/section&gt;
+              &lt;/div&gt;
+              &lt;div class="mobile-lg:grid-col-6 desktop:grid-col-3"&gt;
+                &lt;section class="usa-footer__primary-content usa-footer__primary-content--collapsible"&gt;
+                  &lt;h4 class="usa-footer__primary-link"&gt;Topic&lt;/h4&gt;
+                  &lt;ul class="usa-list usa-list--unstyled"&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/section&gt;
+              &lt;/div&gt;
+              &lt;div class="mobile-lg:grid-col-6 desktop:grid-col-3"&gt;
+                &lt;section class="usa-footer__primary-content usa-footer__primary-content--collapsible"&gt;
+                  &lt;h4 class="usa-footer__primary-link"&gt;Topic&lt;/h4&gt;
+                  &lt;ul class="usa-list usa-list--unstyled"&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/section&gt;
+              &lt;/div&gt;
+              &lt;div class="mobile-lg:grid-col-6 desktop:grid-col-3"&gt;
+                &lt;section class="usa-footer__primary-content usa-footer__primary-content--collapsible"&gt;
+                  &lt;h4 class="usa-footer__primary-link"&gt;Topic&lt;/h4&gt;
+                  &lt;ul class="usa-list usa-list--unstyled"&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="usa-footer__secondary-link"&gt;
+                      &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/section&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;div class="tablet:grid-col-4"&gt;
+          &lt;div class="usa-sign-up"&gt;
+            &lt;h4 class="usa-sign-up__heading"&gt;Sign up for updates&lt;/h4&gt;
+            &lt;form class="usa-form" action="#"&gt;
+              &lt;label class="usa-label" for="email"&gt;Your email address&lt;/label&gt;
+              &lt;input class="usa-input" id="email" name="email" type="email"/&gt;
+              &lt;button class="usa-button" type="submit"&gt;Sign up&lt;/button&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="usa-footer__secondary-section"&gt;
+    &lt;div class="grid-container"&gt;
+      &lt;div class="grid-row grid-gap"&gt;
+        &lt;div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"&gt;
+          &lt;div class="grid-col-auto"&gt;
+            &lt;img class="usa-footer__logo-img" src="/dist/uswds/img/logo-img.png" alt=""/&gt;
+          &lt;/div&gt;
+          &lt;div class="grid-col-auto"&gt;
+            &lt;p class="usa-footer__logo-heading"&gt;Name of Agency&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="usa-footer__contact-links mobile-lg:grid-col-6"&gt;
+          &lt;div class="usa-footer__social-links grid-row grid-gap-1"&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/facebook.svg" alt="Facebook"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/twitter.svg" alt="Twitter"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/youtube.svg" alt="YouTube"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/instagram.svg" alt="Instagram"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="grid-col-auto"&gt;
+              &lt;a class="usa-social-link" href="#"&gt;
+                &lt;img class="usa-social-link__icon" src="/dist/uswds/img/usa-icons/rss_feed.svg" alt="RSS"/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class="usa-footer__contact-heading"&gt;Agency Contact Center&lt;/p&gt;
+          &lt;address class="usa-footer__address"&gt;
+            &lt;div class="usa-footer__contact-info grid-row grid-gap"&gt;
+              &lt;div class="grid-col-auto"&gt;
+                &lt;a href="tel:1-800-555-5555"&gt;(800) 555-5555&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class="grid-col-auto"&gt;
+                &lt;a href="mailto:info@agency.gov"&gt;info@agency.gov&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/address&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the footer component</h3>
+                      <dl>
+                        <dd class="margin-left-0 margin-bottom-2">Every page on your site should have a footer. The footer provides a consistent place for users to find secondary navigation, contact information, and legal links.</dd>
+                        <dd class="margin-left-0 margin-bottom-2">Choose the footer variant that best fits your site's content needs: slim for simple sites, medium for standard sites, and big for sites with extensive navigation requirements.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>The footer is essential for most websites.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">You should always include a footer, but consider pairing it with the Identifier component for federal websites to meet required link requirements.</dd>
+
+                        <dt class="margin-bottom-05"><strong>If you need to display required federal links.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use the Identifier component in addition to the footer to display legally required links and government branding.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Include a "Return to top" link.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Add a "Return to top" link at the top of the footer to help users quickly navigate back to the top of the page, especially on long pages.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include social media links when appropriate.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If your organization has official social media accounts, include them in the footer using recognizable icons with proper alt text.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide clear contact information.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Include a phone number and email address in the footer so users can easily find ways to contact your organization.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the sign-up form strategically.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The big footer variant includes an optional email sign-up form. Only include this if you have a newsletter or updates that users can subscribe to.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use the <code class="font-mono-xs">&lt;footer&gt;</code> landmark element.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The footer should be wrapped in a <code class="font-mono-xs">&lt;footer&gt;</code> element, which creates a footer landmark for screen reader users to easily navigate to.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include proper heading hierarchy.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use appropriate heading levels within the footer. Navigation section headings should be <code class="font-mono-xs">&lt;h4&gt;</code> elements in the big footer variant.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use descriptive link text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Ensure all links in the footer have descriptive text that makes sense out of context. Avoid generic text like "Click here" or "Learn more."</dd>
+
+                        <dt class="margin-bottom-05"><strong>Label the navigation region.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use <code class="font-mono-xs">aria-label="Footer navigation"</code> on the <code class="font-mono-xs">&lt;nav&gt;</code> element to distinguish it from other navigation regions on the page.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide alt text for social media icons.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Include descriptive alt text for social media icons (e.g., "Facebook", "Twitter") so screen reader users understand where each link leads.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the <code class="font-mono-xs">&lt;address&gt;</code> element for contact information.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Wrap contact information in an <code class="font-mono-xs">&lt;address&gt;</code> element to semantically identify it as contact details.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/footer/" target="_blank" rel="noopener noreferrer">USWDS Footer Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-background-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Background color of the footer primary section.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-secondary-background-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Background color of the footer secondary section.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-text-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Text color used in the footer.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-link-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Link color used in the footer.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family used in the footer.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-footer-max-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Maximum width of the footer content.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-footer--slim</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>A minimal footer with basic navigation links and contact information. Best for simple sites with limited content.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-footer</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>The default medium footer with navigation, logo, social links, and contact information. Suitable for most sites.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-footer--big</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>A comprehensive footer with multiple navigation columns, sign-up form, social links, and contact information. Best for large sites with extensive navigation needs.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

@@ -1,0 +1,809 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Pagination | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html" class="usa-current">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Pagination</h1>
+                  <p class="usa-intro">Pagination is navigation for paginated content.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Default (Bounded) -->
+                  <h2 id="default">Default (Bounded)</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <nav aria-label="Pagination" class="usa-pagination">
+                    <ul class="usa-pagination__list">
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" aria-label="Previous page">
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use href="/dist/uswds/img/sprite.svg#navigate_before"></use>
+                          </svg>
+                          <span class="usa-pagination__link-text">Previous</span>
+                        </a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 1">1</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages">
+                        <span>…</span>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 9">9</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button usa-current" aria-label="Page 10" aria-current="page">10</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 11">11</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages">
+                        <span>…</span>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Last page, page 24">24</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" aria-label="Next page">
+                          <span class="usa-pagination__link-text">Next </span>
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use href="/dist/uswds/img/sprite.svg#navigate_next"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-default">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-default" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;nav aria-label="Pagination" class="usa-pagination"&gt;
+  &lt;ul class="usa-pagination__list"&gt;
+    &lt;li class="usa-pagination__item usa-pagination__arrow"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" aria-label="Previous page"&gt;
+        &lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
+          &lt;use href="/dist/uswds/img/sprite.svg#navigate_before"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class="usa-pagination__link-text"&gt;Previous&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 1"&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages"&gt;
+      &lt;span&gt;…&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 9"&gt;9&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button usa-current" aria-label="Page 10" aria-current="page"&gt;10&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 11"&gt;11&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages"&gt;
+      &lt;span&gt;…&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Last page, page 24"&gt;24&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__arrow"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" aria-label="Next page"&gt;
+        &lt;span class="usa-pagination__link-text"&gt;Next &lt;/span&gt;
+        &lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
+          &lt;use href="/dist/uswds/img/sprite.svg#navigate_next"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Unbounded -->
+                  <h2 class="margin-top-4" id="unbounded">Unbounded</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <nav aria-label="Pagination" class="usa-pagination">
+                    <ul class="usa-pagination__list">
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" aria-label="Previous page">
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use href="/dist/uswds/img/sprite.svg#navigate_before"></use>
+                          </svg>
+                          <span class="usa-pagination__link-text">Previous</span>
+                        </a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 1">1</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages">
+                        <span>…</span>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 9">9</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button usa-current" aria-label="Page 10" aria-current="page">10</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 11">11</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__page-no">
+                        <a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 12">12</a>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages">
+                        <span>…</span>
+                      </li>
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" aria-label="Next page">
+                          <span class="usa-pagination__link-text">Next </span>
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use href="/dist/uswds/img/sprite.svg#navigate_next"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-unbounded">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-unbounded" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;nav aria-label="Pagination" class="usa-pagination"&gt;
+  &lt;ul class="usa-pagination__list"&gt;
+    &lt;li class="usa-pagination__item usa-pagination__arrow"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" aria-label="Previous page"&gt;
+        &lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
+          &lt;use href="/dist/uswds/img/sprite.svg#navigate_before"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class="usa-pagination__link-text"&gt;Previous&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 1"&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages"&gt;
+      &lt;span&gt;…&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 9"&gt;9&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button usa-current" aria-label="Page 10" aria-current="page"&gt;10&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 11"&gt;11&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__page-no"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__button" aria-label="Page 12"&gt;12&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__overflow" aria-label="ellipsis indicating non-visible pages"&gt;
+      &lt;span&gt;…&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="usa-pagination__item usa-pagination__arrow"&gt;
+      &lt;a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" aria-label="Next page"&gt;
+        &lt;span class="usa-pagination__link-text"&gt;Next &lt;/span&gt;
+        &lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
+          &lt;use href="/dist/uswds/img/sprite.svg#navigate_next"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2 id="guidance">Guidance</h2>
+                    <div>
+                      <h3 id="when-to-use">When to use the pagination component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Search results.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Pagination is most commonly used with paginated search results. The component works with both bounded (discrete number of pages) and unbounded (uncalculated number of pages) result sets.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Multi-page collections of related items.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Splitting a large collection of related items into individual pages can improve browsability and scannability. Common examples include articles related to a category or tag, content archives, and history or activity.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="when-to-consider">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Meaningful page groupings.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you have long content split meaningfully, or grouped by subject or theme, use conventional navigation like Side navigation.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Steps in a sequence.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you need to indicate progress in a series of steps that must be completed in succession, like an onboarding flow, consider using the step indicator component.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Short collections.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If the length of the entire collection is less than 3-4 screen lengths long, consider showing all the items at once instead of paginating.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="usability">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Show the size of the paginated set.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Users want to know the length of a paginated section. Always show the last page as the last item in the pagination navigation for bounded sets.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Highlight the current page.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Pagination shows the current page the user is on in relation to the entire collection of pages.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Always include the first, previous, and next pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Users should always be able to navigate to each of these pages from any page in the set.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Show navigation items in a single line.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Don't split the navigation items over multiple lines. Avoid using Pagination in any context where it would be more than one line long.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Indicate any missing pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Whenever there are pages missing, indicate them with an indicator like a non-selectable ellipsis.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="accessibility">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use the nav element.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use a wrapping <code class="font-mono-xs">&lt;nav&gt;</code> element to identify Pagination as a navigation section to screen readers.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use a unique, descriptive ARIA label.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Provide a descriptive ARIA label for any Pagination component's <code class="font-mono-xs">&lt;nav&gt;</code> element that describes its purpose.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Voice the current page.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use <code class="font-mono-xs">aria-current="page"</code> on the current page's link item to properly voice the current page for screen readers.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Voice the word "page" before page numbers.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use <code class="font-mono-xs">aria-label="page [#]"</code> on each page link to be explicit that the numbers are links to page numbers.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/pagination/" target="_blank" rel="noopener noreferrer">USWDS Pagination Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2 id="settings">Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-pagination-background-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The background color of the entire pagination component.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-pagination-breakpoint</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Breakpoint at which full pagination displays.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-pagination-button-border-radius</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Default pagination button border radius.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-pagination-button-border-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Width of button border.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-pagination-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Default font family for pagination.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2 id="variants">Variants</h2>
+                    <p>This component has no modifier class variants. The bounded vs unbounded distinction is determined by whether or not a last page link is included.</p>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Type</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Type">
+                            <p><strong>Bounded</strong></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Has a discrete number of pages. Shows the last page as the final navigation item.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Type">
+                            <p><strong>Unbounded</strong></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Has no calculated last page (e.g., large search results sorted by relevance). Shows an ellipsis at the end instead of a last page number.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

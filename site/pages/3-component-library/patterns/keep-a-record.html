@@ -1,0 +1,788 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Keep a Record | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2" class="usa-current">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html" class="usa-current">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Keep a Record</h1>
+                  <p class="usa-intro">Help users save, download, or print important information from their interactions with government services so they have a personal copy for their records.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Overview -->
+                  <h2>Overview</h2>
+                  <p>The "Keep a record" pattern ensures users can retain important information after completing transactions, submitting forms, or interacting with government services. This pattern addresses the fundamental need for users to have documentation of their actions and the information they provided or received.</p>
+                  <p>Government interactions often involve critical information that users may need to reference later, such as confirmation numbers, submitted data, deadlines, or next steps. Providing multiple ways to save this information helps users regardless of their technical capabilities or access to technology.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Key Elements -->
+                  <h2 class="margin-top-4">Key Elements</h2>
+
+                  <!-- Confirmation Pages -->
+                  <h3 class="padding-bottom-2">Confirmation Pages</h3>
+                  <p>Confirmation pages display a summary of the information users have submitted. They serve as the primary record of a completed transaction and should include all relevant details the user might need to reference.</p>
+
+                  <!-- Component Preview -->
+                  <h4 class="padding-bottom-2">Component Preview</h4>
+
+                  <div class="usa-alert usa-alert--success">
+                    <div class="usa-alert__body">
+                      <h4 class="usa-alert__heading">Application submitted successfully</h4>
+                      <p class="usa-alert__text">
+                        Your application has been received. Your confirmation number is <strong>APP-2024-78432</strong>. Please save this number for your records.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="usa-summary-box margin-top-3" role="region" aria-labelledby="summary-box-key-information">
+                    <div class="usa-summary-box__body">
+                      <h4 class="usa-summary-box__heading" id="summary-box-key-information">
+                        Submission Summary
+                      </h4>
+                      <div class="usa-summary-box__text">
+                        <ul class="usa-list">
+                          <li><strong>Confirmation number:</strong> APP-2024-78432</li>
+                          <li><strong>Date submitted:</strong> January 15, 2024</li>
+                          <li><strong>Application type:</strong> Benefits renewal</li>
+                          <li><strong>Expected processing time:</strong> 5-7 business days</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Component Code -->
+                  <h4 class="padding-bottom-2">Component Code</h4>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="kar-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="kar-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--success"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Application submitted successfully&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Your application has been received. Your confirmation number is
+      &lt;strong&gt;APP-2024-78432&lt;/strong&gt;. Please save this number for your records.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="usa-summary-box margin-top-3" role="region"
+     aria-labelledby="summary-box-key-information"&gt;
+  &lt;div class="usa-summary-box__body"&gt;
+    &lt;h4 class="usa-summary-box__heading" id="summary-box-key-information"&gt;
+      Submission Summary
+    &lt;/h4&gt;
+    &lt;div class="usa-summary-box__text"&gt;
+      &lt;ul class="usa-list"&gt;
+        &lt;li&gt;&lt;strong&gt;Confirmation number:&lt;/strong&gt; APP-2024-78432&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Date submitted:&lt;/strong&gt; January 15, 2024&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Application type:&lt;/strong&gt; Benefits renewal&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Expected processing time:&lt;/strong&gt; 5-7 business days&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Print Functionality -->
+                  <h3 class="margin-top-5 padding-bottom-2">Print Functionality</h3>
+                  <p>Provide a clear print option that generates a print-friendly version of the confirmation or summary page. The print layout should be optimized for paper, removing unnecessary navigation and formatting elements.</p>
+
+                  <!-- Component Preview -->
+                  <h4 class="padding-bottom-2">Component Preview</h4>
+
+                  <div class="usa-button-group">
+                    <button type="button" class="usa-button usa-button--outline" onclick="window.print()">
+                      Print this page
+                    </button>
+                  </div>
+
+                  <br>
+
+                  <!-- Component Code -->
+                  <h4 class="padding-bottom-2">Component Code</h4>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="kar-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="kar-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-button-group"&gt;
+  &lt;button type="button" class="usa-button usa-button--outline"
+          onclick="window.print()"&gt;
+    Print this page
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Add print styles in your CSS --&gt;
+&lt;style&gt;
+@media print {
+  .usa-header,
+  .usa-footer,
+  .usa-sidenav,
+  .usa-button-group {
+    display: none;
+  }
+
+  .usa-summary-box {
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+}
+&lt;/style&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Download Options -->
+                  <h3 class="margin-top-5 padding-bottom-2">Download Options</h3>
+                  <p>Offer downloadable formats such as PDF for users who want to save a digital copy. Downloads should include all relevant information and be clearly labeled with the document type and date.</p>
+
+                  <!-- Component Preview -->
+                  <h4 class="padding-bottom-2">Component Preview</h4>
+
+                  <div class="usa-button-group">
+                    <a href="#" class="usa-button">
+                      Download confirmation (PDF)
+                    </a>
+                    <a href="#" class="usa-button usa-button--outline">
+                      Download summary (PDF)
+                    </a>
+                  </div>
+
+                  <br>
+
+                  <!-- Component Code -->
+                  <h4 class="padding-bottom-2">Component Code</h4>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="kar-a3">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="kar-a3" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-button-group"&gt;
+  &lt;a href="/path/to/confirmation.pdf" class="usa-button"&gt;
+    Download confirmation (PDF)
+  &lt;/a&gt;
+  &lt;a href="/path/to/summary.pdf" class="usa-button usa-button--outline"&gt;
+    Download summary (PDF)
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Reference Numbers -->
+                  <h3 class="margin-top-5 padding-bottom-2">Reference Numbers</h3>
+                  <p>Provide unique reference or confirmation numbers that users can use to track their submission or reference it in future communications. These should be prominently displayed and easy to copy.</p>
+
+                  <!-- Component Preview -->
+                  <h4 class="padding-bottom-2">Component Preview</h4>
+
+                  <div class="usa-alert usa-alert--info">
+                    <div class="usa-alert__body">
+                      <h4 class="usa-alert__heading">Your reference number</h4>
+                      <p class="usa-alert__text">
+                        <span class="font-mono-lg text-bold">REF-2024-00123456</span>
+                        <br><br>
+                        Use this number when contacting us about your submission. You will also need this number to check your application status online.
+                      </p>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Component Code -->
+                  <h4 class="padding-bottom-2">Component Code</h4>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="kar-a4">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="kar-a4" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--info"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Your reference number&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      &lt;span class="font-mono-lg text-bold"&gt;REF-2024-00123456&lt;/span&gt;
+      &lt;br&gt;&lt;br&gt;
+      Use this number when contacting us about your submission.
+      You will also need this number to check your application status online.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <!-- Email Confirmations -->
+                  <h3 class="margin-top-5 padding-bottom-2">Email Confirmations</h3>
+                  <p>Offer users the option to receive a copy of their confirmation via email. This provides an additional backup and allows users to access their records from any device.</p>
+
+                  <!-- Component Preview -->
+                  <h4 class="padding-bottom-2">Component Preview</h4>
+
+                  <fieldset class="usa-fieldset">
+                    <legend class="usa-legend">Would you like to receive a copy by email?</legend>
+                    <div class="usa-checkbox">
+                      <input class="usa-checkbox__input" id="email-confirm" type="checkbox" name="email-confirmation" value="yes">
+                      <label class="usa-checkbox__label" for="email-confirm">Yes, send me a confirmation email</label>
+                    </div>
+                    <label class="usa-label margin-top-2" for="email-address">Email address</label>
+                    <input class="usa-input" id="email-address" name="email-address" type="email" placeholder="email@example.gov">
+                  </fieldset>
+
+                  <br>
+
+                  <!-- Component Code -->
+                  <h4 class="padding-bottom-2">Component Code</h4>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="kar-a5">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="kar-a5" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;fieldset class="usa-fieldset"&gt;
+  &lt;legend class="usa-legend"&gt;Would you like to receive a copy by email?&lt;/legend&gt;
+  &lt;div class="usa-checkbox"&gt;
+    &lt;input class="usa-checkbox__input" id="email-confirm" type="checkbox"
+           name="email-confirmation" value="yes"&gt;
+    &lt;label class="usa-checkbox__label" for="email-confirm"&gt;
+      Yes, send me a confirmation email
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;label class="usa-label margin-top-2" for="email-address"&gt;Email address&lt;/label&gt;
+  &lt;input class="usa-input" id="email-address" name="email-address"
+         type="email" placeholder="email@example.gov"&gt;
+&lt;/fieldset&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the keep a record pattern</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>After form submissions.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Provide confirmation and summary information after users submit applications, registrations, or other forms.</dd>
+
+                        <dt class="margin-bottom-05"><strong>After transactions.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Give users a record of completed transactions, including payments, renewals, or status changes.</dd>
+
+                        <dt class="margin-bottom-05"><strong>After applications.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Provide documentation of submitted applications, including confirmation numbers and expected timelines.</dd>
+
+                        <dt class="margin-bottom-05"><strong>When providing important information.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Whenever users receive critical information they may need to reference later, such as deadlines, requirements, or next steps.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Best practices</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Include all relevant details.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Ensure confirmation pages include the complete information users submitted, along with any reference numbers, dates, and next steps.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide multiple save options.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Offer print, download, and email options to accommodate different user preferences and technical capabilities.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Make reference numbers prominent.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Display confirmation and reference numbers clearly using a monospace font and larger text size to make them easy to read and copy.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Optimize print layouts.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Create print-specific stylesheets that remove navigation, focus on content, and format information clearly for paper.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Generate accessible PDFs.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Ensure downloadable documents are properly tagged and accessible to users with screen readers.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility considerations</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use proper heading structure.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Organize confirmation content with semantic headings so users can navigate easily with assistive technology.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Ensure sufficient color contrast.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Reference numbers and important information should meet WCAG contrast requirements, especially when using monospace fonts.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide text alternatives for icons.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If using icons for print or download buttons, include appropriate text labels and <code class="font-mono-xs">aria-label</code> attributes.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Make downloadable content accessible.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">PDF documents should be tagged properly and include alternative text for any images or graphics.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Test with screen readers.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Verify that confirmation information and interactive elements (buttons, forms) work correctly with assistive technology.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/patterns/keep-a-record/" target="_blank" rel="noopener noreferrer">USWDS Keep a Record Pattern Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

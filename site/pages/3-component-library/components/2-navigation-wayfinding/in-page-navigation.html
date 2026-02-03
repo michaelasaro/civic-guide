@@ -1,0 +1,841 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title
+    ================================================== -->
+    <title>In-page Navigation | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html" class="usa-current">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">In-page Navigation</h1>
+                  <p class="usa-intro">The in-page navigation allows navigation to specific sections on a lengthy content page.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Default In-page Navigation -->
+                  <h2>Default</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <p>The in-page navigation shown to the right of this content is a live example of the component. It automatically generates its links based on the <code class="font-mono-xs">h2</code> and <code class="font-mono-xs">h3</code> headings within the main content region.</p>
+
+                  <div class="usa-alert usa-alert--info usa-alert--slim margin-top-2">
+                    <div class="usa-alert__body">
+                      <p class="usa-alert__text">
+                        This component auto-generates its content from page headings using JavaScript. The example below shows the minimum required markup.
+                      </p>
+                    </div>
+                  </div>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-default">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-default" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-in-page-nav-container"&gt;
+  &lt;aside class="usa-in-page-nav"&gt;&lt;/aside&gt;
+  &lt;main id="main-content" class="main-content"&gt;
+    [ Page content with h2 and h3 headings ]
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- With Custom Options -->
+                  <h2 class="margin-top-4">With Custom Data Attributes</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <p>You can customize the in-page navigation using data attributes on the <code class="font-mono-xs">aside</code> element. This allows you to change the title text, heading levels to include, scroll offset, and more.</p>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-custom">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-custom" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-in-page-nav-container"&gt;
+  &lt;aside
+    class="usa-in-page-nav"
+    data-heading-elements="h2 h3"
+    data-title-text="On this page"
+    data-title-heading-level="h4"
+    data-scroll-offset="48"
+    data-root-margin="48px 0px -70% 0px"
+    data-threshold="1"
+    data-main-content-selector=".main-content"
+  &gt;&lt;/aside&gt;
+  &lt;main id="main-content" class="main-content"&gt;
+    [ Page content ]
+  &lt;/main&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the in-page navigation component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Long pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">In-page navigation can offer a substantial improvement to user experience for pages that include three or more distinct content sections or content that exceeds three or more viewport heights.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Short pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For pages that require little or no scrolling, in-page navigation is not necessary.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Unstructured content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Pages that lack heading-based hierarchical structures cannot use the in-page navigation component.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Infinite scrolling.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For pages that feature infinite scrolling, in-page navigation is neither a practical nor feasible feature.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Display the in-page navigation to the side of the main content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Visually, place the in-page navigation component after the main content in the language's natural reading order. For example, for a left-to-right language like English, this component goes to the right of the main content.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Make it stand out.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Site visitors should be able to quickly and easily distinguish in-page navigation from other landmarks on the page. Include borders and well-defined link active states to clearly convey the utility and purpose of the section.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use language that matches section headings.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The text of the links displayed within the in-page navigation <code class="font-mono-xs">aside</code> should match the heading text of the target sections. By default, the component scans the page for <code class="font-mono-xs">h2</code> and <code class="font-mono-xs">h3</code> elements within the <code class="font-mono-xs">main</code> element.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Don't include the page h1 in the navigation.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Each page should have a single <code class="font-mono-xs">h1</code> to describe its contents. It would be redundant to include this heading level in the in-page navigation.</dd>
+
+                        <dt class="margin-bottom-05"><strong>In-page navigation heading.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as "On this page," "In this article," or "Table of contents."</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Allow keyboard navigation.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Users should be able to navigate between items by using the <code class="font-mono-xs">Tab</code> key. They should also be able to activate a link when pressing <code class="font-mono-xs">Enter</code> on their keyboard.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Keyboard users should access the in-page navigation before the main content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">When a user tabs through a page that contains the in-page navigation component, they should find the in-page navigation before the <code class="font-mono-xs">main</code> content.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Set focus state on section target for keyboard users.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">When keyboard users follow an in-page anchor link, set the focus state to the link target when the user presses the <code class="font-mono-xs">Enter</code> key.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Using the in-page navigation component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>A wrapper div with the class <code class="font-mono-xs">usa-in-page-nav-container</code> must surround the main element.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">This container enables the sticky positioning and proper layout of the in-page navigation.</dd>
+
+                        <dt class="margin-bottom-05"><strong>A new sibling aside with the class <code class="font-mono-xs">usa-in-page-nav</code> must precede the main element.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The aside element will be populated automatically by JavaScript based on the headings in your main content.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Customize with data attributes.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use data attributes like <code class="font-mono-xs">data-heading-elements</code>, <code class="font-mono-xs">data-title-text</code>, <code class="font-mono-xs">data-scroll-offset</code>, and <code class="font-mono-xs">data-main-content-selector</code> to customize component behavior.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/in-page-navigation/" target="_blank" rel="noopener noreferrer">USWDS In-page Navigation Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Initialization Properties -->
+                  <section class="usa-prose">
+                    <h2>Initialization Properties</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:35%;">Property</th>
+                          <th style="width:45%;">Description</th>
+                          <th>Default</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-heading-elements</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The list of header levels that should be included in the link list.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">h2 h3</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-main-content-selector</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The element the component pulls headers from.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">&lt;main&gt;</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-title-heading-level</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The heading level of the navigation title header.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">h4</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-title-text</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The text of the navigation title header.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">"On this page"</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-scroll-offset</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Number of pixels scroll should offset from the top of the parent element.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">0</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-root-margin</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Observable margin around the observed root used for calculating the current active section. Use values similar to CSS margin.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">0px 0px 0px 0px</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-threshold</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Percentage of the scrolling section that must be in the observed area before the current section is triggered. Use a value between 0 and 1.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">1</code>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Property" class="">
+                            <code class="font-code-xs">data-minimum-heading-count</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The minimum number of headings needed in the content region for the component to build on the page.</p>
+                            </span>
+                          </td>
+                          <td data-title="Default" class="">
+                            <code class="font-code-xs">2</code>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-background-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Background color of the in-page navigation block.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-background-padding</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Padding of the in-page navigation block.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-background-radius</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The border radius of the in-page navigation block.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-bar-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Color of the bar representing the active state of a link in the in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-bar-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Width of the colored bar representing the active state of a link in the in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family of the in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-link-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>The color of the link in the in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-main-content-max-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Maximum width of the main element.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-margin-left</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Margin to the left of in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-margin-top</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Margin above in-page navigation.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-in-page-nav-top</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Distance from top of page to top of navigation when the sticky position is engaged on scroll.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <p>This component has no variants. The in-page navigation is customized through data attributes rather than CSS modifier classes.</p>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

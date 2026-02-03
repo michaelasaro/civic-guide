@@ -1,0 +1,904 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Collection | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html" class="usa-current">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Collection</h1>
+                  <p class="usa-intro">A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Default Collection -->
+                  <h2>Default Collection</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-collection">
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Article headline one</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          Brief description of the article content. This provides context for what the user will find when they click through.
+                        </p>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item">By Author Name</li>
+                          <li class="usa-collection__meta-item">
+                            <time datetime="2024-01-15">January 15, 2024</time>
+                          </li>
+                        </ul>
+                        <ul class="usa-collection__meta" aria-label="Topics">
+                          <li class="usa-collection__meta-item usa-tag usa-tag--new">New</li>
+                          <li class="usa-collection__meta-item usa-tag">Topic</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Article headline two</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          Another brief description of the article content providing context for users.
+                        </p>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item">By Another Author</li>
+                          <li class="usa-collection__meta-item">
+                            <time datetime="2024-01-10">January 10, 2024</time>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="coll-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="coll-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-collection"&gt;
+  &lt;li class="usa-collection__item"&gt;
+    &lt;div class="usa-collection__body"&gt;
+      &lt;h4 class="usa-collection__heading"&gt;
+        &lt;a class="usa-link" href="#"&gt;Article headline&lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;p class="usa-collection__description"&gt;
+        Brief description of the article content.
+      &lt;/p&gt;
+      &lt;ul class="usa-collection__meta" aria-label="More information"&gt;
+        &lt;li class="usa-collection__meta-item"&gt;By Author Name&lt;/li&gt;
+        &lt;li class="usa-collection__meta-item"&gt;
+          &lt;time datetime="2024-01-15"&gt;January 15, 2024&lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul class="usa-collection__meta" aria-label="Topics"&gt;
+        &lt;li class="usa-collection__meta-item usa-tag usa-tag--new"&gt;New&lt;/li&gt;
+        &lt;li class="usa-collection__meta-item usa-tag"&gt;Topic&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Media Thumbnail -->
+                  <h2 class="margin-top-4">Media Thumbnail Collection</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-collection">
+                    <li class="usa-collection__item">
+                      <img
+                        class="usa-collection__img"
+                        src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                        alt="Placeholder image"
+                      />
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Article with thumbnail</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          This collection item includes a thumbnail image alongside the content.
+                        </p>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item">By Author Name</li>
+                          <li class="usa-collection__meta-item">
+                            <time datetime="2024-01-15">January 15, 2024</time>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <img
+                        class="usa-collection__img"
+                        src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                        alt="Placeholder image"
+                      />
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Another article with thumbnail</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          Another collection item with a thumbnail image for visual interest.
+                        </p>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item">By Another Author</li>
+                          <li class="usa-collection__meta-item">
+                            <time datetime="2024-01-10">January 10, 2024</time>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="coll-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="coll-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-collection"&gt;
+  &lt;li class="usa-collection__item"&gt;
+    &lt;img
+      class="usa-collection__img"
+      src="/path/to/image.jpg"
+      alt="Descriptive alt text"
+    /&gt;
+    &lt;div class="usa-collection__body"&gt;
+      &lt;h4 class="usa-collection__heading"&gt;
+        &lt;a class="usa-link" href="#"&gt;Article with thumbnail&lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;p class="usa-collection__description"&gt;
+        This collection item includes a thumbnail image.
+      &lt;/p&gt;
+      &lt;ul class="usa-collection__meta" aria-label="More information"&gt;
+        &lt;li class="usa-collection__meta-item"&gt;By Author Name&lt;/li&gt;
+        &lt;li class="usa-collection__meta-item"&gt;
+          &lt;time datetime="2024-01-15"&gt;January 15, 2024&lt;/time&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Calendar Display -->
+                  <h2 class="margin-top-4">Calendar Display Collection</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-collection">
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__calendar-date">
+                        <time datetime="2024-01-15">
+                          <span class="usa-collection__calendar-date-month">JAN</span>
+                          <span class="usa-collection__calendar-date-day">15</span>
+                        </time>
+                      </div>
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Upcoming event title</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          Description of the upcoming event with details about what participants can expect.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__calendar-date">
+                        <time datetime="2024-02-20">
+                          <span class="usa-collection__calendar-date-month">FEB</span>
+                          <span class="usa-collection__calendar-date-day">20</span>
+                        </time>
+                      </div>
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Another event title</a>
+                        </h4>
+                        <p class="usa-collection__description">
+                          Another event description providing context and details for attendees.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="coll-a3">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="coll-a3" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-collection"&gt;
+  &lt;li class="usa-collection__item"&gt;
+    &lt;div class="usa-collection__calendar-date"&gt;
+      &lt;time datetime="2024-01-15"&gt;
+        &lt;span class="usa-collection__calendar-date-month"&gt;JAN&lt;/span&gt;
+        &lt;span class="usa-collection__calendar-date-day"&gt;15&lt;/span&gt;
+      &lt;/time&gt;
+    &lt;/div&gt;
+    &lt;div class="usa-collection__body"&gt;
+      &lt;h4 class="usa-collection__heading"&gt;
+        &lt;a class="usa-link" href="#"&gt;Event title&lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;p class="usa-collection__description"&gt;
+        Description of the event.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Condensed (Headings Only) -->
+                  <h2 class="margin-top-4">Condensed Collection (Headings Only)</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-collection usa-collection--condensed">
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">The eight principles of mobile-friendliness</a>
+                        </h4>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item position-relative">Digital.gov</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">The USWDS maturity model</a>
+                        </h4>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item position-relative">U.S. Web Design System</li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">A news item that's on our own site</a>
+                        </h4>
+                      </div>
+                    </li>
+                    <li class="usa-collection__item">
+                      <div class="usa-collection__body">
+                        <h4 class="usa-collection__heading">
+                          <a class="usa-link" href="#">Another condensed link item</a>
+                        </h4>
+                        <ul class="usa-collection__meta" aria-label="More information">
+                          <li class="usa-collection__meta-item position-relative">Source Name</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="coll-a4">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="coll-a4" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-collection usa-collection--condensed"&gt;
+  &lt;li class="usa-collection__item"&gt;
+    &lt;div class="usa-collection__body"&gt;
+      &lt;h4 class="usa-collection__heading"&gt;
+        &lt;a class="usa-link" href="#"&gt;Link title&lt;/a&gt;
+      &lt;/h4&gt;
+      &lt;ul class="usa-collection__meta" aria-label="More information"&gt;
+        &lt;li class="usa-collection__meta-item position-relative"&gt;
+          Source Name
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the collection component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>To feature content with its metadata.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.</dd>
+
+                        <dt class="margin-bottom-05"><strong>To group related content together.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.</dd>
+
+                        <dt class="margin-bottom-05"><strong>To collect items from multiple sources.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use collections when you want to guide users to additional resources available elsewhere.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Providing an archive of articles or pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.</dd>
+
+                        <dt class="margin-bottom-05"><strong>When you want to display large images or other media.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Collections are meant to be compact. If you need something with large images or other media, consider using the card component.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use thumbnail images consistently.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you use a thumbnail image on one item, use a similar kind of image on every item in the collection.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use a consistent width for images.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Display item images with a consistent width. This promotes consistent alignment and easy scannability.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use a descriptive title.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The collection's title should make the collection's theme clear.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use unordered lists and list items.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use a <code class="font-mono-xs">ul</code> for a collection and an <code class="font-mono-xs">li</code> for each item. This allows screen readers to enumerate the items.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the appropriate heading level for your page.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Update heading levels based on the content of your page to make sure collection headings are in the correct logical outline order.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Each link should have a unique name.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Those using assistive technology may collect all page links together. Unique names help users distinguish between links.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/collection/" target="_blank" rel="noopener noreferrer">USWDS Collection Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-collection-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family for collection body.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-collection-header-typeset</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Family, size, and line height of the heading.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-collection--condensed</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>A more condensed item presentation with less space between items.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

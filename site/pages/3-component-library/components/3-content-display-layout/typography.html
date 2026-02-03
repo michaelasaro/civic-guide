@@ -1,0 +1,786 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Typography | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html" class="usa-current">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Typography</h1>
+                  <p class="usa-intro">Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Typesetting -->
+                  <h2>Typesetting with USWDS</h2>
+                  <p>Typesetting controls the readability of a text with the size, style, and spacing of its type. The more readable a text is, the more easily users can understand its content.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Headings -->
+                  <h2>Headings</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="component-preview">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="headings-code">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="headings-code" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Body Text -->
+                  <h2 class="margin-top-4">Body Text</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="component-preview">
+                    <p class="usa-intro">This is intro text. Great Smoky Mountains National Park straddles the border of North Carolina and Tennessee.</p>
+                    <p>This is body text. The sprawling landscape encompasses lush forests and an abundance of wildflowers that bloom year-round. Streams, rivers and waterfalls appear along hiking routes that include a segment of the Appalachian Trail.</p>
+                    <p><a href="#">This is a text link</a> within a body of text.</p>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="body-text-code">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="body-text-code" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;p class="usa-intro"&gt;Intro text is larger.&lt;/p&gt;
+&lt;p&gt;Body text is standard size.&lt;/p&gt;
+&lt;p&gt;&lt;a href="#"&gt;This is a link&lt;/a&gt; within text.&lt;/p&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Display Classes -->
+                  <h2 class="margin-top-4">Display Classes</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="component-preview">
+                    <p class="display-1">Display 1</p>
+                    <p class="display-2">Display 2</p>
+                    <p class="display-3">Display 3</p>
+                    <p class="display-4">Display 4</p>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="display-classes-code">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="display-classes-code" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;p class="display-1"&gt;Display 1&lt;/p&gt;
+&lt;p class="display-2"&gt;Display 2&lt;/p&gt;
+&lt;p class="display-3"&gt;Display 3&lt;/p&gt;
+&lt;p class="display-4"&gt;Display 4&lt;/p&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Included Typefaces -->
+                  <h2 class="margin-top-4">Included Typefaces</h2>
+
+                  <!-- Source Sans Pro -->
+                  <h3>Source Sans Pro</h3>
+                  <p>Source Sans Pro, designed by Paul D. Hunt, is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly readable body text.</p>
+                  <div class="component-preview">
+                    <p class="font-sans-xl">Aa</p>
+                    <p class="font-sans-lg">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p class="font-sans-lg">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p class="font-sans-lg">0 1 2 3 4 5 6 7 8 9</p>
+                  </div>
+
+                  <br>
+
+                  <!-- Merriweather -->
+                  <h3>Merriweather</h3>
+                  <p>Merriweather, designed by Sorkin Type, is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design with a tall x-height but relatively small letterforms.</p>
+                  <div class="component-preview">
+                    <p class="font-serif-xl">Aa</p>
+                    <p class="font-serif-lg">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p class="font-serif-lg">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p class="font-serif-lg">0 1 2 3 4 5 6 7 8 9</p>
+                  </div>
+
+                  <br>
+
+                  <!-- Public Sans -->
+                  <h3>Public Sans</h3>
+                  <p>Public Sans is an open-source sans serif typeface designed and maintained by USWDS. It is a strong, neutral, principles-driven typeface for text or display based on a traditional American form.</p>
+                  <div class="component-preview">
+                    <p style="font-family: 'Public Sans', sans-serif; font-size: 4rem;">Aa</p>
+                    <p style="font-family: 'Public Sans', sans-serif; font-size: 1.25rem;">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p style="font-family: 'Public Sans', sans-serif; font-size: 1.25rem;">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p style="font-family: 'Public Sans', sans-serif; font-size: 1.25rem;">0 1 2 3 4 5 6 7 8 9</p>
+                  </div>
+
+                  <br>
+
+                  <!-- Roboto Mono -->
+                  <h3>Roboto Mono</h3>
+                  <p>Roboto Mono, designed by Christian Robinson, is a monospaced addition to the Roboto type family. The fonts are optimized for readability on screens with special consideration given to glyphs important for reading and writing code.</p>
+                  <div class="component-preview">
+                    <p class="font-mono-xl">Aa</p>
+                    <p class="font-mono-lg">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p class="font-mono-lg">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p class="font-mono-lg">0 1 2 3 4 5 6 7 8 9</p>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>Font Size</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use a comfortable reading size for body text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For most text, including body copy, use at least an effective size of 16px (font-size 5). Smaller and larger text can be used sparingly for special purposes.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Text Alignment</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Set type flush left.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Type set flush left provides the eye a constant starting point for each line, making text easier to read.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Measure (Line Length)</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Most lines of text should be 45-90 characters.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The current standard range for readable line length is 45 to 90 characters per line. A good target for long texts is 66 characters.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Line Height</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Longer texts require more line height.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Headings and other content elements no longer than a line or two can have a line height between 1 and 1.35. Longer texts should have a line height of at least 1.5.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Avoid long sections of uppercase text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Uppercase text has a serious negative effect on readability. Consider other type treatments for any uppercase text longer than just a few words.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Avoid long sections of italic or bold text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Both italic and bold text can degrade readability. Both are best used for limited sections of contrast.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/typography/" target="_blank" rel="noopener noreferrer">USWDS Typography Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-font-type-sans</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Sans serif font family.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-font-type-serif</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Serif font family.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-font-type-mono</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Monospace font family.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-body-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family for body text.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-body-font-size</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font size for body text.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-body-line-height</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Line height for body text.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-h1-font-size</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font size for H1 headings.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-h2-font-size</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font size for H2 headings.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-h3-font-size</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font size for H3 headings.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-text-measure</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Default measure (line length) for text.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-lead-measure</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Measure for intro/lead text.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

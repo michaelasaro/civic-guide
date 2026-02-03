@@ -1,0 +1,733 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Text Input | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html" class="usa-current">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Text Input</h1>
+                  <p class="usa-intro">A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Default Text Input -->
+                  <h2 id="default">Default</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <form class="usa-form">
+                    <label class="usa-label" for="input-type-text">Text input label</label>
+                    <input class="usa-input" id="input-type-text" name="input-type-text" />
+                  </form>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-default">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-default" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;form class="usa-form"&gt;
+  &lt;label class="usa-label" for="input-type-text"&gt;Text input label&lt;/label&gt;
+  &lt;input class="usa-input" id="input-type-text" name="input-type-text" /&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Text Area -->
+                  <h2 class="margin-top-4" id="text-area">Text Area</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <form class="usa-form">
+                    <label class="usa-label" for="input-type-textarea">Text area label</label>
+                    <textarea class="usa-textarea" id="input-type-textarea" name="input-type-textarea"></textarea>
+                  </form>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-textarea">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-textarea" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;form class="usa-form"&gt;
+  &lt;label class="usa-label" for="input-type-textarea"&gt;Text area label&lt;/label&gt;
+  &lt;textarea class="usa-textarea" id="input-type-textarea" name="input-type-textarea"&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Error State -->
+                  <h2 class="margin-top-4" id="error-state">Error State</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <form class="usa-form">
+                    <label class="usa-label usa-label--error" for="input-error">Text input with error</label>
+                    <span class="usa-error-message" id="input-error-message" role="alert">Error message goes here</span>
+                    <input class="usa-input usa-input--error" id="input-error" name="input-error" aria-describedby="input-error-message" />
+                  </form>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-error">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-error" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;form class="usa-form"&gt;
+  &lt;label class="usa-label usa-label--error" for="input-error"&gt;Text input with error&lt;/label&gt;
+  &lt;span class="usa-error-message" id="input-error-message" role="alert"&gt;Error message goes here&lt;/span&gt;
+  &lt;input class="usa-input usa-input--error" id="input-error" name="input-error" aria-describedby="input-error-message" /&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Success State -->
+                  <h2 class="margin-top-4" id="success-state">Success State</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <form class="usa-form">
+                    <label class="usa-label" for="input-success">Text input with success</label>
+                    <input class="usa-input usa-input--success" id="input-success" name="input-success" />
+                  </form>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-success">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-success" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;form class="usa-form"&gt;
+  &lt;label class="usa-label" for="input-success"&gt;Text input with success&lt;/label&gt;
+  &lt;input class="usa-input usa-input--success" id="input-success" name="input-success" /&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Width Variants -->
+                  <h2 class="margin-top-4" id="width-variants">Width Variants</h2>
+
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <form class="usa-form">
+                    <label class="usa-label" for="input-2xs">2xs width (5ex)</label>
+                    <input class="usa-input usa-input--2xs" id="input-2xs" name="input-2xs" />
+
+                    <label class="usa-label" for="input-xs">xs width (9ex)</label>
+                    <input class="usa-input usa-input--xs" id="input-xs" name="input-xs" />
+
+                    <label class="usa-label" for="input-sm">sm width (13ex)</label>
+                    <input class="usa-input usa-input--sm" id="input-sm" name="input-sm" />
+
+                    <label class="usa-label" for="input-md">md width (20ex)</label>
+                    <input class="usa-input usa-input--md" id="input-md" name="input-md" />
+
+                    <label class="usa-label" for="input-lg">lg width (30ex)</label>
+                    <input class="usa-input usa-input--lg" id="input-lg" name="input-lg" />
+
+                    <label class="usa-label" for="input-xl">xl width (40ex)</label>
+                    <input class="usa-input usa-input--xl" id="input-xl" name="input-xl" />
+
+                    <label class="usa-label" for="input-2xl">2xl width (50ex)</label>
+                    <input class="usa-input usa-input--2xl" id="input-2xl" name="input-2xl" />
+                  </form>
+
+                  <br>
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="code-width">
+                        View Component Code
+                      </button>
+                    </h4>
+                    <div id="code-width" class="usa-accordion__content usa-prose">
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;form class="usa-form"&gt;
+  &lt;label class="usa-label" for="input-2xs"&gt;2xs width (5ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--2xs" id="input-2xs" name="input-2xs" /&gt;
+
+  &lt;label class="usa-label" for="input-xs"&gt;xs width (9ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--xs" id="input-xs" name="input-xs" /&gt;
+
+  &lt;label class="usa-label" for="input-sm"&gt;sm width (13ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--sm" id="input-sm" name="input-sm" /&gt;
+
+  &lt;label class="usa-label" for="input-md"&gt;md width (20ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--md" id="input-md" name="input-md" /&gt;
+
+  &lt;label class="usa-label" for="input-lg"&gt;lg width (30ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--lg" id="input-lg" name="input-lg" /&gt;
+
+  &lt;label class="usa-label" for="input-xl"&gt;xl width (40ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--xl" id="input-xl" name="input-xl" /&gt;
+
+  &lt;label class="usa-label" for="input-2xl"&gt;2xl width (50ex)&lt;/label&gt;
+  &lt;input class="usa-input usa-input--2xl" id="input-2xl" name="input-2xl" /&gt;
+&lt;/form&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2 id="guidance">Guidance</h2>
+                    <div>
+                      <h3 id="when-to-use">When to use the text input component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Unpredictable or freeform responses.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you can't reasonably predict a user's answer to a prompt and there might be wide variability in users' answers.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Input simplicity.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a date picker.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Pasted content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">When users want to be able to paste in a response.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="when-to-consider-something-else">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Predetermined input options.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">When users are choosing from a specific set of options.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="usability-guidance">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use fields appropriate to the length of the input.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Consider the mobile context.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Wait to validate.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Only show error validation messages or stylings after a user has interacted with a particular field.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Avoid placeholder text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5" id="accessibility-guidance">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Customize form controls accessibly.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">If you customize this component, ensure that it continues to meet the accessibility requirements that apply to all form controls.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Avoid placeholder text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Most browsers' default rendering of placeholder text does not provide a high enough contrast ratio.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Avoid splitting numbers.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number).</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/text-input/" target="_blank" rel="noopener noreferrer">USWDS Text Input Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2 id="settings">Settings</h2>
+                    <p>This component has no settings.</p>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2 id="variants">Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-input--error</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>The error state of the text input.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-input--success</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>The success state of the text input.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-input--[width]</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Displays an input at a specific width. Accepts <code class="font-mono-xs">2xs</code> (5ex), <code class="font-mono-xs">xs</code> (9ex), <code class="font-mono-xs">sm</code> or <code class="font-mono-xs">small</code> (13ex), <code class="font-mono-xs">md</code> or <code class="font-mono-xs">medium</code> (20ex), <code class="font-mono-xs">lg</code> (30ex), <code class="font-mono-xs">xl</code> (40ex), and <code class="font-mono-xs">2xl</code> (50ex).</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

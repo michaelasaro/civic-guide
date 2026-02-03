@@ -1,0 +1,1074 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Card | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html" class="usa-current">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Card</h1>
+                  <p class="usa-intro">Cards contain content and actions about a single subject.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Default Card -->
+                  <h2>Default Card</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-card-group">
+                    <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Card</h4>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                            tenetur quo cupiditate, eaque qui officia recusandae.
+                          </p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Card with Media</h4>
+                        </div>
+                        <div class="usa-card__media">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                            tenetur quo cupiditate, eaque qui officia recusandae.
+                          </p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4 usa-card--header-first">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Media with header first</h4>
+                        </div>
+                        <div class="usa-card__media usa-card__media--exdent">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                            possimus similique nemo odit doloremque laudantium?
+                          </p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Inset media</h4>
+                        </div>
+                        <div class="usa-card__media usa-card__media--inset">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>
+                            Etiam vitae sodales metus. Fusce id orci dignissim, efficitur risus
+                            eget, tempus odio.
+                          </p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Exdent media</h4>
+                        </div>
+                        <div class="usa-card__media usa-card__media--exdent">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                            possimus similique nemo odit doloremque laudantium?
+                          </p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="card-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="card-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-card-group"&gt;
+  &lt;li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Card&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+          tenetur quo cupiditate, eaque qui officia recusandae.
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Card with Media&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+          tenetur quo cupiditate, eaque qui officia recusandae.
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4 usa-card--header-first"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Media with header first&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media usa-card__media--exdent"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          possimus similique nemo odit doloremque laudantium?
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Inset media&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media usa-card__media--inset"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;
+          Etiam vitae sodales metus. Fusce id orci dignissim, efficitur risus
+          eget, tempus odio.
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-card tablet-lg:grid-col-6 widescreen:grid-col-4"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Exdent media&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media usa-card__media--exdent"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          possimus similique nemo odit doloremque laudantium?
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Flag Layout Card -->
+                  <h2 class="margin-top-4">Flag Layout Card</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <ul class="usa-card-group">
+                    <li class="usa-card usa-card--flag flex-1">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Default flag</h4>
+                        </div>
+                        <div class="usa-card__media">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="usa-card usa-card--flag flex-1 usa-card--media-right">
+                      <div class="usa-card__container">
+                        <div class="usa-card__header">
+                          <h4 class="usa-card__heading">Flag media right inset</h4>
+                        </div>
+                        <div class="usa-card__media usa-card__media--inset">
+                          <div class="usa-card__img">
+                            <img
+                              src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+                              alt="A placeholder image"
+                            />
+                          </div>
+                        </div>
+                        <div class="usa-card__body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="usa-card__footer">
+                          <a href="#" class="usa-button">Visit Florida Keys</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <br>
+
+                  <!-- View Component Code -->
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="card-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="card-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;ul class="usa-card-group"&gt;
+  &lt;li class="usa-card usa-card--flag flex-1"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Default flag&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-card usa-card--flag flex-1 usa-card--media-right"&gt;
+    &lt;div class="usa-card__container"&gt;
+      &lt;div class="usa-card__header"&gt;
+        &lt;h4 class="usa-card__heading"&gt;Flag media right inset&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__media usa-card__media--inset"&gt;
+        &lt;div class="usa-card__img"&gt;
+          &lt;img
+            src="https://designsystem.digital.gov/img/introducing-uswds-2-0/built-to-grow--alt.jpg"
+            alt="A placeholder image"
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__body"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="usa-card__footer"&gt;
+        &lt;a href="#" class="usa-button"&gt;Visit Florida Keys&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the card component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Collections of related content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Cards help present a collection of related groups of content, like articles or sections of a website.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Tabular data.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Don't use a card as a substitute for a table row.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Simple calls to action.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use a button instead.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Standalone content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Consider an <code class="font-mono-xs">aside</code> or another standalone element.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Sequential, continuous text.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Make cards actionable.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Since cards are used as a summary of more detailed information, any individual card should link out to that information.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Don't use the card component only for decoration.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use the card component for cards, not for any type of content that's designed to have a border around it.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include non-redundant content.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Don't repeat images or content common to all or most cards in a collection.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Make sure images are properly sized.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use simple styling.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Avoid distracting skeumorphism. Don't include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use unordered lists and list items.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use a <code class="font-mono-xs">ul</code> for a card group and an <code class="font-mono-xs">li</code> for each card. This formatting allows screen readers to enumerate the items in the card group.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the appropriate heading level for your page.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Update heading level based on the content of your page to make sure card headings are in the correct, logical outline order.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use CSS to order the media element.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Logically, the media element should follow the header element. Don't re-organize the markup to reverse their order.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Using the card component</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Control card size and layout with USWDS utilities.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The card component works well with layout grid utilities. The <code class="font-mono-xs">usa-card-group</code> block is functionally a wrap-able <code class="font-mono-xs">grid-row</code>, and each individual <code class="font-mono-xs">usa-card</code> is a <code class="font-mono-xs">grid-col</code>.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Control image aspect ratio with the <code class="font-mono-xs">add-aspect</code> utility.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Add aspect ratio utility classes to <code class="font-mono-xs">usa-card__img</code> or <code class="font-mono-xs">usa-card__media</code> elements to control the aspect ratio on card images.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Style cards with utilities.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Style the <code class="font-mono-xs">usa-card__container</code> element with utilities to achieve custom effects, such as changing the border or background color or adding a drop shadow.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/card/" target="_blank" rel="noopener noreferrer">USWDS Card Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-border-color</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Stroke color of card.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-border-radius</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Border radius of card.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-border-width</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Stroke thickness of card.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-gap</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Gap between cards in a card group.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-flag-min-width</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Width at which flag cards change to horizontal layout.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-flag-image-width</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Fixed image width in the card flag variant.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-font-family</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Font family for card body.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-header-typeset</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Family, size, and line height of the heading.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-margin-bottom</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Bottom margin for card.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-padding-perimeter</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Padding between card elements and card border.</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable">
+                            <code class="font-code-xs">$theme-card-padding-y</code>
+                          </td>
+                          <td data-title="Description">
+                            <span class="font-lang-3xs">Vertical padding between card elements.</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card--flag</code>
+                          </td>
+                          <td data-title="Description">
+                            Display in a horizontal ("flag") orientation at a specified width.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card--header-first</code>
+                          </td>
+                          <td data-title="Description">
+                            Displays the header element before the media element.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card--media-right</code>
+                          </td>
+                          <td data-title="Description">
+                            In combination with <code class="font-mono-xs">usa-card--flag</code>, sets the media element on the right.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card__media--inset</code>
+                          </td>
+                          <td data-title="Description">
+                            Indents the media element so it doesn't extend to the edge of the card.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card__body--exdent</code>
+                          </td>
+                          <td data-title="Description">
+                            Extends the body element out over the card border.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card__footer--exdent</code>
+                          </td>
+                          <td data-title="Description">
+                            Extends the footer element out over the card border.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card__header--exdent</code>
+                          </td>
+                          <td data-title="Description">
+                            Extends the header element out over the card border.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variant">
+                            <code class="font-code-xs">.usa-card__media--exdent</code>
+                          </td>
+                          <td data-title="Description">
+                            Extends the media element out over the card border.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

@@ -1,0 +1,895 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Identifier | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html" class="usa-current">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Identifier</h1>
+                  <p class="usa-intro">The identifier component is a required component that displays agency information and links to required federal government policy pages.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Topic -->
+
+                  <!-- Default Identifier -->
+                  <h2>Default Identifier</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="usa-identifier">
+                    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+                      <div class="usa-identifier__container">
+                        <div class="usa-identifier__logos">
+                          <a href="javascript:void(0);" class="usa-identifier__logo">
+                            <img class="usa-identifier__logo-img" src="/dist/uswds/img/circle-gray-20.svg" alt="Parent agency logo" role="img">
+                          </a>
+                        </div>
+                        <section class="usa-identifier__identity" aria-label="Agency description">
+                          <p class="usa-identifier__identity-domain">domain.gov</p>
+                          <p class="usa-identifier__identity-disclaimer">
+                            An official website of the <a href="javascript:void(0);">Parent Agency</a>
+                          </p>
+                        </section>
+                      </div>
+                    </section>
+                    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+                      <div class="usa-identifier__container">
+                        <ul class="usa-identifier__required-links-list">
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">About Parent Agency</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Accessibility statement</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">FOIA requests</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Performance reports</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Privacy policy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+                      <div class="usa-identifier__container">
+                        <div class="usa-identifier__usagov-description">
+                          Looking for U.S. government information and services?
+                        </div>
+                        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+                      </div>
+                    </section>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="id-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="id-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-identifier"&gt;
+  &lt;section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;div class="usa-identifier__logos"&gt;
+        &lt;a href="#" class="usa-identifier__logo"&gt;
+          &lt;img class="usa-identifier__logo-img" src="/path/to/parent-agency-logo.svg" alt="Parent agency logo" role="img"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;section class="usa-identifier__identity" aria-label="Agency description"&gt;
+        &lt;p class="usa-identifier__identity-domain"&gt;domain.gov&lt;/p&gt;
+        &lt;p class="usa-identifier__identity-disclaimer"&gt;
+          An official website of the &lt;a href="#"&gt;Parent Agency&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;ul class="usa-identifier__required-links-list"&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;About Parent Agency&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Accessibility statement&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;FOIA requests&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;No FEAR Act data&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Office of the Inspector General&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Performance reports&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Privacy policy&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;div class="usa-identifier__usagov-description"&gt;
+        Looking for U.S. government information and services?
+      &lt;/div&gt;
+      &lt;a href="https://www.usa.gov/" class="usa-link"&gt;Visit USA.gov&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Identifier with Multiple Parents -->
+                  <h2 class="margin-top-4">Identifier with Multiple Parents</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="usa-identifier">
+                    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+                      <div class="usa-identifier__container">
+                        <div class="usa-identifier__logos">
+                          <a href="javascript:void(0);" class="usa-identifier__logo">
+                            <img class="usa-identifier__logo-img" src="/dist/uswds/img/circle-gray-20.svg" alt="Parent agency 1 logo" role="img">
+                          </a>
+                          <a href="javascript:void(0);" class="usa-identifier__logo">
+                            <img class="usa-identifier__logo-img" src="/dist/uswds/img/circle-gray-20.svg" alt="Parent agency 2 logo" role="img">
+                          </a>
+                        </div>
+                        <section class="usa-identifier__identity" aria-label="Agency description">
+                          <p class="usa-identifier__identity-domain">domain.gov</p>
+                          <p class="usa-identifier__identity-disclaimer">
+                            An official website of the <a href="javascript:void(0);">First Parent Agency</a> and the <a href="javascript:void(0);">Second Parent Agency</a>
+                          </p>
+                        </section>
+                      </div>
+                    </section>
+                    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+                      <div class="usa-identifier__container">
+                        <ul class="usa-identifier__required-links-list">
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">About First Parent Agency</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">About Second Parent Agency</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Accessibility statement</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">FOIA requests</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Performance reports</a>
+                          </li>
+                          <li class="usa-identifier__required-links-item">
+                            <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Privacy policy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+                      <div class="usa-identifier__container">
+                        <div class="usa-identifier__usagov-description">
+                          Looking for U.S. government information and services?
+                        </div>
+                        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+                      </div>
+                    </section>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="id-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="id-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-identifier"&gt;
+  &lt;section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;div class="usa-identifier__logos"&gt;
+        &lt;a href="#" class="usa-identifier__logo"&gt;
+          &lt;img class="usa-identifier__logo-img" src="/path/to/parent-agency-1-logo.svg" alt="Parent agency 1 logo" role="img"&gt;
+        &lt;/a&gt;
+        &lt;a href="#" class="usa-identifier__logo"&gt;
+          &lt;img class="usa-identifier__logo-img" src="/path/to/parent-agency-2-logo.svg" alt="Parent agency 2 logo" role="img"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;section class="usa-identifier__identity" aria-label="Agency description"&gt;
+        &lt;p class="usa-identifier__identity-domain"&gt;domain.gov&lt;/p&gt;
+        &lt;p class="usa-identifier__identity-disclaimer"&gt;
+          An official website of the &lt;a href="#"&gt;First Parent Agency&lt;/a&gt; and the &lt;a href="#"&gt;Second Parent Agency&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;ul class="usa-identifier__required-links-list"&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;About First Parent Agency&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;About Second Parent Agency&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Accessibility statement&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;FOIA requests&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;No FEAR Act data&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Office of the Inspector General&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Performance reports&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-identifier__required-links-item"&gt;
+          &lt;a href="#" class="usa-identifier__required-link usa-link"&gt;Privacy policy&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+  &lt;section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services"&gt;
+    &lt;div class="usa-identifier__container"&gt;
+      &lt;div class="usa-identifier__usagov-description"&gt;
+        Looking for U.S. government information and services?
+      &lt;/div&gt;
+      &lt;a href="https://www.usa.gov/" class="usa-link"&gt;Visit USA.gov&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the identifier component</h3>
+                      <dl>
+                        <dd class="margin-left-0 margin-bottom-2">Use the identifier on all federal government websites. The identifier is required for federal websites under the 21st Century Integrated Digital Experience Act (IDEA).</dd>
+                        <dd class="margin-left-0 margin-bottom-2">Use the identifier to establish the official status of your website. It clearly communicates that your site is an official government website and identifies the parent agency.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Non-federal websites should not use this component.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The identifier is specifically designed for federal government websites. State, local, or private sector websites should not use this component as it may mislead users about the site's official status.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Place the identifier after the footer.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The identifier should appear at the very bottom of every page, after the footer content.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include all required links.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Federal websites must include links to: About [Agency], Accessibility statement, FOIA requests, No FEAR Act data, Office of the Inspector General, Performance reports, and Privacy policy.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the parent agency's logo.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Display the logo of the parent agency (such as a department or major agency) rather than a sub-agency logo.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include the website's domain.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Display the primary domain of your website in the masthead section to help users verify they are on the correct site.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Use <code class="font-mono-xs">aria-label</code> on sections.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Each section of the identifier should have an appropriate <code class="font-mono-xs">aria-label</code> to help screen reader users understand the purpose of each section.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Ensure link text makes sense out of context.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Screen reader users often navigate by links. Make sure each link clearly describes its destination, such as "About [Agency Name]" rather than just "About."</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include meaningful alt text for logos.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Provide descriptive alt text for agency logos, such as "Department of Example logo" to identify the agency to screen reader users.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use the <code class="font-mono-xs">nav</code> element for the required links section.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The required links section uses a <code class="font-mono-xs">&lt;nav&gt;</code> element with an <code class="font-mono-xs">aria-label</code> to help users identify it as a navigation region.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/identifier/" target="_blank" rel="noopener noreferrer">USWDS Identifier Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-background-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Background color of the identifier component.</p>
+
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family of the identifier component.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-identity-domain-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Color of the domain text in the identifier masthead.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-max-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Maximum width of the identifier content.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-primary-link-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Color of the primary links in the identifier.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-identifier-secondary-link-color</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Color of the secondary links in the identifier.</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-identifier</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Default identifier with single parent agency logo and required links.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-identifier__logos</code> (multiple logos)</p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Identifier with multiple parent agency logos for sites with multiple parent agencies.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-identifier--no-logo</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Identifier variant without a logo, for cases where a logo is unavailable.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

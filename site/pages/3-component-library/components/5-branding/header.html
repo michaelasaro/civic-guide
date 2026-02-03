@@ -1,0 +1,941 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Header | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></a>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Component Library -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+
+                        <!-- Components -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                          <ul class="usa-sidenav__sublist">
+
+                            <!-- Form Inputs & Controls -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                                <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Navigation & Wayfinding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                                <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                              </ul>
+                            </li>
+
+                            <!-- Content Display & Layout -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                                <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                              </ul>
+                            </li>
+
+                            <!-- Feedback & Messaging -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html">Alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                                <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                              </ul>
+                            </li>
+
+                            <!-- Branding -->
+                            <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                              <ul class="usa-sidenav__sublist">
+                                <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/header.html" class="usa-current">Header</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                                <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                              </ul>
+                            </li>
+
+                          </ul>
+                        </li>
+
+                        <!-- Patterns -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                            <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                            <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                            <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                          </ul>
+                        </li>
+
+                        <!-- Templates -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                            <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                            <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                            <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                            <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                          </ul>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+                  <!-- Intro -->
+                  <h1 class="usa-page-title">Header</h1>
+                  <p class="usa-intro">A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Topic -->
+
+                  <!-- Basic Header -->
+                  <h2>Basic Header</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border padding-2 radius-md bg-base-lightest">
+                    <p class="margin-0 text-base-dark font-sans-xs"><strong>Basic Header Structure:</strong></p>
+                    <ul class="margin-top-1 margin-bottom-0 font-sans-xs text-base-dark">
+                      <li>Logo/site title on the left</li>
+                      <li>Primary navigation links on the right</li>
+                      <li>Optional search component</li>
+                      <li>Mobile menu button for responsive design</li>
+                    </ul>
+                    <p class="margin-top-2 margin-bottom-0 text-base font-sans-3xs"><em>Note: Full header preview would conflict with page header. See the code below for implementation.</em></p>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="h-a1">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="h-a1" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;header class="usa-header usa-header--basic"&gt;
+  &lt;div class="usa-nav-container"&gt;
+    &lt;div class="usa-navbar"&gt;
+      &lt;div class="usa-logo"&gt;
+        &lt;em class="usa-logo__text"&gt;
+          &lt;a href="/" title="Home"&gt;Project Title&lt;/a&gt;
+        &lt;/em&gt;
+      &lt;/div&gt;
+      &lt;button type="button" class="usa-menu-btn"&gt;Menu&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;nav aria-label="Primary navigation" class="usa-nav"&gt;
+      &lt;button type="button" class="usa-nav__close"&gt;
+        &lt;img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" /&gt;
+      &lt;/button&gt;
+      &lt;ul class="usa-nav__primary usa-accordion"&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;a href="#" class="usa-nav-link"&gt;
+            &lt;span&gt;Link One&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;a href="#" class="usa-nav-link"&gt;
+            &lt;span&gt;Link Two&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;a href="#" class="usa-nav-link"&gt;
+            &lt;span&gt;Link Three&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;section aria-label="Search component"&gt;
+        &lt;form class="usa-search usa-search--small" role="search"&gt;
+          &lt;label class="usa-sr-only" for="search-field"&gt;Search&lt;/label&gt;
+          &lt;input class="usa-input" id="search-field" type="search" name="search" /&gt;
+          &lt;button class="usa-button" type="submit"&gt;
+            &lt;img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /&gt;
+          &lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/section&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Extended Header -->
+                  <h2 class="margin-top-4">Extended Header</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border padding-2 radius-md bg-base-lightest">
+                    <p class="margin-0 text-base-dark font-sans-xs"><strong>Extended Header Structure:</strong></p>
+                    <ul class="margin-top-1 margin-bottom-0 font-sans-xs text-base-dark">
+                      <li>Logo/site title in a dedicated row</li>
+                      <li>Secondary navigation row below the logo</li>
+                      <li>Primary navigation in expanded row</li>
+                      <li>More space for additional navigation items</li>
+                      <li>Optional search component</li>
+                    </ul>
+                    <p class="margin-top-2 margin-bottom-0 text-base font-sans-3xs"><em>Note: Full header preview would conflict with page header. See the code below for implementation.</em></p>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="margin-top-5 padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="h-a2">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="h-a2" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;header class="usa-header usa-header--extended"&gt;
+  &lt;div class="usa-navbar"&gt;
+    &lt;div class="usa-logo"&gt;
+      &lt;em class="usa-logo__text"&gt;
+        &lt;a href="/" title="Home"&gt;Project Title&lt;/a&gt;
+      &lt;/em&gt;
+    &lt;/div&gt;
+    &lt;button type="button" class="usa-menu-btn"&gt;Menu&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;nav aria-label="Primary navigation" class="usa-nav"&gt;
+    &lt;div class="usa-nav__inner"&gt;
+      &lt;button type="button" class="usa-nav__close"&gt;
+        &lt;img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" /&gt;
+      &lt;/button&gt;
+      &lt;ul class="usa-nav__primary usa-accordion"&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-one"&gt;
+            &lt;span&gt;Section One&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;ul id="extended-nav-section-one" class="usa-nav__submenu"&gt;
+            &lt;li class="usa-nav__submenu-item"&gt;
+              &lt;a href="#"&gt;Submenu Link One&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="usa-nav__submenu-item"&gt;
+              &lt;a href="#"&gt;Submenu Link Two&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;a href="#" class="usa-nav-link"&gt;
+            &lt;span&gt;Simple Link&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class="usa-nav__secondary"&gt;
+        &lt;ul class="usa-nav__secondary-links"&gt;
+          &lt;li class="usa-nav__secondary-item"&gt;
+            &lt;a href="#"&gt;Secondary link&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="usa-nav__secondary-item"&gt;
+            &lt;a href="#"&gt;Another link&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;section aria-label="Search component"&gt;
+          &lt;form class="usa-search usa-search--small" role="search"&gt;
+            &lt;label class="usa-sr-only" for="extended-search-field"&gt;Search&lt;/label&gt;
+            &lt;input class="usa-input" id="extended-search-field" type="search" name="search" /&gt;
+            &lt;button class="usa-button" type="submit"&gt;
+              &lt;img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /&gt;
+            &lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Header with Megamenu -->
+                  <h2 class="margin-top-4">Header with Megamenu</h2>
+
+                  <!-- Component Preview -->
+                  <h3 class="padding-bottom-2">Component Preview</h3>
+
+                  <div class="border padding-2 radius-md bg-base-lightest">
+                    <p class="margin-0 text-base-dark font-sans-xs"><strong>Header with Megamenu Structure:</strong></p>
+                    <ul class="margin-top-1 margin-bottom-0 font-sans-xs text-base-dark">
+                      <li>Full-width dropdown panels</li>
+                      <li>Multi-column navigation layout</li>
+                      <li>Organized link groups within each megamenu</li>
+                      <li>Supports complex site architectures</li>
+                      <li>Works with both basic and extended header variants</li>
+                    </ul>
+                    <p class="margin-top-2 margin-bottom-0 text-base font-sans-3xs"><em>Note: Full header preview would conflict with page header. See the code below for implementation.</em></p>
+                  </div>
+
+                  <br>
+
+                  <!-- View Component Code -->
+
+                  <h3 class="margin-top-5 padding-bottom-2">Component Code</h3>
+
+                  <div class="usa-accordion usa-accordion--bordered">
+                    <h4 class="usa-accordion__heading">
+                      <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="h-a3">
+                        View Component Code
+                      </button>
+                    </h4>
+
+                    <div id="h-a3" class="usa-accordion__content usa-prose">
+
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;header class="usa-header usa-header--extended"&gt;
+  &lt;div class="usa-navbar"&gt;
+    &lt;div class="usa-logo"&gt;
+      &lt;em class="usa-logo__text"&gt;
+        &lt;a href="/" title="Home"&gt;Project Title&lt;/a&gt;
+      &lt;/em&gt;
+    &lt;/div&gt;
+    &lt;button type="button" class="usa-menu-btn"&gt;Menu&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;nav aria-label="Primary navigation" class="usa-nav"&gt;
+    &lt;div class="usa-nav__inner"&gt;
+      &lt;button type="button" class="usa-nav__close"&gt;
+        &lt;img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" /&gt;
+      &lt;/button&gt;
+      &lt;ul class="usa-nav__primary usa-accordion"&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;button type="button" class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="megamenu-1"&gt;
+            &lt;span&gt;Section One&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;div id="megamenu-1" class="usa-nav__submenu usa-megamenu"&gt;
+            &lt;div class="grid-row grid-gap-4"&gt;
+              &lt;div class="usa-col"&gt;
+                &lt;ul class="usa-nav__submenu-list"&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 1&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 2&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 3&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class="usa-col"&gt;
+                &lt;ul class="usa-nav__submenu-list"&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 4&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 5&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 6&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class="usa-col"&gt;
+                &lt;ul class="usa-nav__submenu-list"&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 7&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 8&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="usa-nav__submenu-item"&gt;
+                    &lt;a href="#"&gt;Megamenu Link 9&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="usa-nav__primary-item"&gt;
+          &lt;a href="#" class="usa-nav-link"&gt;
+            &lt;span&gt;Simple Link&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class="usa-nav__secondary"&gt;
+        &lt;section aria-label="Search component"&gt;
+          &lt;form class="usa-search usa-search--small" role="search"&gt;
+            &lt;label class="usa-sr-only" for="mega-search-field"&gt;Search&lt;/label&gt;
+            &lt;input class="usa-input" id="mega-search-field" type="search" name="search" /&gt;
+            &lt;button class="usa-button" type="submit"&gt;
+              &lt;img src="/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /&gt;
+            &lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Guidance -->
+                  <section class="usa-prose">
+                    <h2>Guidance</h2>
+                    <div>
+                      <h3>When to use the header component</h3>
+                      <dl>
+                        <dd class="margin-left-0 margin-bottom-2">Use the header component to provide primary navigation for your website or application.</dd>
+                        <dd class="margin-left-0 margin-bottom-2">Use when you need to display site branding, logo, and title consistently across all pages.</dd>
+                        <dd class="margin-left-0 margin-bottom-2">Use to give users a familiar, consistent way to navigate between major sections of your site.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">When to consider something else</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>If your site has very few pages.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">A simple landing page or single-page application may not need a full header with navigation. Consider simpler alternatives.</dd>
+
+                        <dt class="margin-bottom-05"><strong>If you need the extended header.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Only use the extended header if you have secondary navigation needs or many primary navigation items. For most sites, the basic header is sufficient.</dd>
+
+                        <dt class="margin-bottom-05"><strong>If you have a complex information architecture.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Consider using megamenus if you have many pages organized into distinct categories that users need to access quickly.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Usability guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Keep navigation items minimal.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Limit primary navigation to 4-8 items. Too many options can overwhelm users and make navigation difficult.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use clear, concise labels.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Navigation labels should be short, descriptive, and use familiar terms. Avoid jargon or internal terminology.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Design mobile-first.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Ensure your header works well on mobile devices. The USWDS header is responsive by default, but test thoroughly on various screen sizes.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Include a search feature.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">For content-rich sites, include a search component in the header to help users find information quickly.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Indicate the current page.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Use the <code class="font-mono-xs">usa-current</code> class to highlight the current section in the navigation.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">Accessibility guidance</h3>
+                      <dl>
+                        <dt class="margin-bottom-05"><strong>Include a skip navigation link.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Add a "Skip to main content" link as the first focusable element on the page. This allows keyboard users to bypass repetitive navigation.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use proper ARIA labels.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Add <code class="font-mono-xs">aria-label="Primary navigation"</code> to the main <code class="font-mono-xs">&lt;nav&gt;</code> element to identify it for screen reader users.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Ensure keyboard navigation works.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">All navigation items should be focusable and operable with keyboard only. Dropdown menus should be accessible via arrow keys.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use proper heading hierarchy.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">The site title/logo should not use heading tags to avoid disrupting the page's heading hierarchy.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Provide text alternatives for icons.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Icons like the search icon and close button should have appropriate <code class="font-mono-xs">alt</code> text or <code class="font-mono-xs">aria-label</code> attributes.</dd>
+
+                        <dt class="margin-bottom-05"><strong>Use <code class="font-mono-xs">aria-expanded</code> for dropdown menus.</strong></dt>
+                        <dd class="margin-left-0 margin-bottom-2">Toggle the <code class="font-mono-xs">aria-expanded</code> attribute to indicate when dropdown menus are open or closed.</dd>
+                      </dl>
+
+                      <h3 class="margin-top-5">USWDS Documentation</h3>
+                      <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/header/" target="_blank" rel="noopener noreferrer">USWDS Header Component Documentation</a>.</p>
+                    </div>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Settings -->
+                  <section class="usa-prose">
+                    <h2>Settings</h2>
+
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;">Variable</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="font-mono">
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-header-font-family</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Font family used in the header.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-header-logo-text-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Width of the logo text area.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-header-max-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Maximum width of the header content.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-header-min-width</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Minimum width before the mobile menu is activated.</p>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td data-title="Variable" class="">
+                            <code class="font-code-xs">$theme-megamenu-columns</code>
+                          </td>
+                          <td data-title="Description" class="">
+                            <span class="font-lang-3xs">
+                              <p>Number of columns in the megamenu (1, 2, or 3).</p>
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Component Variants -->
+                  <section class="usa-prose">
+                    <h2>Variants</h2>
+                    <table class="usa-table usa-table--borderless" style="width:100%;">
+                      <thead>
+                        <tr>
+                          <th style="width:50%;" scope="col">Variant</th>
+                          <th scope="col" class="">Description</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-header--basic</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Simple header with logo and primary navigation in a single row.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-header--extended</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Header with logo row and separate navigation row for more complex navigation needs.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-megamenu</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Full-width dropdown panel with multi-column navigation. Apply to submenu container.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-nav__submenu</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Standard dropdown submenu for navigation items.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="" data-title="Variant">
+                            <p><code class="font-code-xs">.usa-current</code></p>
+                          </td>
+                          <td class="" data-title="Description">
+                            <p>Indicates the current active navigation item or section.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>

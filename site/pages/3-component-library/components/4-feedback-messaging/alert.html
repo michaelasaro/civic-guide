@@ -1,0 +1,675 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert | Civic</title>
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+    <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+  </head>
+
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+      <header class="usa-banner__header">
+        <div class="usa-banner__inner">
+          <div class="grid-col-auto">
+            <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+            <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <header class="usa-header usa-header--basic">
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <div class="usa-logo">
+            <div class="grid-container">
+              <div style="display: inline-flex; align-items: center;">
+                <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="usa-menu-btn">Menu</button>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+          <button type="button" class="usa-nav__close"><img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/></button>
+          <ul class="usa-nav__primary usa-accordion margin-right-4">
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Home</span></a></li>
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Style Guide</span></a></li>
+            <li class="usa-nav__primary-item">
+              <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two"><span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></button>
+              <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html"><span>All sections</span></a></li>
+                <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current"><span class="margin-left-2">Components</span></a></li>
+                <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html#patterns-2"><span class="margin-left-2">Patterns</span></a></li>
+                <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html#templates-2"><span class="margin-left-2">Templates</span></a></li>
+              </ul>
+            </li>
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Guidelines</span></a></li>
+          </ul>
+          <section aria-label="Search component">
+            <form class="usa-search usa-search--small" role="search">
+              <label class="usa-sr-only" for="search-field">Search</label>
+              <input class="usa-input" id="search-field" type="search" name="search" />
+              <button class="usa-button" type="submit"><img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /></button>
+            </form>
+          </section>
+        </nav>
+      </div>
+    </header>
+
+    <div class="usa-section usa-prose grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-in-page-nav-container">
+
+          <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+            <nav aria-label="Secondary navigation">
+              <ul class="usa-sidenav">
+                <li class="usa-sidenav__item"><a href="/site/pages/3-component-library/component-library.html"><strong>Component Library</strong></a>
+                  <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none" class="usa-current"><strong>Components</strong></a>
+                    <ul class="usa-sidenav__sublist">
+                      <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Form Inputs + Controls</strong></a>
+                        <ul class="usa-sidenav__sublist">
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button.html">Button</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/button-group.html">Button group</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/character-count.html">Character count</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/checkbox.html">Checkbox</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/combo-box.html">Combo box</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-picker.html">Date picker</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/date-range-picker.html">Date range picker</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/file-input.html">File input</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-mask.html">Input mask</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/input-prefix-suffix.html">Input prefix/suffix</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/memorable-date.html">Memorable date</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/radio-buttons.html">Radio buttons</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/range-slider.html">Range slider</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/search.html">Search</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/select.html">Select dropdown</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/text-input.html">Text input</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/time-picker.html">Time picker</a>
+                          <a href="/site/pages/3-component-library/components/1-form-inputs-controls/validation.html">Validation</a>
+                        </ul>
+                      </li>
+                      <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Navigation & Wayfinding</strong></a>
+                        <ul class="usa-sidenav__sublist">
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/breadcrumb.html">Breadcrumb</a>
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/header.html">Header</a>
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/in-page-navigation.html">In-page navigation</a>
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/link.html">Link</a>
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/pagination.html">Pagination</a>
+                          <a href="/site/pages/3-component-library/components/2-navigation-wayfinding/side-navigation.html">Side navigation</a>
+                        </ul>
+                      </li>
+                      <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Content Display</strong></a>
+                        <ul class="usa-sidenav__sublist">
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/accordion.html">Accordion</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/card.html">Card</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/collection.html">Collection</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/icon-list.html">Icon list</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/list.html">List</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/process-list.html">Process list</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/prose.html">Prose</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/step-indicator.html">Step indicator</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/table.html">Table</a>
+                          <a href="/site/pages/3-component-library/components/3-content-display-layout/typography.html">Typography</a>
+                        </ul>
+                      </li>
+                      <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Feedback</strong></a>
+                        <ul class="usa-sidenav__sublist">
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/alert.html" class="usa-current">Alert</a>
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/modal.html">Modal</a>
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/site-alert.html">Site alert</a>
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/summary-box.html">Summary box</a>
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/tag.html">Tag</a>
+                          <a href="/site/pages/3-component-library/components/4-feedback-messaging/tooltip.html">Tooltip</a>
+                        </ul>
+                      </li>
+                      <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Branding</strong></a>
+                        <ul class="usa-sidenav__sublist">
+                          <a href="/site/pages/3-component-library/components/5-branding/banner.html">Banner</a>
+                          <a href="/site/pages/3-component-library/components/5-branding/header.html">Header</a>
+                          <a href="/site/pages/3-component-library/components/5-branding/footer.html">Footer</a>
+                          <a href="/site/pages/3-component-library/components/5-branding/identifier.html">Identifier</a>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Patterns</strong></a>
+                    <ul class="usa-sidenav__sublist">
+                      <a href="/site/pages/3-component-library/patterns/establish-trust.html">Establish trust</a>
+                      <a href="/site/pages/3-component-library/patterns/keep-a-record.html">Keep a record</a>
+                      <a href="/site/pages/3-component-library/patterns/language-selector.html">Language selector</a>
+                      <a href="/site/pages/3-component-library/patterns/select-a-language.html">Select a language</a>
+                    </ul>
+                  </li>
+                  <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Templates</strong></a>
+                    <ul class="usa-sidenav__sublist">
+                      <a href="/site/pages/3-component-library/templates/404-page.html">404 page</a>
+                      <a href="/site/pages/3-component-library/templates/authentication-pages.html">Authentication pages</a>
+                      <a href="/site/pages/3-component-library/templates/complex-form.html">Complex form</a>
+                      <a href="/site/pages/3-component-library/templates/documentation-page.html">Documentation page</a>
+                      <a href="/site/pages/3-component-library/templates/landing-page.html">Landing page</a>
+                    </ul>
+                  </li>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <aside class="usa-in-page-nav" data-heading-elements="h2 h3" data-title-text="On this page" data-title-heading-level="h4" data-scroll-offset="48" data-root-margin="48px 0px -70% 0px" data-threshold="1"></aside>
+
+          <main class="usa-prose grid-col-fill grid-container margin-x-4">
+
+            <h1 class="usa-page-title">Alert</h1>
+            <p class="usa-intro">An alert keeps users informed of important and sometimes time-sensitive changes.</p>
+
+            <br>
+            <hr>
+
+            <!-- Informative Alert -->
+            <h2>Informative Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--info">
+              <div class="usa-alert__body">
+                <h4 class="usa-alert__heading">Informative status</h4>
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a1">View Component Code</button>
+              </h4>
+              <div id="alert-a1" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--info"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Informative status&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Warning Alert -->
+            <h2 class="margin-top-4">Warning Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--warning">
+              <div class="usa-alert__body">
+                <h4 class="usa-alert__heading">Warning status</h4>
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a2">View Component Code</button>
+              </h4>
+              <div id="alert-a2" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--warning"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Warning status&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Success Alert -->
+            <h2 class="margin-top-4">Success Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--success">
+              <div class="usa-alert__body">
+                <h4 class="usa-alert__heading">Success status</h4>
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a3">View Component Code</button>
+              </h4>
+              <div id="alert-a3" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--success"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Success status&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Error Alert -->
+            <h2 class="margin-top-4">Error Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--error" role="alert">
+              <div class="usa-alert__body">
+                <h4 class="usa-alert__heading">Error status</h4>
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a4">View Component Code</button>
+              </h4>
+              <div id="alert-a4" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--error" role="alert"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Error status&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Emergency Alert -->
+            <h2 class="margin-top-4">Emergency Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--emergency" role="alert">
+              <div class="usa-alert__body">
+                <h4 class="usa-alert__heading">Emergency status</h4>
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a5">View Component Code</button>
+              </h4>
+              <div id="alert-a5" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--emergency" role="alert"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Emergency status&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Slim Alert -->
+            <h2 class="margin-top-4">Slim Alert</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--info usa-alert--slim">
+              <div class="usa-alert__body">
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a6">View Component Code</button>
+              </h4>
+              <div id="alert-a6" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--info usa-alert--slim"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <!-- Alert with No Icon -->
+            <h2 class="margin-top-4">Alert with No Icon</h2>
+
+            <h3 class="padding-bottom-2">Component Preview</h3>
+
+            <div class="usa-alert usa-alert--info usa-alert--no-icon">
+              <div class="usa-alert__body">
+                <p class="usa-alert__text">
+                  Lorem ipsum dolor sit amet,
+                  <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+                  elit, sed do eiusmod.
+                </p>
+              </div>
+            </div>
+
+            <br>
+
+            <h3 class="padding-bottom-2">Component Code</h3>
+
+            <div class="usa-accordion usa-accordion--bordered">
+              <h4 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="alert-a7">View Component Code</button>
+              </h4>
+              <div id="alert-a7" class="usa-accordion__content usa-prose">
+                <pre><header></header><code class="language-html" data-lang="html">&lt;div class="usa-alert usa-alert--info usa-alert--no-icon"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;p class="usa-alert__text"&gt;
+      Lorem ipsum dolor sit amet,
+      &lt;a class="usa-link" href="javascript:void(0);"&gt;consectetur adipiscing&lt;/a&gt;
+      elit, sed do eiusmod.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Guidance -->
+            <section class="usa-prose">
+              <h2>Guidance</h2>
+              <div>
+                <h3>When to use the alert component</h3>
+                <dl>
+                  <dt class="margin-bottom-05"><strong>System status messages.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">An alert may be a notification that keeps people informed of the status of the system and may or may not require the user to respond. Such notifications may be errors, warnings, and general updates.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Validation messages.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">An alert may be a validation message that informs a user they just took an action that needs to be corrected or a confirmation that a task was completed successfully.</dd>
+                </dl>
+
+                <h3 class="margin-top-5">When to consider something else</h3>
+                <dl>
+                  <dt class="margin-bottom-05"><strong>Long forms.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Destructive actions.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">If an action will result in destroying a user's work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this action is what they want.</dd>
+                </dl>
+
+                <h3 class="margin-top-5">Usability guidance</h3>
+                <dl>
+                  <dt class="margin-bottom-05"><strong>Consider next steps.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">When the user is required to do something in response to an alert, let them know what they need to do, and make that task as easy as possible. Think about how much context to provide with your message.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Be polite.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">Be polite in error messages - don't blame the user.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Alerts are an opportunity.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">Users will read a message that helps them resolve an error even if they generally won't read documentation; include some educational material in your error message.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Don't overdo it.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">Too many notifications will either overwhelm or annoy the user and are likely to be ignored.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Understand the user's context.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">Don't include notifications that aren't related to the user's current goal.</dd>
+                </dl>
+
+                <h3 class="margin-top-5">Accessibility guidance</h3>
+                <dl>
+                  <dt class="margin-bottom-05"><strong>Don't visually hide alert messages.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</dd>
+
+                  <dt class="margin-bottom-05"><strong>Use the proper ARIA role.</strong></dt>
+                  <dd class="margin-left-0 margin-bottom-2">The ARIA <code class="font-mono-xs">role</code> attribute can notify assistive technologies of time-sensitive and important messages. Use <code class="font-mono-xs">role="alert"</code> for error and emergency alerts, <code class="font-mono-xs">role="status"</code> for success alerts, and <code class="font-mono-xs">role="region"</code> for informative or warning alerts.</dd>
+                </dl>
+
+                <h3 class="margin-top-5">USWDS Documentation</h3>
+                <p>For more guidance, view the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/components/alert/" target="_blank" rel="noopener noreferrer">USWDS Alert Component Documentation</a>.</p>
+              </div>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Settings -->
+            <section class="usa-prose">
+              <h2>Settings</h2>
+              <table class="usa-table usa-table--borderless" style="width:100%;">
+                <thead>
+                  <tr>
+                    <th style="width:50%;">Variable</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-bar-width</code></td>
+                    <td><span class="font-lang-3xs">Width of the colored bar to the left of the alert.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-font-family</code></td>
+                    <td><span class="font-lang-3xs">Font family of the alert.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-icon-size</code></td>
+                    <td><span class="font-lang-3xs">Size of the alert icon.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-padding-x</code></td>
+                    <td><span class="font-lang-3xs">Padding on the left and right of the alert.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-padding-y</code></td>
+                    <td><span class="font-lang-3xs">Padding on the top and bottom of the alert.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-text-color</code></td>
+                    <td><span class="font-lang-3xs">Text color on light backgrounds.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-link-color</code></td>
+                    <td><span class="font-lang-3xs">Link color on light backgrounds.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-text-reverse-color</code></td>
+                    <td><span class="font-lang-3xs">Text color on dark backgrounds.</span></td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">$theme-alert-link-reverse-color</code></td>
+                    <td><span class="font-lang-3xs">Link color on dark backgrounds.</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Variants -->
+            <section class="usa-prose">
+              <h2>Variants</h2>
+              <table class="usa-table usa-table--borderless" style="width:100%;">
+                <thead>
+                  <tr>
+                    <th style="width:50%;" scope="col">Variant</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--info</code></td>
+                    <td>Display an informational status alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--warning</code></td>
+                    <td>Display a warning status alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--success</code></td>
+                    <td>Display a success status alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--error</code></td>
+                    <td>Display an error status alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--emergency</code></td>
+                    <td>Display an emergency status alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--slim</code></td>
+                    <td>Display a slimmer version of the alert.</td>
+                  </tr>
+                  <tr>
+                    <td><code class="font-code-xs">.usa-alert--no-icon</code></td>
+                    <td>Display an alert without an icon.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+          </main>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="usa-footer">
+      <div class="grid-container usa-footer__return-to-top">
+        <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+      </div>
+      <div class="usa-footer__primary-section">
+        <nav class="usa-footer__nav" aria-label="Footer navigation">
+          <ul class="grid-row grid-gap-2">
+            <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"><a class="usa-footer__primary-link" href="#">About</a></li>
+            <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"><a class="usa-footer__primary-link" href="#">Contact</a></li>
+            <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"><a class="usa-footer__primary-link" href="#">Help</a></li>
+            <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content"><a class="usa-footer__primary-link" href="#">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="usa-identifier">
+      <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__logos">
+            <a href="#" class="usa-identifier__logo"><img class="usa-identifier__logo-img" src="/site/images/civic-logo/civic-wordmark.svg" alt="Civic logo" role="img"></a>
+          </div>
+        </div>
+      </section>
+      <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+        <div class="usa-identifier__container">
+          <ul class="usa-identifier__required-links-list">
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a></li>
+            <li class="usa-identifier__required-links-item"><a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
+          <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+        </div>
+      </section>
+    </div>
+
+  </body>
+
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/civic-code-copy-button.js"></script>
+
+</html>
