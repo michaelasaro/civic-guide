@@ -13,9 +13,10 @@
 //  This gulpfile provides two ways to build the project:
 //
 //  1. Custom Build (Recommended for this project)
-//     - npm run build        → Full build: clean, compile Sass, copy assets
-//     - npm run build:styles → Compile Sass only
-//     - npm run clean        → Remove dist/ folder
+//     - npm run build         → Full build: clean, compile Sass, copy assets
+//     - npm run build:styles  → Compile Sass only
+//     - npm run watch:styles  → Watch Sass files and recompile on changes
+//     - npm run clean         → Remove dist/ folder
 //
 //  2. Standard USWDS Compile (For users familiar with USWDS workflow)
 //     - npx gulp init        → First-time setup
@@ -37,6 +38,9 @@
 const fs = require('fs');                                         // Node.js file system
 const path = require('path');                                     // Node.js path utilities
 const sass = require('sass');                                     // Dart Sass compiler
+const postcss = require('postcss');                               // CSS post-processor
+const autoprefixer = require('autoprefixer');                     // Adds vendor prefixes
+const cssnano = require('cssnano');                               // CSS minifier
 const { src, dest, series, parallel, watch } = require("gulp");   // Gulp task runner
 const uswds = require('@uswds/compile');                          // USWDS compile utilities
 
@@ -326,6 +330,13 @@ async function doBuildAll () {
  * control over the compilation process. The compiled CSS is written directly
  * to dist/civic/styles/ - no intermediate staging folder needed.
  *
+ * The build pipeline:
+ *   1. Sass compilation     → Raw CSS + sourcemap
+ *   2. Autoprefixer         → Adds vendor prefixes for browser compatibility
+ *   3. Write civic.css      → Full (readable) CSS with sourcemap
+ *   4. Minification         → Compressed CSS for production
+ *   5. Write civic.min.css  → Minified CSS with sourcemap
+ *
  * Load paths tell Sass where to find USWDS packages when you use
  * @use or @forward statements like: @forward "uswds"
  */
@@ -333,22 +344,25 @@ async function doSassCompile () {
     const inputFile = sassConfig.src;
     const outputDir = sassConfig.dest;
     const outputFile = path.join(outputDir, sassConfig.filename);
+    const outputFileMin = path.join(outputDir, sassConfig.filename.replace('.css', '.min.css'));
 
     // Ensure the output directory exists (creates parent dirs if needed)
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true })
     }
 
-    // Clean up any existing output file
-    if (fs.existsSync(outputFile)) {
-        console.info('Cleaning target file location: ' + outputFile)
-        fs.rmSync(outputFile);
-    }
+    // ------------------------------------------------------------------
+    // STEP 1: Compile Sass to CSS
+    // ------------------------------------------------------------------
 
     console.info('Sass compilation starting...')
 
-    // Compile Sass to CSS
     let compiledSass = sass.compile(inputFile, {
+        // Generate a sourcemap so browser DevTools can show the original
+        // Sass source files instead of the compiled CSS
+        sourceMap: true,
+        sourceMapIncludeSources: true,
+
         // Suppress USWDS deprecation warnings (they're noisy but not actionable)
         logger: {
             warn (message, options) {
@@ -365,10 +379,75 @@ async function doSassCompile () {
 
     console.info('Sass compilation done!')
 
-    // Write compiled CSS directly to dist folder
+    // ------------------------------------------------------------------
+    // STEP 2: Autoprefix (add vendor prefixes for browser compatibility)
+    // ------------------------------------------------------------------
+    // Targets are defined in .browserslistrc at the project root.
+    // This adds prefixes like -webkit- and -ms- where needed.
+    // ------------------------------------------------------------------
+
+    console.info('Autoprefixing...')
+
+    const prefixed = await postcss([autoprefixer]).process(compiledSass.css, {
+        from: inputFile,
+        to: outputFile,
+        map: {
+            prev: compiledSass.sourceMap,   // Chain the Sass sourcemap
+            inline: false,                  // Write .map as a separate file
+            annotation: sassConfig.filename + '.map'
+        }
+    });
+
+    // ------------------------------------------------------------------
+    // STEP 3: Write full (readable) CSS + sourcemap
+    // ------------------------------------------------------------------
+
     console.info('Writing compiled css to: ' + outputFile)
-    fs.writeFileSync(outputFile, compiledSass.css)
-    await Promise.resolve(outputFile)
+    fs.writeFileSync(outputFile, prefixed.css)
+    fs.writeFileSync(outputFile + '.map', prefixed.map.toString())
+
+    // ------------------------------------------------------------------
+    // STEP 4: Minify for production
+    // ------------------------------------------------------------------
+    // Creates a compressed version for faster page loads.
+    // The full version (civic.css) is still available for debugging.
+    // ------------------------------------------------------------------
+
+    console.info('Minifying...')
+
+    const minified = await postcss([cssnano({ preset: 'default' })]).process(prefixed.css, {
+        from: outputFile,
+        to: outputFileMin,
+        map: {
+            prev: prefixed.map.toString(),  // Chain the prefixed sourcemap
+            inline: false,
+            annotation: sassConfig.filename.replace('.css', '.min.css') + '.map'
+        }
+    });
+
+    console.info('Writing minified css to: ' + outputFileMin)
+    fs.writeFileSync(outputFileMin, minified.css)
+    fs.writeFileSync(outputFileMin + '.map', minified.map.toString())
+
+    // Report file sizes so you can see the impact of minification
+    const fullSize = (fs.statSync(outputFile).size / 1024).toFixed(1);
+    const minSize = (fs.statSync(outputFileMin).size / 1024).toFixed(1);
+    console.info(`CSS sizes: ${fullSize} KB (full) → ${minSize} KB (minified)`)
+}
+
+/**
+ * Watch for Sass changes and recompile automatically
+ *
+ * Watches all .scss files in src/styles/ and reruns the Sass compilation
+ * whenever a file is saved. This is useful during development so you don't
+ * have to run `npm run build:styles` manually after every change.
+ *
+ * Usage: npm run watch:styles
+ */
+function doWatch() {
+    console.info('Watching src/styles/**/*.scss for changes...')
+    console.info('Press Ctrl+C to stop.\n')
+    return watch('src/styles/**/*.scss', doSassCompile);
 }
 
 /**
@@ -413,6 +492,7 @@ async function cleanFolder(foldername) {
 // │                                                                         │
 // │   npm run build          → Full build (clean + compile + copy)          │
 // │   npm run build:styles   → Compile Sass only                            │
+// │   npm run watch:styles   → Watch Sass files and recompile on changes    │
 // │   npm run clean          → Remove dist/ folder                          │
 // │                                                                         │
 // │ These commands are defined in package.json and use the custom functions │
@@ -445,3 +525,4 @@ exports.copyAll = uswds.copyAll;
 exports.buildAll = doBuildAll
 exports.clean = doClean
 exports.sassCompile = doSassCompile
+exports.sassWatch = doWatch

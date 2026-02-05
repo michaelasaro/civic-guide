@@ -1,0 +1,7 @@
+# Browsers to support for CSS autoprefixing.
+# Same targets used by USWDS.
+# See: https://browsersl.ist/
+
+> 2%
+last 2 versions
+not dead

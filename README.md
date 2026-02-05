@@ -30,14 +30,31 @@ Open [http://localhost:3000](http://localhost:3000) to view the documentation si
 
 ---
 
+## Guided Tour (New to this project?)
+
+This repo includes a **CodeTour** that walks you through the entire build system step by step, assuming no prior knowledge. It explains what each file does, how they connect, and why things are set up the way they are.
+
+**To start the tour:**
+
+1. Install the [CodeTour extension](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour) for VS Code
+2. Open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows)
+3. Type **CodeTour: Start Tour** and select **"How the Build Works"**
+
+The tour is stored in `.tours/` and ships with the repo, so anyone who clones it gets access.
+
+---
+
 ## Available Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run build` | Full build: clean, compile Sass, copy all assets to `dist/` |
-| `npm run build:styles` | Compile Sass only (outputs to `dist/civic/styles/civic.css`) |
+| `npm run build` | Full build: clean, compile Sass, autoprefix, minify, copy assets to `dist/` |
+| `npm run build:styles` | Compile Sass only (outputs `civic.css` + `civic.min.css` + sourcemaps) |
+| `npm run watch:styles` | Watch for Sass changes and recompile automatically |
 | `npm run serve` | Start local development server at http://localhost:3000 |
 | `npm run clean` | Remove the `dist/` folder |
+
+**Typical development workflow:** Run `npm run serve` in one terminal and `npm run watch:styles` in another. Every time you save a style change, the CSS rebuilds automatically.
 
 ---
 
@@ -47,19 +64,19 @@ Open [http://localhost:3000](http://localhost:3000) to view the documentation si
 uswds-guide/
 ├── src/                          # Source files
 │   ├── styles/                   # Sass source files
-│   │   ├── index.scss            # Main entry point
-│   │   ├── _bridge.scss          # Connects settings to USWDS
-│   │   ├── custom-styles.scss    # Your custom component styles
-│   │   └── uswds-settings/       # Modular settings files
-│   │       ├── _colors.scss      # Color tokens and themes
-│   │       ├── _typography.scss  # Font settings
-│   │       ├── _spacing.scss     # Spacing and layout
+│   │   ├── index.scss            # Main entry point (3 layers)
+│   │   ├── _bridge.scss          # Connects your settings to USWDS
+│   │   ├── _packages.scss        # Choose which USWDS components to include
+│   │   ├── custom-styles.scss    # Your custom CSS overrides
+│   │   └── uswds-settings/       # Design token settings
+│   │       ├── _colors.scss      # Brand colors and palettes
+│   │       ├── _typography.scss  # Fonts, sizes, weights
+│   │       ├── _spacing.scss     # Margins, padding, grid
 │   │       ├── _components.scss  # Component-specific settings
 │   │       ├── _utilities.scss   # Utility class configuration
-│   │       └── _general.scss     # General settings
+│   │       └── _general.scss     # Paths, focus styles, global settings
 │   ├── fonts/                    # Custom web fonts
-│   ├── images/                   # Custom images (logos, branding)
-│   └── docs/                     # Documentation files
+│   └── images/                   # Custom images (logos, hero, branding)
 │
 ├── site/                         # Documentation website
 │   ├── pages/                    # Content pages (HTML)
@@ -69,16 +86,22 @@ uswds-guide/
 │   └── scripts/                  # Site-specific JavaScript
 │
 ├── dist/                         # Build output (generated)
-│   ├── civic/                    # Your customizations
-│   │   ├── styles/civic.css      # Compiled theme CSS
+│   ├── civic/                    # Your customized theme
+│   │   ├── styles/
+│   │   │   ├── civic.css         # Full compiled CSS
+│   │   │   ├── civic.min.css     # Minified CSS for production
+│   │   │   ├── civic.css.map     # Sourcemap (for debugging)
+│   │   │   └── civic.min.css.map # Sourcemap (minified)
 │   │   ├── fonts/                # Custom fonts
 │   │   └── images/               # Custom images
 │   └── uswds/                    # USWDS assets
 │       ├── css/                  # Pre-compiled USWDS CSS
 │       ├── js/                   # USWDS JavaScript
 │       ├── fonts/                # USWDS fonts
-│       └── img/                  # USWDS icons and images
+│       └── img/                  # USWDS icons and images (~320 files)
 │
+├── .tours/                       # CodeTour guided walkthroughs
+├── .browserslistrc               # Browser targets for autoprefixer
 ├── gulpfile.js                   # Build configuration
 ├── server.js                     # Development server
 └── package.json                  # Dependencies and scripts
@@ -86,69 +109,88 @@ uswds-guide/
 
 ---
 
+## How the Build Works
+
+The build compiles your Sass source into production-ready CSS in 5 steps:
+
+1. **Sass compilation** — Reads `index.scss`, follows all imports, produces raw CSS + sourcemap
+2. **Autoprefixing** — Adds vendor prefixes (`-webkit-`, `-ms-`) for browser compatibility
+3. **Writes `civic.css`** — Full, readable CSS with sourcemap for debugging
+4. **Minification** — Compresses the CSS (removes whitespace, shortens colors)
+5. **Writes `civic.min.css`** — Compressed CSS with sourcemap for production
+
+Browser targets are defined in `.browserslistrc` (same as USWDS: `> 2%, last 2 versions, not dead`).
+
+### The Three-Layer Architecture
+
+Styles are loaded in order through `index.scss`:
+
+```
+Layer 1: BRIDGE          Your settings → passed to USWDS core
+Layer 2: PACKAGES        USWDS components (you choose which ones)
+Layer 3: CUSTOM STYLES   Your CSS overrides (loaded last, wins over everything)
+```
+
+---
+
 ## Customizing the Theme
 
-### How It Works
+### Changing Settings (Colors, Fonts, Spacing, etc.)
 
-This project uses a **modular Sass architecture** that makes customization simple:
+All USWDS settings are pre-written in two places — just uncomment to activate:
 
-1. **Settings files** (`src/styles/uswds-settings/`) contain all your customizations
-2. **Bridge file** (`src/styles/_bridge.scss`) connects your settings to USWDS
-3. **Entry point** (`src/styles/index.scss`) loads everything in the correct order
-
-### Customization Workflow
-
-To customize a USWDS setting:
-
-1. **Find the setting** in the appropriate file under `src/styles/uswds-settings/`
-2. **Uncomment it** and set your value
+1. **Find the setting** in `src/styles/uswds-settings/` (e.g., `_colors.scss`)
+2. **Uncomment it** and change the value
 3. **Uncomment the matching line** in `src/styles/_bridge.scss`
-4. **Run `npm run build`** to see your changes
+4. **Run `npm run build`**
 
 **Example:** Changing the primary color
 
 ```scss
-// In src/styles/uswds-settings/_colors.scss
-$theme-color-primary: 'blue-warm-60v' !default;
+// In src/styles/uswds-settings/_colors.scss — uncomment and set your color:
+$theme-color-primary: #4D8157;
 
-// In src/styles/_bridge.scss (uncomment the matching line)
-$theme-color-primary: $theme-color-primary;
+// In src/styles/_bridge.scss — uncomment the matching line:
+$theme-color-primary: colors.$theme-color-primary,
 ```
+
+Every button, link, and primary-colored element updates automatically.
 
 ### Settings Categories
 
 | File | What it controls |
 |------|------------------|
-| `_colors.scss` | Color tokens, theme colors, state colors |
-| `_typography.scss` | Font families, sizes, line heights |
-| `_spacing.scss` | Spacing units, layout grid, containers |
-| `_components.scss` | Component-specific settings (accordion, banner, etc.) |
-| `_utilities.scss` | Utility class generation and breakpoints |
-| `_general.scss` | Image paths, border radius, global defaults |
+| `_colors.scss` | Brand colors, state colors (error, success), link colors |
+| `_typography.scss` | Font families, sizes, weights, line heights |
+| `_spacing.scss` | Border radius, column gaps, grid container, site margins |
+| `_components.scss` | Individual component settings (banner, card, header, etc.) |
+| `_utilities.scss` | Utility class generation and responsive breakpoints |
+| `_general.scss` | Image paths, focus styles, compile warnings |
+
+### Choosing Which Components to Include
+
+By default, all USWDS components are included. To reduce CSS file size, comment out components you don't use in `src/styles/_packages.scss`:
+
+```scss
+// Comment out a component you don't need:
+// @forward "usa-tooltip/src/styles";
+
+// Keep the ones you use:
+@forward "usa-button/src/styles";
+@forward "usa-header/src/styles";
+```
+
+Components are grouped by purpose (Layout, Page Structure, Navigation, Content, Forms, etc.) with descriptions of what each one provides.
+
+### Adding Custom CSS
+
+For styles that can't be achieved with design tokens, add CSS to `src/styles/custom-styles.scss`. It loads last, so it overrides anything from USWDS.
 
 ---
 
-## Build System
+## Alternative Build Option
 
-This project provides two build options:
-
-### Option 1: Custom Build (Recommended)
-
-Uses the custom Gulp tasks defined in `gulpfile.js`:
-
-```bash
-npm run build          # Full build
-npm run build:styles   # Sass only
-npm run clean          # Clean dist/
-```
-
-**Benefits:**
-- Selective image copying (skips 2,100+ unused Material Icons)
-- Clear separation of theme assets (`dist/civic/`) and USWDS assets (`dist/uswds/`)
-
-### Option 2: Standard USWDS Compile
-
-For users familiar with the [official USWDS workflow](https://designsystem.digital.gov/documentation/getting-started/developers/phase-two-compile/):
+For users familiar with the [official USWDS workflow](https://designsystem.digital.gov/documentation/getting-started/developers/phase-two-compile/), the standard compile functions are also available:
 
 ```bash
 npx gulp init          # First-time setup
@@ -172,7 +214,7 @@ The documentation site includes:
 
 ## Requirements
 
-- **Node.js** 18.x or higher (tested with v25.5.0)
+- **Node.js** 18.x or higher
 - **npm** 8.x or higher
 
 ### Dependencies
@@ -180,21 +222,25 @@ The documentation site includes:
 | Package | Version | Purpose |
 |---------|---------|---------|
 | `@uswds/uswds` | 3.13.0 | U.S. Web Design System |
-| `@uswds/compile` | 1.3.1 | USWDS build utilities |
-| `gulp` | 5.0.0 | Task runner |
-| `sass` | 1.90.0 | Dart Sass compiler |
-| `express` | 5.1.0 | Development server |
+| `@uswds/compile` | ^1.3.1 | USWDS build utilities |
+| `gulp` | ^5.0.0 | Task runner |
+| `sass` | ^1.90.0 | Dart Sass compiler |
+| `postcss` | ^8.5.6 | CSS post-processor |
+| `autoprefixer` | ^10.4.24 | Adds vendor prefixes for browser compatibility |
+| `cssnano` | ^7.1.2 | CSS minifier |
+| `express` | ^5.1.0 | Development server |
 
 ---
 
 ## Browser Support
 
-This project follows USWDS browser support:
+Defined in `.browserslistrc`, matching USWDS targets:
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Browsers with > 2% global usage
+- Last 2 versions of each browser
+- No discontinued browsers
+
+In practice: Chrome, Firefox, Safari, Edge (latest versions), and most mobile browsers.
 
 ---
 

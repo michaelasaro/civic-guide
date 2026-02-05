@@ -7,6 +7,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && npx gulp buildAll",
     "build:styles": "npx gulp sassCompile",
+    "watch:styles": "npx gulp sassWatch",
     "serve": "nodemon server.js"
   },
   "author": "michaelasaro",
@@ -17,9 +18,12 @@
     "gulp": "^5.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "cssnano": "^7.1.2",
     "express": "^5.1.0",
     "jsdom": "^27.2.0",
     "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
     "sass": "^1.90.0"
   }
 }

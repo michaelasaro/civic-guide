@@ -25,8 +25,9 @@
 //       Your custom design tokens are passed to USWDS, which generates
 //       all the base styles, components, and utilities.
 //
-//    2. USWDS COMPONENTS
-//       The full USWDS component library (buttons, forms, navigation, etc.)
+//    2. USWDS PACKAGES
+//       The USWDS component library (buttons, forms, navigation, etc.)
+//       You choose which packages to include in _packages.scss.
 //
 //    3. CUSTOM STYLES
 //       Your own CSS that goes on top of everything else.
@@ -56,6 +57,12 @@
 //  ✨ That's it! Both files have all settings pre-written - no typing needed.
 //
 //
+//  📦 TO REDUCE CSS FILE SIZE:
+//  ---------------------------
+//  Comment out components you don't use in _packages.scss.
+//  See that file for details on what each package provides.
+//
+//
 //  ⚡ TO ADD CUSTOM CSS:
 //  ---------------------
 //  Edit: src/styles/custom-styles.scss
@@ -78,13 +85,18 @@
 
 
 // -------------------------------------------------------------------------------------------------
-// LAYER 2: USWDS PACKAGE
+// LAYER 2: USWDS PACKAGES
 // -------------------------------------------------------------------------------------------------
-// This loads all the USWDS components, utilities, and base styles.
+// This loads the USWDS components, utilities, and base styles.
 // Your settings from the bridge are already applied at this point.
+//
+// By default, all packages are included. To reduce your CSS file size,
+// you can comment out packages you don't use.
+//
+// 📁 See: src/styles/_packages.scss (to choose which components to include)
 // -------------------------------------------------------------------------------------------------
 
-@forward "../../node_modules/@uswds/uswds/packages/uswds";
+@forward "./packages";
 
 
 // -------------------------------------------------------------------------------------------------

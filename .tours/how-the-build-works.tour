@@ -1,0 +1,115 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "How the Build Works",
+  "description": "A guided walkthrough of how this project turns source files into a working website. No prior knowledge required.",
+  "steps": [
+    {
+      "file": "package.json",
+      "line": 1,
+      "title": "Welcome to the project",
+      "description": "## What is this file?\n\nEvery project that uses Node.js has a `package.json`. Think of it as the project's **ID card** — it tells the system the project's name, what tools it needs, and what commands are available.\n\nYou'll almost never edit this file by hand. It gets updated automatically when you install tools."
+    },
+    {
+      "file": "package.json",
+      "line": 7,
+      "title": "The commands you can run",
+      "description": "## Scripts\n\nThese are the commands you can type in the terminal to do things:\n\n- **`npm run build`** — Compiles everything and creates the finished files\n- **`npm run build:styles`** — Just recompiles the CSS (faster)\n- **`npm run watch:styles`** — Watches for changes and recompiles automatically\n- **`npm run serve`** — Starts a local web server so you can preview the site\n- **`npm run clean`** — Deletes all compiled files (start fresh)\n\nThe most common workflow: run `npm run serve` in one terminal, and `npm run watch:styles` in another. Then every time you save a style change, the CSS rebuilds automatically."
+    },
+    {
+      "file": "package.json",
+      "line": 15,
+      "title": "Dependencies — the tools this project uses",
+      "description": "## What are dependencies?\n\nThese are other people's code that our project relies on. Instead of writing everything from scratch, we use pre-built tools:\n\n- **@uswds/uswds** — The US Web Design System itself (all the components, icons, fonts)\n- **@uswds/compile** — USWDS's official build helper\n- **gulp** — A task runner that automates the build process\n\nWhen you run `npm install`, Node downloads all of these into the `node_modules/` folder. That folder is huge (thousands of files) but you never need to look inside it — it's managed automatically."
+    },
+    {
+      "file": "package.json",
+      "line": 19,
+      "title": "Dev dependencies — tools for building, not for the website",
+      "description": "## Dev vs. regular dependencies\n\n**Dependencies** (above) are needed for the site to work.\n\n**Dev dependencies** are tools that help you *build* the site but don't ship to users:\n\n- **sass** — Compiles `.scss` files into regular `.css` that browsers understand\n- **postcss + autoprefixer** — Adds browser-specific CSS prefixes automatically\n- **cssnano** — Compresses the CSS to make it smaller\n- **express + nodemon** — A local web server for previewing your work\n- **jsdom** — Helps render HTML on the server side"
+    },
+    {
+      "file": "gulpfile.js",
+      "line": 1,
+      "title": "The build configuration",
+      "description": "## What is a gulpfile?\n\n**Gulp** is a task runner — it automates repetitive work. This file tells Gulp exactly what to do when you run `npm run build`.\n\nThink of it as a recipe:\n1. Clean up any old files\n2. Compile the Sass into CSS\n3. Add browser prefixes\n4. Create a minified version\n5. Copy fonts, images, and icons to the right places\n\nYou don't need to edit this file unless you're changing *how* the project builds (not *what* it looks like)."
+    },
+    {
+      "file": "gulpfile.js",
+      "line": 57,
+      "title": "Where compiled files go",
+      "description": "## The dist/ folder\n\n`dist` is short for \"distribution\" — it's the folder that contains the finished, ready-to-use files.\n\nWhen you run `npm run build`, everything gets compiled and copied into `dist/`. The structure inside:\n\n```\ndist/\n  civic/          ← Your customized theme\n    styles/       ← Your compiled CSS (civic.css)\n    fonts/        ← Your custom fonts\n    images/       ← Your custom images\n  uswds/          ← USWDS assets (from node_modules)\n    fonts/        ← System fonts\n    img/          ← Icons and images\n    js/           ← JavaScript for interactive components\n```\n\nThe `dist/` folder is **generated** — you never edit files inside it directly. If you delete it and rebuild, you get the same result."
+    },
+    {
+      "file": "src/styles/index.scss",
+      "line": 1,
+      "title": "The main entry point for styles",
+      "description": "## Where it all starts\n\nThis file is the **front door** for the entire styling system. When Sass compiles your CSS, it starts here and follows the trail.\n\nIt loads three layers, in order. Each layer builds on the one before it. The next few stops will walk through each layer."
+    },
+    {
+      "file": "src/styles/index.scss",
+      "line": 77,
+      "title": "Layer 1: The Bridge",
+      "description": "## Settings → USWDS\n\n`@forward \"./bridge\"` tells Sass to load the bridge file next.\n\n**What the bridge does:** It takes your custom settings (colors, fonts, spacing) and passes them to the USWDS engine. Think of it as a translator — you say \"my primary color is green\" and the bridge tells USWDS to use green everywhere it uses a primary color.\n\nThis MUST load first, before any components, because the components need to know your settings before they can generate their styles."
+    },
+    {
+      "file": "src/styles/_bridge.scss",
+      "line": 34,
+      "title": "Inside the bridge — importing settings",
+      "description": "## How settings get loaded\n\nThese `@use` statements pull in your settings from the individual files in `uswds-settings/`. Each file handles one category:\n\n- **colors** — Your brand palette\n- **general** — File paths, focus styles\n- **spacing** — Margins, padding, border radius\n- **typography** — Fonts, sizes, weights\n- **components** — Individual component tweaks\n- **utilities** — Which utility classes to generate\n\nThe `as colors`, `as general`, etc. are nicknames so the bridge can reference them below."
+    },
+    {
+      "file": "src/styles/_bridge.scss",
+      "line": 49,
+      "title": "Inside the bridge — passing settings to USWDS",
+      "description": "## The handoff\n\nThis is where the magic happens. `@use \"uswds-core\" with (...)` loads the USWDS engine and passes your settings to it.\n\nEvery uncommented line is an active setting. For example:\n- `$theme-color-primary: colors.$theme-color-primary` tells USWDS to use whatever primary color you defined in `_colors.scss`\n\nCommented lines (starting with `//`) use the USWDS defaults.\n\n**The pattern:** To change a setting, you uncomment it in two places — once in the settings file (where you set the value) and once here (where you pass it to USWDS)."
+    },
+    {
+      "file": "src/styles/uswds-settings/_colors.scss",
+      "line": 66,
+      "title": "Example: Changing your primary color",
+      "description": "## A real setting in action\n\nThis line sets the primary brand color to `#4D8157` (a forest green). It's uncommented, so it's active.\n\nThe comment below it says `Default: \"blue-60v\"` — that's what USWDS would use if you commented this line back out.\n\nTo change your brand color, you'd:\n1. Change `#4D8157` to any hex color you want\n2. Run `npm run build`\n3. Every button, link, and primary-colored element on the site updates\n\nThat's the power of design tokens — one change, everywhere."
+    },
+    {
+      "file": "src/styles/index.scss",
+      "line": 92,
+      "title": "Layer 2: USWDS Packages",
+      "description": "## The component library\n\n`@forward \"./packages\"` loads the USWDS components — buttons, cards, headers, forms, navigation, and more.\n\nBy this point, your settings from Layer 1 are already applied. So when USWDS generates the CSS for a button, it uses *your* primary color, *your* border radius, *your* fonts.\n\nThe `_packages.scss` file lets you choose which components to include. If you're building a simple site that only needs buttons and a header, you can comment out everything else to make the CSS smaller."
+    },
+    {
+      "file": "src/styles/_packages.scss",
+      "line": 47,
+      "title": "Inside packages — the foundation",
+      "description": "## Required packages\n\nThese three packages are the foundation. They provide the base styles that everything else builds on:\n\n- **uswds-global** — Browser resets and base styles\n- **uswds-helpers** — Internal tools used by all components\n- **uswds-typography** — Headings, paragraphs, links\n\nNever comment these out — other packages depend on them."
+    },
+    {
+      "file": "src/styles/_packages.scss",
+      "line": 76,
+      "title": "Inside packages — choosing components",
+      "description": "## Pick what you need\n\nEach `@forward` line includes one component's CSS. They're grouped by purpose:\n\n- **Page Structure** — banner, header, footer (the frame of the page)\n- **Navigation** — breadcrumbs, sidenav, pagination\n- **Content** — cards, tables, icons\n- **Actions** — buttons, search, modals\n- **Forms** — inputs, checkboxes, date pickers\n\nTo remove a component, add `//` in front of its line. To add it back, remove the `//`.\n\nRight now everything is included because this is a documentation site that showcases all components."
+    },
+    {
+      "file": "src/styles/index.scss",
+      "line": 104,
+      "title": "Layer 3: Custom styles",
+      "description": "## Your overrides\n\n`@forward \"./custom-styles.scss\"` loads last, on top of everything else.\n\nSome things can't be changed with design tokens alone. For example, USWDS doesn't have a token for \"navigation link text color.\" For those cases, you write regular CSS in this file.\n\nBecause it loads last, anything you write here wins over USWDS defaults — it's the final word."
+    },
+    {
+      "file": "gulpfile.js",
+      "line": 333,
+      "title": "The build pipeline",
+      "description": "## What happens when you run `npm run build`\n\nThe `doSassCompile` function runs through 5 steps:\n\n1. **Sass compilation** — Reads `index.scss`, follows all the `@forward` trails, and produces one big CSS file\n2. **Autoprefixer** — Scans the CSS and adds browser-specific prefixes (like `-webkit-`) where needed\n3. **Writes `civic.css`** — The full, readable CSS plus a sourcemap for debugging\n4. **Minification** — Compresses the CSS (removes whitespace, shortens colors)\n5. **Writes `civic.min.css`** — The compressed version for production\n\nThe sourcemap files (`.css.map`) let browser DevTools show you the original `.scss` file and line number when you inspect an element, instead of \"line 14,328 of civic.css.\""
+    },
+    {
+      "file": ".browserslistrc",
+      "line": 1,
+      "title": "Which browsers to support",
+      "description": "## Browser targets\n\nThis tiny file tells autoprefixer which browsers to add prefixes for:\n\n- **`> 2%`** — Browsers with more than 2% global usage\n- **`last 2 versions`** — The two most recent versions of each browser\n- **`not dead`** — Skip browsers that are no longer maintained\n\nThis means your CSS will work in Chrome, Safari, Firefox, Edge, and most mobile browsers without you having to think about it."
+    },
+    {
+      "file": "src/styles/index.scss",
+      "line": 1,
+      "title": "The big picture",
+      "description": "## Summary: How it all fits together\n\n```\nYou edit these:                    The build produces:\n─────────────────                  ──────────────────\nuswds-settings/_colors.scss   ─┐\nuswds-settings/_typography.scss │\nuswds-settings/_spacing.scss   ├→ _bridge.scss ─┐\nuswds-settings/_components.scss│                │\nuswds-settings/_utilities.scss ─┘                │\nuswds-settings/_general.scss  ─┘                ├→ index.scss → civic.css\n                                                │            → civic.min.css\n_packages.scss ─────────────────────────────────┤            → civic.css.map\n                                                │            → civic.min.css.map\ncustom-styles.scss ─────────────────────────────┘\n```\n\n**Your workflow:**\n1. Change a setting in `uswds-settings/` + uncomment it in `_bridge.scss`\n2. Or write custom CSS in `custom-styles.scss`\n3. Run `npm run build` (or let `watch:styles` do it automatically)\n4. Refresh the browser\n\nThat's the whole system."
+    }
+  ]
+}

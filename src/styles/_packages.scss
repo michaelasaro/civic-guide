@@ -1,0 +1,247 @@
+// =================================================================================================
+//
+//  ██████╗  █████╗  ██████╗██╗  ██╗ █████╗  ██████╗ ███████╗███████╗
+//  ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔══██╗██╔════╝ ██╔════╝██╔════╝
+//  ██████╔╝███████║██║     █████╔╝ ███████║██║  ███╗█████╗  ███████╗
+//  ██╔═══╝ ██╔══██║██║     ██╔═██╗ ██╔══██║██║   ██║██╔══╝  ╚════██║
+//  ██║     ██║  ██║╚██████╗██║  ██╗██║  ██║╚██████╔╝███████╗███████║
+//  ╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
+//
+//  USWDS PACKAGES
+//  Choose which USWDS components are included in your compiled CSS.
+//
+//  📖 Learn more: https://designsystem.digital.gov/components/overview/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      To REMOVE a component you don't need:
+//        1. Add // in front of its @forward line below
+//        2. Run: npm run build
+//
+//      To ADD a component back:
+//        1. Remove the // from the beginning of its @forward line
+//        2. Run: npm run build
+//
+// =================================================================================================
+//
+//  WHY WOULD I REMOVE PACKAGES?
+//  ----------------------------
+//  Every package you include adds CSS to your final stylesheet.
+//  With all packages included, the compiled CSS is ~400KB+.
+//
+//  If your site only uses a handful of components (say, buttons, cards,
+//  and a header), you can comment out everything else to get a much
+//  smaller CSS file. Smaller CSS = faster page loads for your users.
+//
+//  If you're not sure what you need, leave everything included. You can
+//  always come back and remove packages later once you know which
+//  components your site actually uses.
+//
+//
+//  ⚠️  IMPORTANT:
+//  --------------
+//  The "Foundation" packages at the top are REQUIRED. They provide the
+//  base styles that all other packages depend on. Do not comment those out.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 🏗️ FOUNDATION (Required)
+// -------------------------------------------------------------------------------------------------
+// These packages are the base layer of USWDS. All other packages depend on them.
+// Do NOT comment these out - your styles will break without them.
+// -------------------------------------------------------------------------------------------------
+
+@forward "uswds-global";
+    // Global resets, normalize, and base element styles
+
+@forward "uswds-helpers";
+    // Sass helper functions and mixins used by all components
+
+@forward "uswds-typography";
+    // Headings, paragraphs, lists, links, and prose styles
+
+
+// -------------------------------------------------------------------------------------------------
+// 📐 LAYOUT
+// -------------------------------------------------------------------------------------------------
+// The grid system and page-level containers.
+// Most sites need these for responsive layouts.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-layout-grid/src/styles";
+    // 12-column responsive grid system (grid-row, grid-col, etc.)
+
+@forward "usa-section/src/styles";
+    // Page sections with consistent vertical spacing
+
+@forward "usa-layout-docs/src/styles";
+    // Documentation layout (main content + sidebar)
+
+
+// -------------------------------------------------------------------------------------------------
+// 🏛️ PAGE STRUCTURE
+// -------------------------------------------------------------------------------------------------
+// The "frame" of a government website: banner, header, footer, etc.
+// These are the components that appear on every page.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-banner/src/styles";
+    // "An official website of the United States government" banner
+    // Required on all federal .gov websites
+
+@forward "usa-skipnav/src/styles";
+    // "Skip to main content" link for keyboard/screen reader users
+    // Required for accessibility compliance
+
+@forward "usa-header/src/styles";
+    // Site header with logo, title, and navigation container
+
+@forward "usa-nav/src/styles";
+    // Primary navigation (desktop mega menu + mobile drawer)
+
+@forward "usa-footer/src/styles";
+    // Site footer with contact info, links, and branding
+
+@forward "usa-identifier/src/styles";
+    // Agency identifier bar (parent agency, required links)
+    // Required on all federal .gov websites
+
+@forward "usa-hero/src/styles";
+    // Hero banner with background image and call to action
+
+
+// -------------------------------------------------------------------------------------------------
+// 🧭 NAVIGATION
+// -------------------------------------------------------------------------------------------------
+// Ways for users to find their way around your site.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-breadcrumb/src/styles";
+    // Breadcrumb trail showing the user's location in the site
+
+@forward "usa-sidenav/src/styles";
+    // Side navigation for sections with many child pages
+
+@forward "usa-pagination/src/styles";
+    // Page numbers for navigating through multi-page lists
+
+@forward "usa-in-page-navigation/src/styles";
+    // Sticky sidebar that links to sections within the current page
+
+
+// -------------------------------------------------------------------------------------------------
+// 📄 CONTENT
+// -------------------------------------------------------------------------------------------------
+// Components for displaying content: cards, tables, lists, etc.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-card/src/styles";
+    // Card containers for grouping related content
+
+@forward "usa-table/src/styles";
+    // Styled data tables with sorting and striping options
+
+@forward "usa-collection/src/styles";
+    // List of related items with optional metadata and thumbnails
+
+@forward "usa-icon/src/styles";
+    // Inline SVG icons from the USWDS icon library
+
+@forward "usa-icon-list/src/styles";
+    // Vertical list with icons alongside each item
+
+@forward "usa-graphic-list/src/styles";
+    // Alternating image-and-text content blocks
+
+@forward "usa-media-block/src/styles";
+    // Image or icon alongside a block of text
+
+@forward "usa-summary-box/src/styles";
+    // Highlighted box for key information or takeaways
+
+@forward "usa-process-list/src/styles";
+    // Numbered steps showing a sequential process
+
+@forward "usa-tag/src/styles";
+    // Small labels for categorizing or flagging content
+
+@forward "usa-embed-container/src/styles";
+    // Responsive container for embedded videos and iframes
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔘 ACTIONS & OVERLAYS
+// -------------------------------------------------------------------------------------------------
+// Buttons, search, modals, and other interactive elements.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-button/src/styles";
+    // Buttons in various styles (primary, secondary, outline, etc.)
+
+@forward "usa-button-group/src/styles";
+    // Group of buttons displayed inline (e.g., Save / Cancel)
+
+@forward "usa-search/src/styles";
+    // Search bar component with input field and submit button
+
+@forward "usa-modal/src/styles";
+    // Dialog boxes that overlay the page (confirmations, detail views)
+
+@forward "usa-tooltip/src/styles";
+    // Small popup that appears on hover to explain an element
+
+@forward "usa-language-selector/src/styles";
+    // Language selection dropdown for multilingual sites
+
+
+// -------------------------------------------------------------------------------------------------
+// 📝 FORMS
+// -------------------------------------------------------------------------------------------------
+// Form layouts and all form input components.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-form/src/styles";
+    // Form container with consistent spacing between fields
+
+@forward "uswds-form-controls";
+    // All form input types in one package:
+    //   Text inputs, textareas, selects, checkboxes, radio buttons,
+    //   date picker, time picker, combo box, file input, range slider,
+    //   input prefix/suffix
+
+@forward "usa-checklist/src/styles";
+    // Password/validation checklist with pass/fail indicators
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔔 FEEDBACK & STATUS
+// -------------------------------------------------------------------------------------------------
+// Components that communicate status, progress, or important messages.
+// -------------------------------------------------------------------------------------------------
+
+@forward "usa-alert/src/styles";
+    // Alert messages (info, success, warning, error, emergency)
+
+@forward "usa-site-alert/src/styles";
+    // Full-width alert at the top of the page (emergencies, outages)
+
+@forward "usa-step-indicator/src/styles";
+    // Progress bar showing steps in a multi-step process
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔧 UTILITIES
+// -------------------------------------------------------------------------------------------------
+// Utility classes for quick styling adjustments directly in your HTML.
+// Examples: .margin-top-2, .text-bold, .display-flex, .bg-primary
+//
+// This is optional but very convenient. If you prefer to write all styles
+// in CSS/Sass rather than using utility classes in HTML, you can comment
+// this out to reduce CSS size significantly.
+// -------------------------------------------------------------------------------------------------
+
+@forward "uswds-utilities/src/styles";
+    // All USWDS utility classes (spacing, color, typography, layout, etc.)
