@@ -33,8 +33,6 @@
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var query = form.querySelector('input[type="search"]').value.trim();
-    if (query) {
-      window.location.href = "/site/pages/search-results.html?q=" + encodeURIComponent(query);
-    }
+    window.location.href = "/site/pages/search-results.html" + (query ? "?q=" + encodeURIComponent(query) : "");
   });
 })();
