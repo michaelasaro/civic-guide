@@ -39,6 +39,9 @@ jobs:
           cp -r site dist/site
           cp -r src/images dist/images 2>/dev/null || true
 
+      - name: Index site with Pagefind
+        run: npx pagefind --site dist --output-path dist/_pagefind
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

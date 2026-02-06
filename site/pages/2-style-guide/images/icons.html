@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <!-- Head Start -->
     <head>
@@ -27,15 +28,19 @@
     <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
+    <!-- Pagefind Meta Tags
+    ================================================== -->
+    <meta data-pagefind-meta="image[content]" content="/site/images/civic-logo/civic-favicon.svg">
+
     <!-- CSS Links
     ================================================== -->
-    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/civic/styles/civic.css">
     <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
 
     <!-- USWDS INIT
     ================================================== -->
-    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
-    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+    <script src="/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
 
     </head>
   <!-- Head End -->
@@ -51,7 +56,7 @@
           <header class="usa-banner__header">
             <div class="usa-banner__inner">
               <div class="grid-col-auto">
-                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt=""/>
               </div>
               <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
                 <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
@@ -71,7 +76,7 @@
               <div class="grid-container">
                 <div style="display: inline-flex; align-items: center;">
                   <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
-                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                  <a href="/" title="Website title" class="text-no-wrap"><strong>Civic Design System</strong></a>
                 </div>
               </div>
             </div>
@@ -85,45 +90,50 @@
 
                 <!-- Mobile close button -->
                   <button type="button" class="usa-nav__close">
-                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                    <img src="/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
                   </button>
 
                 <!-- Primary Menu Start -->
-                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+                  <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
 
                     <!-- Home -->
                     <li class="usa-nav__primary-item usa-nav__link">
                       <a href="/" class="font-sans-xs usa-nav-link">
-                      <span style="white-space: nowrap;">Home</span>
+                      <span class="text-no-wrap">Home</span>
                       </a>
                     </li>
 
                     <!-- Style Guide -->
                     <li class="usa-nav__primary-item usa-nav__link">
                       <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link usa-current">
-                        <span style="white-space: nowrap;">Style Guide</span>
+                        <span class="text-no-wrap">Style Guide</span>
                       </a>
                     </li>
 
                     <!-- Component Library -->
                     <li class="usa-nav__primary-item">
                       <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
-                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span>
+                        <span class="font-sans-xs text-no-wrap">Component Library</span>
                       </button>
                       <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
                         <li class="usa-nav__submenu-item">
-                          <a href="/site/pages/3-component-library/components/component-library.html">
-                            <span>Components</span>
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
                           </a>
                         </li>
                         <li class="usa-nav__submenu-item">
-                          <a href="/site/pages/3-component-library/patterns/pattern-library.html">
-                            <span>Patterns</span>
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
                           </a>
                         </li>
                         <li class="usa-nav__submenu-item">
-                          <a href="/site/pages/3-component-library/templates/template-library.html">
-                            <span>Templates</span>
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
                           </a>
                         </li>
                       </ul>
@@ -132,7 +142,7 @@
                     <!-- Guidelines -->
                     <li class="usa-nav__primary-item usa-nav__link">
                       <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
-                        <span style="white-space: nowrap;">Guidelines</span>
+                        <span class="text-no-wrap">Guidelines</span>
                       </a>
                     </li>
                   </ul>
@@ -144,7 +154,7 @@
                     <label class="usa-sr-only" for="search-field">Search</label>
                     <input class="usa-input" id="search-field" type="search" name="search" />
                     <button class="usa-button" type="submit">
-                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                      <img src="/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
                     </button>
                   </form>
                 </section>
@@ -319,82 +329,82 @@
 
                   <!-- USWDS Icons -->
                   <h2 id="uswds-icons">USWDS icons</h2>
-                  <p>The U.S. Web Design System includes a set of 245+ icons designed for government websites. These icons are included with Civic and are located in <code>/dist/uswds/img/usa-icons/</code>.</p>
+                  <p>The U.S. Web Design System includes a set of 245+ icons designed for government websites. These icons are included with Civic and are located in <code>/uswds/img/usa-icons/</code>.</p>
 
                   <h3 id="uswds-sample-icons">Sample icons</h3>
                   <p>Here are some commonly used USWDS icons:</p>
 
                   <div class="grid-row grid-gap-2 margin-y-3">
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/home.svg" alt="Home icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/home.svg" alt="Home icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">home</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/search.svg" alt="Search icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/search.svg" alt="Search icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">search</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/menu.svg" alt="Menu icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/menu.svg" alt="Menu icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">menu</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/close.svg" alt="Close icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/close.svg" alt="Close icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">close</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/check.svg" alt="Check icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/check.svg" alt="Check icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">check</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/error.svg" alt="Error icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/error.svg" alt="Error icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">error</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/warning.svg" alt="Warning icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/warning.svg" alt="Warning icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">warning</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/info.svg" alt="Info icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/info.svg" alt="Info icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">info</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/settings.svg" alt="Settings icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/settings.svg" alt="Settings icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">settings</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/account_circle.svg" alt="Account circle icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/account_circle.svg" alt="Account circle icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">account_circle</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/mail.svg" alt="Mail icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/mail.svg" alt="Mail icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">mail</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/phone.svg" alt="Phone icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/phone.svg" alt="Phone icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">phone</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/edit.svg" alt="Edit icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/edit.svg" alt="Edit icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">edit</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/delete.svg" alt="Delete icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/delete.svg" alt="Delete icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">delete</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/file_download.svg" alt="File download icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/file_download.svg" alt="File download icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">file_download</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/file_upload.svg" alt="File upload icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/file_upload.svg" alt="File upload icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">file_upload</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/arrow_forward.svg" alt="Arrow forward icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/arrow_forward.svg" alt="Arrow forward icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">arrow_forward</p>
                     </div>
                     <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
-                      <img src="/dist/uswds/img/usa-icons/arrow_back.svg" alt="Arrow back icon" style="width: 32px; height: 32px;">
+                      <img src="/uswds/img/usa-icons/arrow_back.svg" alt="Arrow back icon" style="width: 32px; height: 32px;">
                       <p class="font-sans-3xs margin-top-1 margin-bottom-0">arrow_back</p>
                     </div>
                   </div>
@@ -402,14 +412,14 @@
                   <h3 id="uswds-icon-usage">Using USWDS icons</h3>
                   <p>Include icons directly via the <code>&lt;img&gt;</code> tag:</p>
 
-                  <pre class="bg-base-lightest padding-2 radius-md text-pre-wrap font-mono-2xs"><code>&lt;img src="/dist/uswds/img/usa-icons/home.svg"
+                  <pre class="bg-base-lightest padding-2 radius-md text-pre-wrap font-mono-2xs"><code>&lt;img src="/uswds/img/usa-icons/home.svg"
      alt="Home"
      style="width: 24px; height: 24px;"&gt;</code></pre>
 
                   <p>Or use the USWDS sprite file for better performance when using multiple icons:</p>
 
                   <pre class="bg-base-lightest padding-2 radius-md text-pre-wrap font-mono-2xs"><code>&lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
-  &lt;use xlink:href="/dist/uswds/img/sprite.svg#home"&gt;&lt;/use&gt;
+  &lt;use xlink:href="/uswds/img/sprite.svg#home"&gt;&lt;/use&gt;
 &lt;/svg&gt;</code></pre>
 
                   <p class="margin-top-3">
@@ -567,19 +577,19 @@
 
                   <pre class="bg-base-lightest padding-2 radius-md text-pre-wrap font-mono-2xs"><code>&lt;!-- Meaningful icon (needs alt text) --&gt;
 &lt;button&gt;
-  &lt;img src="/dist/uswds/img/usa-icons/search.svg" alt="Search"&gt;
+  &lt;img src="/uswds/img/usa-icons/search.svg" alt="Search"&gt;
 &lt;/button&gt;
 
 &lt;!-- Decorative icon (hidden from assistive tech) --&gt;
 &lt;a href="/home"&gt;
-  &lt;img src="/dist/uswds/img/usa-icons/home.svg" alt="" aria-hidden="true"&gt;
+  &lt;img src="/uswds/img/usa-icons/home.svg" alt="" aria-hidden="true"&gt;
   Home
 &lt;/a&gt;
 
 &lt;!-- SVG sprite with accessibility --&gt;
 &lt;button aria-label="Close dialog"&gt;
   &lt;svg class="usa-icon" aria-hidden="true" focusable="false" role="img"&gt;
-    &lt;use xlink:href="/dist/uswds/img/sprite.svg#close"&gt;&lt;/use&gt;
+    &lt;use xlink:href="/uswds/img/sprite.svg#close"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 &lt;/button&gt;</code></pre>
 
@@ -688,6 +698,7 @@
 
   <!-- Scripts
   ================================================== -->
-  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/search.js"></script>
 
 </html>

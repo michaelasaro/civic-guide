@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,11 +7,15 @@
     <title>Alert | Civic</title>
     <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
     <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+
+    <!-- Pagefind Meta Tags
+    ================================================== -->
+    <meta data-pagefind-meta="image[content]" content="/site/images/civic-logo/civic-favicon.svg">
+    <link rel="stylesheet" href="/civic/styles/civic.css">
     <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
     <link rel="stylesheet" href="/site/styles/civic-code-copy-button.css">
-    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
-    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+    <script src="/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
   </head>
 
   <body>
@@ -19,7 +24,7 @@
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+            <img aria-hidden="true" class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt=""/>
           </div>
           <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
             <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
@@ -35,19 +40,19 @@
             <div class="grid-container">
               <div style="display: inline-flex; align-items: center;">
                 <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
-                <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                <a href="/" title="Website title" class="text-no-wrap"><strong>Civic Design System</strong></a>
               </div>
             </div>
           </div>
           <button type="button" class="usa-menu-btn">Menu</button>
         </div>
         <nav aria-label="Primary navigation" class="usa-nav">
-          <button type="button" class="usa-nav__close"><img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/></button>
-          <ul class="usa-nav__primary usa-accordion margin-right-4">
-            <li class="usa-nav__primary-item usa-nav__link"><a href="/" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Home</span></a></li>
-            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Style Guide</span></a></li>
+          <button type="button" class="usa-nav__close"><img src="/uswds/img/usa-icons/close.svg" role="img" alt="Close"/></button>
+          <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/" class="font-sans-xs usa-nav-link"><span class="text-no-wrap">Home</span></a></li>
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link"><span class="text-no-wrap">Style Guide</span></a></li>
             <li class="usa-nav__primary-item">
-              <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two"><span class="font-sans-xs" style="white-space: nowrap;">Component Library</span></button>
+              <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two"><span class="font-sans-xs text-no-wrap">Component Library</span></button>
               <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
                 <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html"><span>All sections</span></a></li>
                 <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html#components-2" class="usa-current"><span class="margin-left-2">Components</span></a></li>
@@ -55,13 +60,13 @@
                 <li class="usa-nav__submenu-item"><a href="/site/pages/3-component-library/component-library.html#templates-2"><span class="margin-left-2">Templates</span></a></li>
               </ul>
             </li>
-            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link"><span style="white-space: nowrap;">Guidelines</span></a></li>
+            <li class="usa-nav__primary-item usa-nav__link"><a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link"><span class="text-no-wrap">Guidelines</span></a></li>
           </ul>
           <section aria-label="Search component">
             <form class="usa-search usa-search--small" role="search">
               <label class="usa-sr-only" for="search-field">Search</label>
               <input class="usa-input" id="search-field" type="search" name="search" />
-              <button class="usa-button" type="submit"><img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /></button>
+              <button class="usa-button" type="submit"><img src="/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" /></button>
             </form>
           </section>
         </nav>
@@ -669,7 +674,8 @@
 
   </body>
 
-  <script src="/dist/uswds/js/uswds.min.js"></script>
+  <script src="/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/search.js"></script>
   <script src="/site/scripts/civic-code-copy-button.js"></script>
 
 </html>

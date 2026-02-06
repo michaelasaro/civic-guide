@@ -6,10 +6,13 @@
 // Usage:
 //   npm run serve     → Starts server at http://localhost:3000
 //
-// The server serves static files from the project root, which includes:
-//   - /site/          → Documentation HTML pages
-//   - /dist/civic/    → Compiled theme CSS, fonts, images
-//   - /dist/uswds/    → USWDS assets (fonts, icons, JS)
+// The server serves static files from:
+//   - /site/          → Documentation HTML pages (from project root)
+//   - /civic/         → Compiled theme CSS, fonts, images (from dist/)
+//   - /uswds/         → USWDS assets: fonts, icons, JS (from dist/)
+//
+// HTML pages reference assets at /civic/ and /uswds/ (no /dist/ prefix).
+// This matches the deployed structure on GitHub Pages where dist/ is the root.
 //
 // ============================================================================
 
@@ -18,8 +21,11 @@ const app = express();
 const path = require('path');
 const port = 3000;
 
-// Serve static files from the project root
-// index.html at root will be served automatically for /
+// Serve compiled assets from dist/ at root paths (/civic/, /uswds/)
+// This mirrors the GitHub Pages structure where dist/ contents are the root
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Serve project root for /site/, index.html, etc.
 app.use(express.static(path.join(__dirname, './')));
 
 // Start the server
