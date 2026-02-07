@@ -113,7 +113,7 @@
 
                     <!-- Component Library -->
                     <li class="usa-nav__primary-item">
-                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs usa-current" aria-expanded="false" aria-controls="basic-nav-section-two">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
                         <span class="font-sans-xs text-no-wrap">Component Library</span>
                       </button>
                       <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
@@ -179,35 +179,39 @@
                       <!-- Guidelines -->
                       <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html"><strong>Guidelines</strong></a>
 
-                        <!-- General -->
+                        <!-- Welcome -->
                         <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Welcome</strong></a>
                           <ul class="usa-sidenav__sublist">
-                            <li><a href="/site/pages/4-guidelines/welcome/about-fpac-design.html">About FPAC Design</a></li>
-                            <li><a href="/site/pages/4-guidelines/welcome/getting-started.html">Getting Started</a></li>
+                            <li><a href="/site/pages/4-guidelines/1-welcome/about-civic-design.html">About Civic Design</a></li>
+                            <li><a href="/site/pages/4-guidelines/1-welcome/getting-started.html">Getting Started</a></li>
                           </ul>
                         </li>
 
                         <!-- Design & Accessibility -->
                         <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Design & Accessibility</strong></a>
                           <ul class="usa-sidenav__sublist">
-                            <li><a href="/site/pages/4-guidelines/design-accessibility/accessibility.html">Accessibility</a></li>
-                            <li><a href="/site/pages/4-guidelines/design-accessibility/design-principles.html">Design Principles</a></li>
-                            <li><a href="https://designsystem.digital.gov/components/data-visualizations/">Data Visualizations</a></li>
-                            <li><a href="https://designsystem.digital.gov/design-accessibility/components/form/">Forms</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html">WCAG Accessibility</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/working-with-color.html">Working with Color</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/design-principles.html">Design Principles</a></li>
                           </ul>
                         </li>
 
                         <!-- Development & Process -->
                         <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Development & Process</strong></a>
                           <ul class="usa-sidenav__sublist">
-                            <li><a href="/site/pages/4-guidelines/development-process/development-guidance.html">Development Guidance</a></li>
-                            <li><a href="/site/pages/4-guidelines/development-process/process-maturity.html">Process Maturity</a></li>
+                            <li><a href="/site/pages/4-guidelines/3-development-process/process-maturity.html">Process Maturity</a></li>
                           </ul>
                         </li>
                       </li>
 
-                      <!-- DS Configuration -->
-                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/ds-configuration/ds-configuration.html" class="usa-current"><em>DS Configuration</em></a></li>
+                      <!-- Custom Configuration -->
+                        <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/4-custom-configuration/custom-configuration.html"><strong>Custom Configuration</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/ds-configuration.html" class="usa-current">DS Configuration</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/color-palettes.html">Color Palettes</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/utilities-mixins-functions.html">Utilities, Mixins & Functions</a></li>
+                          </ul>
+                        </li>
                     </ul>              
                   </nav>
                 </div>
@@ -590,9 +594,6 @@
                                 </tr>
                             </tbody>
                         </table>
-
-
-
           <hr>
                           <h2>Responsive variants</h2>              
                           <p class="utility-text">Add a responsive breakpoint prefix separated with a <code>:</code> to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</p>
@@ -610,107 +611,6 @@
           }
                           </pre>
                           </div>
-
-
-
-
-                          <h3>State variants</h3>
-                          <p></p>
-                          <button class="usa-button" onclick="window.open('https://designsystem.digital.gov/utilities/border/#state-variants-2','_blank')" type="button">
-                              State variants
-                              <img src="/uswds/img/usa-icons-bg/launch--white.svg" alt="(external site)" style="width:1em; height:1em; vertical-align:middle; margin-left:0.25em;">
-                          </button>
-
-                          <h3>Output control</h3>
-                          <p></p>
-                          <button class="usa-button" onclick="window.open('https://designsystem.digital.gov/utilities/border/#output-control-2','_blank')" type="button">
-                              Output control
-                              <img src="/uswds/img/usa-icons-bg/launch--white.svg" alt="(external site)" style="width:1em; height:1em; vertical-align:middle; margin-left:0.25em;">
-                          </button>
-
-                          <h3>Custom values</h3>
-                          <p></p>
-                          <button class="usa-button" onclick="window.open('https://designsystem.digital.gov/utilities/border/#custom-values','_blank')" type="button">
-                              Custom values
-                              <img src="/uswds/img/usa-icons-bg/launch--white.svg" alt="(external site)" style="width:1em; height:1em; vertical-align:middle; margin-left:0.25em;">
-                          </button>
-
-                          <h3>Manual values</h3>
-                          <p></p>
-                          <button class="usa-button" onclick="window.open('https://designsystem.digital.gov/utilities/border/#manual-values','_blank')" type="button">
-                              Manual values
-                              <img src="/uswds/img/usa-icons-bg/launch--white.svg" alt="(external site)" style="width:1em; height:1em; vertical-align:middle; margin-left:0.25em;">
-                          </button>
-
-                          <h3>Palettes</h3>
-                          <p></p>
-                          <button class="usa-button" onclick="window.open('https://designsystem.digital.gov/utilities/border/#palettes','_blank')" type="button">
-                              Palettes
-                              <img src="/uswds/img/usa-icons-bg/launch--white.svg" alt="(external site)" style="width:1em; height:1em; vertical-align:middle; margin-left:0.25em;">
-                          </button>
-                    </section>
-
-                    <hr>
-                    <section>
-
-                      <section class="usa-section usa-prose">
-  <h1>Question</h1>
-  <p>In this site, I have mostly been using utility classes, but according to USWDS, which this design system is based
-    on, I could also use Functions or Mixins. What are the differences between those 3? Are there pros and cons? And can
-    you give examples of how each of them would be implemented on this page?</p>
-  <h1>Answer — Differences (short)</h1>
-  <ul>
-    <li><strong>Utility classes</strong> — precompiled, single-purpose CSS classes added in HTML (example:
-      <code>.shadow-3</code>). They emit no Sass at runtime.</li>
-    <li><strong>Mixins (Sass)</strong> — blocks you include (<code>@include</code>) that output CSS rules. They accept
-      parameters and can emit multiple declarations for a selector.</li>
-    <li><strong>Functions (Sass)</strong> — return a value (color, length, string, tokens) you use inside properties or
-      variables. They do not emit CSS by themselves.</li>
-  </ul>
-  <h2>Pros / cons (short)</h2>
-  <ul>
-    <li><strong>Utilities</strong> — Pros: very fast, predictable, no Sass required in markup. Cons: verbose markup,
-      many classes in stylesheet.</li>
-    <li><strong>Mixins</strong> — Pros: parameterizable, bundle many properties into a semantic class. Cons: can
-      duplicate CSS if included many times (larger compiled CSS).</li>
-    <li><strong>Functions</strong> — Pros: DRY values, useful for computed tokens and populating CSS variables. Cons:
-      require a Sass build step and are indirect in markup.</li>
-  </ul>
-  <h2>When to pick</h2>
-  <ul>
-    <li>Utilities for fast prototyping and repeated small tweaks (shadows, spacing).</li>
-    <li>Functions for tokenized, computed values used in multiple properties or variables.</li>
-    <li>Mixins for component-level rules where you want a semantic class that bundles multiple properties.</li>
-  </ul>
-  <h2>Concrete examples (copy into your code)</h2>
-  <h3>1) Utility class (already used on this page)</h3>
-  <p>HTML (already on the page):</p>
-  <pre><code>&lt;div class="square-9 bg-white shadow-3" style="display:inline-block;"&gt;&lt;/div&gt;</code></pre>
-  <h3>2) Sass mixin</h3>
-  <p>Add to a Sass partial (e.g. <code>_mixins.scss</code>) and import it into your build:</p>
-  <pre><code>// _mixins.scss @mixin u-shadow($level) { @if $level == 0 { box-shadow: none; } @else if $level == 1 { box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1); } @else if $level == 2 { box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); } @else if $level == 3 { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1); } @else if $level == 4 { box-shadow: 0 12px 24px 0 rgba(0,0,0,0.1); } @else { box-shadow: 0 16px 32px 0 rgba(0,0,0,0.1); } }</code></pre>
-  <p>Use it in a component stylesheet:</p>
-  <pre><code>.card { background: #fff; border-radius: 4px; padding: 1rem; @include u-shadow(3); }</code></pre>
-  <p>HTML:</p>
-  <pre><code>&lt;div class="card"&gt;Component using mixin-generated shadow&lt;/div&gt;</code></pre>
-  <h3>3) Sass function</h3>
-  <p>Add a function to a partial (e.g. <code>_functions.scss</code>):</p>
-  <pre><code>// _functions.scss @function shadow-value($level) { @if $level == 0 { @return none; } @if $level == 1 { @return 0 1px 4px 0 rgba(0,0,0,0.1); } @if $level == 2 { @return 0 4px 8px 0 rgba(0,0,0,0.1); } @if $level == 3 { @return 0 8px 16px 0 rgba(0,0,0,0.1); } @if $level == 4 { @return 0 12px 24px 0 rgba(0,0,0,0.1); } @return 0 16px 32px 0 rgba(0,0,0,0.1); }</code></pre>
-  <p>Use it directly in a rule or to create a CSS variable:</p>
-  <pre><code>.card--func { box-shadow: shadow-value(2); }
-:root { --card-shadow: #{shadow-value(2)}; } .card--var { box-shadow: var(--card-shadow); }</code></pre>
-
-  <h2>Short recommendation</h2>
-  <ul>
-    <li>Keep using utilities for style-guide examples and quick markup-level changes.</li>
-    <li>Introduce functions for shared shadow tokens so the same value can be used across mixins, variables, or
-      component rules.</li>
-    <li>Use mixins for semantic component classes (cards, modals) that need a bundle of properties including shadows.
-    </li>
-  </ul>
-  <p>If you want, I can generate the <code>_functions.scss</code> and <code>_mixins.scss</code> files and show where to
-    import them into your existing Sass entry.</p>
-</section>
 
                     </section>
                 </main>

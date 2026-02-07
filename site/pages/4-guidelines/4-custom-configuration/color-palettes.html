@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Color Palettes | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- Pagefind Meta Tags
+    ================================================== -->
+    <meta data-pagefind-meta="image[content]" content="/site/images/civic-logo/civic-favicon.svg">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" class="text-no-wrap"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span class="text-no-wrap">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span class="text-no-wrap">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs text-no-wrap">Component Library</span>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link usa-current">
+                        <span class="text-no-wrap">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Guidelines -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html"><strong>Guidelines</strong></a>
+
+                        <!-- Welcome -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Welcome</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/1-welcome/about-civic-design.html">About Civic Design</a></li>
+                            <li><a href="/site/pages/4-guidelines/1-welcome/getting-started.html">Getting Started</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Design & Accessibility -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Design & Accessibility</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html">WCAG Accessibility</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/working-with-color.html">Working with Color</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/design-principles.html">Design Principles</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Development & Process -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Development & Process</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/3-development-process/process-maturity.html">Process Maturity</a></li>
+                          </ul>
+                        </li>
+                      </li>
+
+                      <!-- Custom Configuration -->
+                        <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/4-custom-configuration/custom-configuration.html"><strong>Custom Configuration</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/ds-configuration.html">DS Configuration</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/color-palettes.html" class="usa-current">Color Palettes</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/utilities-mixins-functions.html">Utilities, Mixins & Functions</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main id="main-content" class="usa-prose grid-col-fill grid-container margin-x-4">
+                  <h1>Color Palettes</h1>
+                  <p class="usa-intro">Control which color values are available for USWDS color-based utility classes in your project.</p>
+
+                  <p>The Civic Design System uses the USWDS utility class system to apply styles directly in HTML. Color palettes determine which color values are available when using utilities like <code>.bg-primary</code>, <code>.text-white</code>, or <code>.border-base-lighter</code>. These palettes are configured in the <code>_utilities.scss</code> settings file.</p>
+
+                  <h2>How to Customize</h2>
+                  <p>All palette settings follow the same three-step customization process used throughout the Civic Design System:</p>
+                  <ol>
+                    <li>Find the setting you want to change in <code>src/styles/uswds-settings/_utilities.scss</code></li>
+                    <li>Uncomment it (remove the <code>//</code>) and set your value</li>
+                    <li>Uncomment the matching line in <code>src/styles/_bridge.scss</code></li>
+                  </ol>
+                  <p>The bridge file connects your custom settings to the USWDS core. Both files have all settings pre-written&mdash;just uncomment to activate.</p>
+
+                  <h2>Global Color Palettes</h2>
+                  <p>Global color palettes define a shared set of color values that are applied to all color-based utilities at once. This is the most efficient way to control which colors are available across your project.</p>
+
+                  <p>The global palette is set with the <code>$global-color-palettes</code> variable:</p>
+
+                  <pre><code>$global-color-palettes: ("palette-color-default");</code></pre>
+
+                  <p>The value <code>"palette-color-default"</code> is the standard USWDS color palette. This single setting controls the available colors for four utilities simultaneously:</p>
+
+                  <ul>
+                    <li><strong>background-color</strong> &mdash; utilities like <code>.bg-primary</code>, <code>.bg-base-lightest</code></li>
+                    <li><strong>border-color</strong> &mdash; utilities like <code>.border-primary</code>, <code>.border-base-light</code></li>
+                    <li><strong>color</strong> (text color) &mdash; utilities like <code>.text-primary</code>, <code>.text-white</code></li>
+                    <li><strong>text-decoration-color</strong> &mdash; utilities like <code>.text-decoration-color-primary</code></li>
+                  </ul>
+
+                  <p>By changing the global palette, you change the available color values for all four utilities at once. You can also add multiple palettes by providing a comma-separated list.</p>
+
+                  <h2>Individual Color Utility Palettes</h2>
+                  <p>Each color-based utility also has its own palette variable for fine-grained control. These are empty by default because they inherit from the global palette:</p>
+
+                  <pre><code>// Background color
+$background-color-palettes: ();      // See Global colors
+$background-color-manual-values: ();
+
+// Border color
+$border-color-palettes: ();          // See Global colors
+$border-color-manual-values: ();
+
+// Color (text)
+$color-palettes: ();                 // See Global colors
+$color-manual-values: ();
+
+// Text decoration color
+$text-decoration-color-palettes: (); // See Global colors
+$text-decoration-color-manual-values: ();</code></pre>
+
+                  <p>When a utility&rsquo;s palette is left empty <code>()</code>, it uses the global color palettes. If you set a value here, it will override the global palette for that specific utility.</p>
+
+                  <h3>Palette Variables</h3>
+                  <p>The <code>-palettes</code> variable accepts a list of named USWDS palette strings. These are predefined sets of values that USWDS provides for each utility. For example, <code>"palette-color-default"</code> includes all standard theme and state color tokens.</p>
+
+                  <h3>Manual Values</h3>
+                  <p>The <code>-manual-values</code> variable lets you add custom values beyond what the palettes provide. This is useful when you need a specific color value that isn&rsquo;t included in the default palette. Manual values are specified as a Sass map of name-value pairs:</p>
+
+                  <pre><code>$background-color-manual-values: (
+  "brand-highlight": #F5F0E6,
+  "section-alt": #FAFAFA,
+);</code></pre>
+
+                  <p>This would generate utility classes like <code>.bg-brand-highlight</code> and <code>.bg-section-alt</code>.</p>
+
+                  <h2>Non-Color Utility Palettes</h2>
+                  <p>The same palette system applies to all USWDS utilities, not just color-based ones. Each utility has its own <code>-palettes</code> and <code>-manual-values</code> variables. Some examples:</p>
+
+                  <div class="usa-table-container--scrollable" tabindex="0">
+                    <table class="usa-table usa-table--borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">Utility</th>
+                          <th scope="col">Palette Variable</th>
+                          <th scope="col">Manual Values Variable</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Border radius</td>
+                          <td><code>$border-radius-palettes</code></td>
+                          <td><code>$border-radius-manual-values</code></td>
+                        </tr>
+                        <tr>
+                          <td>Font family</td>
+                          <td><code>$font-family-palettes</code></td>
+                          <td><code>$font-family-manual-values</code></td>
+                        </tr>
+                        <tr>
+                          <td>Font weight</td>
+                          <td><code>$font-weight-palettes</code></td>
+                          <td><code>$font-weight-manual-values</code></td>
+                        </tr>
+                        <tr>
+                          <td>Margin</td>
+                          <td><code>$margin-palettes</code></td>
+                          <td><code>$margin-manual-values</code></td>
+                        </tr>
+                        <tr>
+                          <td>Padding</td>
+                          <td><code>$padding-palettes</code></td>
+                          <td><code>$padding-manual-values</code></td>
+                        </tr>
+                        <tr>
+                          <td>Width</td>
+                          <td><code>$width-palettes</code></td>
+                          <td><code>$width-manual-values</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <p>Each utility&rsquo;s default palette (e.g., <code>"palette-border-radius-default"</code>) includes the standard USWDS values for that property. You can replace or extend these with custom palettes and manual values.</p>
+
+                  <h2>Theme Colors vs. Utility Palettes</h2>
+                  <p>It&rsquo;s important to understand the distinction between <strong>theme color settings</strong> (configured in <code>_colors.scss</code>) and <strong>utility palettes</strong> (configured in <code>_utilities.scss</code>):</p>
+
+                  <ul>
+                    <li><strong>Theme colors</strong> define <em>what</em> your brand colors are&mdash;the actual hex values for primary, secondary, accent, and state colors. These are the color <em>definitions</em>.</li>
+                    <li><strong>Utility palettes</strong> control <em>which</em> color tokens are available as utility classes. These determine what color values you can use in markup via utility classes like <code>.bg-*</code> and <code>.text-*</code>.</li>
+                  </ul>
+
+                  <p>For example, setting <code>$theme-color-primary: #4D8157</code> in <code>_colors.scss</code> defines what &ldquo;primary&rdquo; means. The utility palettes in <code>_utilities.scss</code> determine whether <code>.bg-primary</code>, <code>.text-primary</code>, and similar classes are generated in your CSS output.</p>
+
+                  <h2>Utility Settings</h2>
+                  <p>In addition to palettes, each utility has a settings map that controls its output behavior. These settings are also defined in <code>_utilities.scss</code>:</p>
+
+                  <pre><code>$background-color-settings: (
+  output: true,       // Generate this utility
+  responsive: false,  // Generate responsive variants (e.g., tablet:bg-primary)
+  active: false,      // Generate :active state variants
+  focus: false,       // Generate :focus state variants
+  hover: false,       // Generate :hover state variants
+  visited: false,     // Generate :visited state variants
+);</code></pre>
+
+                  <p>Setting <code>responsive: true</code> generates breakpoint-prefixed classes like <code>.tablet:bg-primary</code> and <code>.desktop:bg-primary</code>. State variants generate classes like <code>.hover:bg-primary-dark</code>. These are controlled per utility to keep CSS output size manageable.</p>
+
+                  <h2>Additional Resources</h2>
+                  <ul>
+                    <li><a href="https://designsystem.digital.gov/utilities/" class="usa-link--external" target="_blank" rel="noopener">USWDS Utilities Documentation</a></li>
+                    <li><a href="https://designsystem.digital.gov/design-tokens/color/" class="usa-link--external" target="_blank" rel="noopener">USWDS Color Design Tokens</a></li>
+                    <li><a href="https://designsystem.digital.gov/design-tokens/color/system-tokens/" class="usa-link--external" target="_blank" rel="noopener">USWDS System Color Tokens</a></li>
+                  </ul>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/search.js"></script>
+
+</html>

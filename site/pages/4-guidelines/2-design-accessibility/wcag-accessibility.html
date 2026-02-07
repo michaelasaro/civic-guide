@@ -6,10 +6,10 @@
     ================================================== -->
     <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
     <meta charset="utf-8">
-    
+
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +20,7 @@
 
     <!-- Page Title
     ================================================== -->
-    <title>Guidelines | Civic</title>
+    <title>WCAG Accessibility | Civic</title>
 
     <!-- Favicon
     ================================================== -->
@@ -41,7 +41,7 @@
     ================================================== -->
     <script src="/uswds/js/uswds-init.min.js" type="module"></script>
     <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
-      
+
     </head>
   <!-- Head End -->
 
@@ -68,7 +68,7 @@
       <!-- Header Start -->
         <header class="usa-header usa-header--basic">
           <div class="usa-nav-container">
-            
+
             <div class="usa-navbar">
 
             <!-- Civic Logo -->
@@ -95,7 +95,7 @@
 
                 <!-- Primary Menu Start -->
                   <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
-                    
+
                     <!-- Home -->
                     <li class="usa-nav__primary-item usa-nav__link">
                       <a href="/" class="font-sans-xs usa-nav-link">
@@ -169,14 +169,14 @@
         <div class="usa-section usa-prose grid-container">
           <div class="grid-row grid-gap">
             <div class="usa-in-page-nav-container">
-              
-              <!-- Side Navigation Menu Start -->            
+
+              <!-- Side Navigation Menu Start -->
                 <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
                   <nav aria-label="Secondary navigation">
                     <ul class="usa-sidenav">
 
                       <!-- Guidelines -->
-                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html" class="usa-current"><strong>Guidelines</strong></a>
+                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html"><strong>Guidelines</strong></a>
 
                         <!-- Welcome -->
                         <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Welcome</strong></a>
@@ -189,7 +189,7 @@
                         <!-- Design & Accessibility -->
                         <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Design & Accessibility</strong></a>
                           <ul class="usa-sidenav__sublist">
-                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html">WCAG Accessibility</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html" class="usa-current">WCAG Accessibility</a></li>
                             <li><a href="/site/pages/4-guidelines/2-design-accessibility/working-with-color.html">Working with Color</a></li>
                             <li><a href="/site/pages/4-guidelines/2-design-accessibility/design-principles.html">Design Principles</a></li>
                           </ul>
@@ -211,7 +211,7 @@
                             <li><a href="/site/pages/4-guidelines/4-custom-configuration/utilities-mixins-functions.html">Utilities, Mixins & Functions</a></li>
                           </ul>
                         </li>
-                    </ul>              
+                    </ul>
                   </nav>
                 </div>
               <!-- Side Navigation Menu End -->
@@ -252,8 +252,196 @@
 
               <!-- Main Content Start -->
                 <main id="main-content" class="usa-prose grid-col-fill grid-container margin-x-4">
-                  <h1>[Page Title]</h1>
-                  <p class="usa-intro">[Page description]</p>
+
+                  <!-- Intro -->
+                    <section id="intro" class="usa-prose">
+                      <h1>WCAG Accessibility</h1>
+                      <p class="usa-intro">
+                        Understanding and applying the Web Content Accessibility Guidelines (WCAG) to ensure digital content is accessible to all users, including those with disabilities.
+                      </p>
+                    </section>
+                  <!-- Intro End -->
+
+                  <br>
+                  <hr>
+                  <br>
+
+                  <!-- Body -->
+                    <section id="body" class="usa-prose">
+
+                  <!-- WCAG Overview -->
+                  <h2>Web Content Accessibility Guidelines (WCAG)</h2>
+                  <ul>
+                    <li>WCAG is often pronounced "wuh-cag".</li>
+                    <li>WCAG is a set of guidelines developed by the World Wide Web Consortium (W3C) to make web content accessible to people with disabilities. It is widely accepted as the standard for digital accessibility conformance and serves as the basis for many accessibility regulations worldwide. It is also the basis for 508 Accessibility guidelines.</li>
+                    <li>"Web content" generally refers to the information in a web page or web application, including:
+                      <ul>
+                        <li>Visible information such as text, images, and sounds.</li>
+                        <li>Hidden information such as code or markup that defines the structure and presentation.</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <!-- WCAG at USDA -->
+                  <h2>WCAG at USDA</h2>
+                  <ul>
+                    <li>Although there are newer versions available, we are responsible for adhering to <strong>WCAG 2.2 AA</strong> standards.</li>
+                    <li>WCAG Level AA establishes a level of accessibility that works for most devices and assistive technologies, such as screen readers.</li>
+                    <li>However, you are encouraged to make your application as accessible as possible because content that is accessible can make it more usable for all people.</li>
+                  </ul>
+
+                  <!-- What is WCAG 2.2 AA? -->
+                  <h2>What is WCAG 2.2 AA?</h2>
+                  <ul>
+                    <li>The WCAG 2.2 standard is organized into <strong>4 principles</strong> under which there are <strong>13 guidelines</strong>.</li>
+                    <li>For each guideline, there are testable success criteria. The success criteria are at three levels: A, AA, and AAA.</li>
+                    <li>The success criteria are what determine "conformance" to WCAG. That is, in order to meet WCAG standards, the content needs to meet the success criteria.</li>
+                    <li>At USDA, we are responsible for meeting the <strong>AA level</strong> of success criteria.</li>
+                  </ul>
+
+                  <!-- WCAG Principles and Guidelines -->
+                  <h2>WCAG Principles and Guidelines</h2>
+                  <p>Below you can find the principles and guidelines with simplified but representative success criteria.</p>
+                  <p>For the full content of the guidelines, please refer to: <a class="usa-link--external" href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1&levels=aaa" target="_blank" rel="noopener">How to Meet WCAG Requirements - Quick Reference</a> (the link is pre-filtered to show only WCAG 2.1 AA criteria).</p>
+
+                  <!-- 1. Perceivable -->
+                  <h2>1. Perceivable</h2>
+                  <p>Information and the user interface components must be presented to users in a way they can perceive. This means providing alternative text for images and ensuring sufficient color contrast.</p>
+
+                  <h3>1.1 Non-text Content</h3>
+                  <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+                  <ol>
+                    <li><strong>Non-text content:</strong> Create a text alternative for visual and auditory content.</li>
+                  </ol>
+
+                  <h3>1.2 Time-based Media (Audio + Video)</h3>
+                  <p>Provide alternatives for time-based media.</p>
+                  <ol>
+                    <li><strong>Audio-only &amp; video-only (prerecorded):</strong> Provide an alternative when content is perceivable with only one sense.</li>
+                    <li><strong>Captions (prerecorded):</strong> Provide captions for audio content in existing videos.</li>
+                    <li><strong>Audio description or media alternative (prerecorded):</strong> Provide a description of the visual content in videos.</li>
+                    <li><strong>Captions (live):</strong> Provide synchronized text for audio content in real-time videos.</li>
+                    <li><strong>Audio description (prerecorded):</strong> Provide a synchronized spoken description of the visual content in videos.</li>
+                  </ol>
+
+                  <h3>1.3 Adaptable</h3>
+                  <p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+                  <ol>
+                    <li><strong>Info and relationships:</strong> Use code to reinforce relationships and information conveyed through presentation.</li>
+                    <li><strong>Meaningful sequence:</strong> Use code to preserve meaningful content order.</li>
+                    <li><strong>Sensory characteristics:</strong> Describe controls by name, not just by appearance or location.</li>
+                    <li><strong>Orientation:</strong> Don't lock content to either portrait or landscape presentation.</li>
+                    <li><strong>Identify input purpose:</strong> Use code to indicate the purpose of common inputs, where technology allows.</li>
+                  </ol>
+
+                  <h3>1.4 Distinguishable</h3>
+                  <p>Make it easier for users to see and hear content including separating foreground from background.</p>
+                  <ol>
+                    <li><strong>Use of color:</strong> Use information in addition to color, such as shape or text, to convey meaning.</li>
+                    <li><strong>Audio control:</strong> If you play audio content automatically, let people turn it down or off.</li>
+                    <li><strong>Contrast (minimum):</strong> Provide sufficient contrast between text and its background.</li>
+                    <li><strong>Resize text:</strong> Ensure text can be doubled in size.</li>
+                    <li><strong>Images of text:</strong> Use text instead of pictures of text.</li>
+                    <li><strong>Reflow:</strong> Make lines of text reflow within the viewport.</li>
+                    <li><strong>Non-text contrast:</strong> Ensure meaningful visual cues achieve 3:1 against the background.</li>
+                    <li><strong>Text spacing:</strong> Ensure content adapts to user-defined text settings.</li>
+                    <li><strong>Content on hover or focus:</strong> If hover or focus causes content changes, ensure interaction is predictable.</li>
+                  </ol>
+
+                  <!-- 2. Operable -->
+                  <h2>2. Operable</h2>
+                  <p>User interface components and controls must be operable. This means ensuring websites are navigable using a keyboard, providing sufficient time for users to interact with elements, and preventing users from getting stuck in a loop.</p>
+
+                  <h3>2.1 Keyboard Accessible</h3>
+                  <p>Make all functionality available from a keyboard.</p>
+                  <ol>
+                    <li><strong>Keyboard:</strong> Ensure pointer actions have a keyboard equivalent.</li>
+                    <li><strong>No keyboard trap:</strong> Ensure users always know how to navigate away from components.</li>
+                    <li><strong>Character key shortcuts:</strong> Ensure character-only shortcut keys can be turned off or modified.</li>
+                  </ol>
+
+                  <h3>2.2 Enough Time</h3>
+                  <p>Provide users enough time to read and use content.</p>
+                  <ol>
+                    <li><strong>Timing adjustable:</strong> Let users turn off, adjust, or extend time limits.</li>
+                    <li><strong>Pause, stop, hide:</strong> Let users control content changes (e.g. moving, blinking, scrolling, or auto-updating information) that occur in parallel with other content.</li>
+                  </ol>
+
+                  <h3>2.3 Seizures and Physical Reactions</h3>
+                  <p>Do not design content in a way that is known to cause seizures or physical reactions.</p>
+                  <ol>
+                    <li><strong>Three flashes or below threshold:</strong> Avoid content that flashes, or keep it under 3 flashes per second.</li>
+                  </ol>
+
+                  <h3>2.4 Navigable</h3>
+                  <p>Provide ways to help users navigate, find content, and determine where they are.</p>
+                  <ol>
+                    <li><strong>Bypass blocks:</strong> Provide a means of skipping repeating content.</li>
+                    <li><strong>Page titled:</strong> Provide a descriptive page title using appropriate technology.</li>
+                    <li><strong>Focus order:</strong> Elements receive focus in an order that preserves meaning.</li>
+                    <li><strong>Link purpose (in context):</strong> Provide descriptive names or context for all links.</li>
+                    <li><strong>Multiple ways:</strong> Provide at least two options for reaching the same content, unless the content is a step in a process.</li>
+                    <li><strong>Headings and labels:</strong> Provide descriptive headings and labels.</li>
+                    <li><strong>Focus visible:</strong> Ensure each item receiving focus has a visible indicator.</li>
+                    <li><strong>Focus not obscured (minimum):</strong> Ensure when an item gets keyboard focus, it is at least partially visible. <em>(New in WCAG 2.2)</em></li>
+                  </ol>
+
+                  <h3>2.5 Input Modalities</h3>
+                  <p>Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+                  <ol>
+                    <li><strong>Pointer gestures:</strong> Provide single-point operation for all functions.</li>
+                    <li><strong>Pointer cancellation:</strong> Make pointer cancellation predictable and consistent.</li>
+                    <li><strong>Label in name:</strong> Where practical, make the control's text label and name match.</li>
+                    <li><strong>Motion actuation:</strong> Don't rely solely on device motion to control page content.</li>
+                    <li><strong>Dragging movements:</strong> For any action that involves dragging, provide a simple pointer alternative.</li>
+                    <li><strong>Target size (minimum):</strong> Ensure targets meet a minimum size or have sufficient spacing around them - typically 24 by 24 CSS pixels. <em>(New in WCAG 2.2)</em></li>
+                  </ol>
+
+                  <!-- 3. Understandable -->
+                  <h2>3. Understandable</h2>
+                  <p>Information and the operation of the user interface must be understandable. This means providing clear and concise language, ensuring that content is predictable, and providing assistance with error correction.</p>
+
+                  <h3>3.1 Readable</h3>
+                  <p>Make text content readable and understandable.</p>
+                  <ol>
+                    <li><strong>Language of page:</strong> Indicate the predominant language on a page.</li>
+                    <li><strong>Language of parts:</strong> Indicate when words are in a different language.</li>
+                  </ol>
+
+                  <h3>3.2 Predictable</h3>
+                  <p>Make Web pages appear and operate in predictable ways.</p>
+                  <ol>
+                    <li><strong>On focus:</strong> Do not change a user's context when items get focus.</li>
+                    <li><strong>On input:</strong> Forewarn users if their context will change based on their input.</li>
+                    <li><strong>Consistent navigation:</strong> Consistently order navigation that repeats across multiple pages.</li>
+                    <li><strong>Consistent identification:</strong> Identify repeating functions consistently.</li>
+                    <li><strong>Consistent help:</strong> Put help in the same place when it is on multiple pages. <em>(New in WCAG 2.2)</em></li>
+                  </ol>
+
+                  <h3>3.3 Input Assistance</h3>
+                  <p>Help users avoid and correct mistakes.</p>
+                  <ol>
+                    <li><strong>Error identification:</strong> Provide descriptive notification of errors.</li>
+                    <li><strong>Labels or instructions:</strong> Provide labels or instructions for inputs.</li>
+                    <li><strong>Error suggestion:</strong> Where errors are detected, suggest known ways to correct them.</li>
+                    <li><strong>Error prevention (legal, financial, data):</strong> Provide ways for users to confirm, correct, or reverse important submissions.</li>
+                    <li><strong>Redundant entry:</strong> Don't ask for the same information twice in the same activity. <em>(New in WCAG 2.2)</em></li>
+                    <li><strong>Accessible authentication (minimum):</strong> Don't make people solve, recall, or transcribe something to log in. <em>(New in WCAG 2.2)</em></li>
+                  </ol>
+
+                  <!-- 4. Robust -->
+                  <h2>4. Robust</h2>
+                  <p>Content must be robust enough to be reliably interpreted by a wide variety of user agents, including assistive technologies. This means using standards-compliant code and ensuring content is compatible with future technologies.</p>
+
+                  <h3>4.1 Compatible</h3>
+                  <p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
+                  <ol>
+                    <li><strong>Name, role, value:</strong> Give components correct names, roles, states, and values so that people using assistive technology understand all components.</li>
+                    <li><strong>Status message:</strong> Let assistive technology notify users about status changes that don't take focus.</li>
+                  </ol>
+
+                    </section>
+
                 </main>
               <!-- Main Content End -->
 
@@ -261,7 +449,7 @@
           </div>
         </div>
       <!-- Body Content End -->
-      
+
       <!-- Footer + Identifier Start -->
         <footer class="usa-footer">
 
@@ -294,7 +482,7 @@
 
       <!-- Identifier Start -->
         <div class="usa-identifier">
-          
+
         <!-- Civic Logo -->
         <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
           <div class="usa-identifier__container">

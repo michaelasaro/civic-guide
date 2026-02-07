@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Process Maturity | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- Pagefind Meta Tags
+    ================================================== -->
+    <meta data-pagefind-meta="image[content]" content="/site/images/civic-logo/civic-favicon.svg">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" class="text-no-wrap"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span class="text-no-wrap">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span class="text-no-wrap">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs text-no-wrap">Component Library</span>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link usa-current">
+                        <span class="text-no-wrap">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Guidelines -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html"><strong>Guidelines</strong></a>
+
+                        <!-- Welcome -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Welcome</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/1-welcome/about-civic-design.html">About Civic Design</a></li>
+                            <li><a href="/site/pages/4-guidelines/1-welcome/getting-started.html">Getting Started</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Design & Accessibility -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Design & Accessibility</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html">WCAG Accessibility</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/working-with-color.html">Working with Color</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/design-principles.html">Design Principles</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Development & Process -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Development & Process</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/3-development-process/process-maturity.html" class="usa-current">Process Maturity</a></li>
+                          </ul>
+                        </li>
+                      </li>
+
+                      <!-- Custom Configuration -->
+                        <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/4-custom-configuration/custom-configuration.html"><strong>Custom Configuration</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/ds-configuration.html">DS Configuration</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/color-palettes.html">Color Palettes</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/utilities-mixins-functions.html">Utilities, Mixins & Functions</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main id="main-content" class="usa-prose grid-col-fill grid-container margin-x-4">
+                  <h1>Process Maturity</h1>
+                  <p class="usa-intro">Effective product development requires coordination across three groups&mdash;Product, Design, and Development&mdash;working from a shared understanding of why, what, and how.</p>
+
+                  <!-- People -->
+                  <h2>People</h2>
+
+                  <h3>Product</h3>
+                  <p><strong>Product Manager, Analysts, Executives</strong></p>
+                  <p>Responsible for the <strong>why</strong>: defining business goals, aligning stakeholders, and ensuring the product makes strategic sense.</p>
+
+                  <h3>Design</h3>
+                  <p><strong>UX Designers, UX Researchers, Discovery Coach</strong></p>
+                  <p>Responsible for the <strong>what</strong>: understanding user needs, exploring solutions, and validating that designs meet those needs.</p>
+
+                  <h3>Development</h3>
+                  <p><strong>Developers, Validators, Architects, Scrum Master</strong></p>
+                  <p>Responsible for the <strong>how</strong>: building, integrating, and releasing software that implements the validated designs.</p>
+
+                  <!-- Benefits of a Coordinated Process -->
+                  <h2>Benefits of a Coordinated Process</h2>
+                  <p>When these groups work together through a structured process, the benefits extend across the organization:</p>
+
+                  <p><strong>For the Team</strong>: Shared understanding of user needs and business goals, improved motivation, better communication.</p>
+                  <p><strong>For the Product</strong>: Build the right thing, improve quality, reduce waste, enable continuous improvement.</p>
+                  <p><strong>For the Business</strong>: Compelling product vision and strategy, accomplish priority goals, stay on time and budget, reduce risk.</p>
+                  <p><strong>For the Customer</strong>: A solution that is valuable, usable, enjoyable, and desirable.</p>
+
+                  <hr>
+
+                  <!-- Discovery Process -->
+                  <h2>Discovery Process</h2>
+                  <p>Discovery happens before development begins. Its purpose is to figure out&mdash;and validate&mdash;what to build. The process moves through four phases, alternating between expansive exploration and focused decision-making.</p>
+
+                  <h3>Pre-Discovery</h3>
+                  <p><em>Determine stakeholders and compile a foundation of research for quick reference during discovery.</em></p>
+                  <p>This is an opening phase&mdash;gather broadly before narrowing.</p>
+
+                  <p><strong>Gather</strong></p>
+                  <ul>
+                    <li>Research findings</li>
+                    <li>User interviews</li>
+                    <li>User task analysis</li>
+                    <li>Market research</li>
+                    <li>Business needs and goals</li>
+                    <li>Existing technical architecture</li>
+                  </ul>
+
+                  <p><strong>Guiding Questions</strong></p>
+                  <ul>
+                    <li>Who are our customers, stakeholders, and subject matter experts?</li>
+                    <li>What problems do they face?</li>
+                    <li>What opportunities should we explore?</li>
+                    <li>Do we have the people, shared understanding, and support we need to be successful?</li>
+                    <li>Where will we store our knowledge?</li>
+                  </ul>
+
+                  <h3>Customer Discovery</h3>
+                  <p><em>Understand our users to make sure we build something they will find valuable.</em></p>
+                  <p>This phase focuses and synthesizes&mdash;distilling research into a clear picture of user needs.</p>
+
+                  <p><strong>Tasks</strong></p>
+                  <ul>
+                    <li>Review research findings</li>
+                    <li>Discover user's point of view: user types, needs and goals, current workflows and task flows, pain points and opportunities</li>
+                    <li>Define success criteria</li>
+                  </ul>
+
+                  <p><strong>Guiding Questions</strong></p>
+                  <ul>
+                    <li>Who are the types of users of this product?</li>
+                    <li>What is valuable to our users?</li>
+                    <li>How are users currently meeting their needs?</li>
+                    <li>What challenges and conflicts do users face?</li>
+                    <li>What changes in user behavior would demonstrate success?</li>
+                  </ul>
+
+                  <h3>Product Discovery</h3>
+                  <p><em>Ideate solutions, establish design criteria, and explore technical feasibility to decide what to build first.</em></p>
+                  <p>This is an expansive phase&mdash;generate multiple possibilities before converging on a direction.</p>
+
+                  <p><strong>Tasks</strong></p>
+                  <ul>
+                    <li>List product capabilities needed</li>
+                    <li>Ideate multiple solutions</li>
+                    <li>Create conceptual models</li>
+                    <li>Conduct technical discovery (development and integration planning)</li>
+                    <li>Identify risks and mitigations</li>
+                  </ul>
+
+                  <p><strong>Guiding Questions</strong></p>
+                  <ul>
+                    <li>What should we build first?</li>
+                    <li>Is it valuable&mdash;will it help users meet their goals?</li>
+                    <li>Is it feasible&mdash;can we build it?</li>
+                    <li>Is it viable&mdash;does it make business sense?</li>
+                    <li>What do we still need to learn, and how will we decide?</li>
+                  </ul>
+
+                  <h3>Initial Design</h3>
+                  <p><em>Use an iterative design process with continuous feedback to validate the solution meets user needs.</em></p>
+                  <p>This phase narrows to decisions&mdash;testing and refining until designs are ready for development.</p>
+
+                  <p><strong>Tasks</strong></p>
+                  <ul>
+                    <li>Create conceptual designs (wireframes)</li>
+                    <li>Create detailed designs (prototypes)</li>
+                    <li>Conduct ongoing usability testing</li>
+                    <li>Identify the MVP</li>
+                    <li>Build the initial Product Backlog</li>
+                    <li>Build the initial Idea Backlog</li>
+                  </ul>
+
+                  <p><strong>Guiding Questions</strong></p>
+                  <ul>
+                    <li>Is it usable&mdash;can users figure it out?</li>
+                    <li>Does it meet user needs?</li>
+                    <li>Does it cause the behavior changes we intended?</li>
+                    <li>Does it still make business and technical sense?</li>
+                    <li>What should we consider designing after the MVP?</li>
+                  </ul>
+
+                  <hr>
+
+                  <!-- Backlogs -->
+                  <h2>Backlogs</h2>
+                  <p>Two backlogs coordinate work between Design and Development.</p>
+
+                  <h3>Idea Backlog</h3>
+                  <p>A list of ideas for features we could build to meet user needs. Ideas are evaluated against four criteria:</p>
+                  <ul>
+                    <li><strong>Valuable</strong>: Does it solve a customer need?</li>
+                    <li><strong>Viable</strong>: Will it work for the business?</li>
+                    <li><strong>Usable</strong>: Can customers figure out how to use it?</li>
+                    <li><strong>Feasible</strong>: Can we build it?</li>
+                  </ul>
+                  <p>The Idea Backlog is owned by Design and fed by learnings from both design testing and post-release feedback.</p>
+
+                  <h3>Product Backlog</h3>
+                  <p>A list of features we need to build to meet the design criteria. Items are evaluated against four criteria:</p>
+                  <ul>
+                    <li><strong>Effective</strong>: Does it technically work?</li>
+                    <li><strong>Aligned</strong>: Does it match the design?</li>
+                    <li><strong>Functional</strong>: Is it efficient?</li>
+                    <li><strong>Adaptable</strong>: Is it easy to change later?</li>
+                  </ul>
+                  <p>The Product Backlog is owned by Development and fed by validated designs from the Design track and technical learnings from released software.</p>
+
+                  <hr>
+
+                  <!-- Dual-Track Development -->
+                  <h2>Dual-Track Development</h2>
+                  <p>Once the initial discovery and design work produces an MVP handoff, development begins and the two tracks run in parallel. This approach is called Dual-Track Agile.</p>
+
+                  <!-- Diagram thumbnail — click to enlarge -->
+                  <style>
+                    .diagram-lightbox {
+                      display: none;
+                      position: fixed;
+                      inset: 0;
+                      z-index: 9999;
+                      background: rgba(0, 0, 0, 0.85);
+                      align-items: center;
+                      justify-content: center;
+                      padding: 2rem;
+                      cursor: pointer;
+                    }
+                    .diagram-lightbox.is-visible {
+                      display: flex;
+                    }
+                    .diagram-lightbox img {
+                      max-width: min(95vw, 1844px);
+                      max-height: 92vh;
+                      width: auto;
+                      height: auto;
+                      object-fit: contain;
+                      background: #fff;
+                      border-radius: 6px;
+                      padding: 1.5rem;
+                      cursor: default;
+                      image-rendering: auto;
+                    }
+                    .diagram-lightbox__close {
+                      position: absolute;
+                      top: 1rem;
+                      right: 1.5rem;
+                      background: none;
+                      border: none;
+                      color: #fff;
+                      font-size: 2rem;
+                      cursor: pointer;
+                      line-height: 1;
+                      padding: 0.25rem 0.5rem;
+                    }
+                    .diagram-lightbox__close:hover {
+                      color: #ccc;
+                    }
+                    .diagram-thumbnail {
+                      cursor: pointer;
+                      border: none;
+                      background: none;
+                      padding: 0;
+                      width: 100%;
+                    }
+                    .diagram-thumbnail:hover {
+                      opacity: 0.85;
+                    }
+                  </style>
+
+                  <button type="button" class="diagram-thumbnail" aria-label="Enlarge workflow diagram" id="diagram-open">
+                    <img src="/site/images/guidelines/dual-track-workflow.svg" alt="Dual-Track Development workflow diagram. Click to enlarge." style="width: 100%;">
+                  </button>
+
+                  <!-- Lightbox overlay -->
+                  <div class="diagram-lightbox" id="diagram-lightbox" role="dialog" aria-label="Enlarged workflow diagram">
+                    <button type="button" class="diagram-lightbox__close" aria-label="Close" id="diagram-close">&times;</button>
+                    <img src="/site/images/guidelines/dual-track-workflow.svg" alt="Dual-Track Development workflow diagram showing the Design and Development tracks running in parallel">
+                  </div>
+
+                  <script>
+                    (function() {
+                      var lightbox = document.getElementById('diagram-lightbox');
+                      var openBtn  = document.getElementById('diagram-open');
+                      var closeBtn = document.getElementById('diagram-close');
+
+                      function open()  { lightbox.classList.add('is-visible'); document.body.style.overflow = 'hidden'; }
+                      function close() { lightbox.classList.remove('is-visible'); document.body.style.overflow = ''; }
+
+                      openBtn.addEventListener('click', open);
+                      closeBtn.addEventListener('click', close);
+                      lightbox.addEventListener('click', function(e) { if (e.target === lightbox) close(); });
+                      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
+                    })();
+                  </script>
+
+                  <h3>The Two Tracks</h3>
+                  <p><strong>Design Track</strong> and <strong>Development Track</strong> operate simultaneously, each with its own iterative loop.</p>
+
+                  <p><strong>Design Track: Learn &rarr; Idea Backlog &rarr; Design &rarr; Test</strong></p>
+                  <p>The Design track cycles through learning, prioritizing, designing, and testing. Testing provides raw data from which to learn how to iterate on the design. After going through this loop, a validated design moves into the Product Backlog for development.</p>
+
+                  <p><strong>Development Track: Product Backlog &rarr; Build &rarr; Validate &rarr; Release</strong></p>
+                  <p>The Development track cycles through building, validating, and releasing. Technical learnings from the release&mdash;such as performance issues or infrastructure needs&mdash;feed back into the Product Backlog. User experience learnings from released software&mdash;such as usage metrics and customer feedback&mdash;flow back to the Design track's learning process.</p>
+
+                  <h3>Release 0</h3>
+                  <p>Development sets up workstations and infrastructure. Design hands off the MVP&mdash;the first set of validated designs moves into the Product Backlog.</p>
+
+                  <h3>The Rhythm</h3>
+                  <p>Design stays one release ahead of Development. While Development is building Release 1, Design is testing and refining work for Release 2. This creates continuous flow without blocking either track.</p>
+                  <p>The feedback loops are essential: what we learn from testing designs and what we learn from released software both inform what we design next. The backlogs aren't just queues&mdash;they're where different types of learning converge and get prioritized.</p>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/search.js"></script>
+
+</html>

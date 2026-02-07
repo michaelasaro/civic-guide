@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Start -->
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Design Principles | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- Pagefind Meta Tags
+    ================================================== -->
+    <meta data-pagefind-meta="image[content]" content="/site/images/civic-logo/civic-favicon.svg">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" class="text-no-wrap"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4 add-list-reset">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span class="text-no-wrap">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link">
+                        <span class="text-no-wrap">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs text-no-wrap">Component Library</span>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html">
+                            <span>All sections</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#components-2">
+                            <span class="margin-left-2">Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#patterns-2">
+                            <span class="margin-left-2">Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/component-library.html#templates-2">
+                            <span class="margin-left-2">Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link usa-current">
+                        <span class="text-no-wrap">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Guidelines -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/guidelines.html"><strong>Guidelines</strong></a>
+
+                        <!-- Welcome -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Welcome</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/1-welcome/about-civic-design.html">About Civic Design</a></li>
+                            <li><a href="/site/pages/4-guidelines/1-welcome/getting-started.html">Getting Started</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Design & Accessibility -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Design & Accessibility</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/wcag-accessibility.html">WCAG Accessibility</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/working-with-color.html">Working with Color</a></li>
+                            <li><a href="/site/pages/4-guidelines/2-design-accessibility/design-principles.html" class="usa-current">Design Principles</a></li>
+                          </ul>
+                        </li>
+
+                        <!-- Development & Process -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Development & Process</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/3-development-process/process-maturity.html">Process Maturity</a></li>
+                          </ul>
+                        </li>
+                      </li>
+
+                      <!-- Custom Configuration -->
+                        <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/4-custom-configuration/custom-configuration.html"><strong>Custom Configuration</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/ds-configuration.html">DS Configuration</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/color-palettes.html">Color Palettes</a></li>
+                            <li><a href="/site/pages/4-guidelines/4-custom-configuration/utilities-mixins-functions.html">Utilities, Mixins & Functions</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "00";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main id="main-content" class="usa-prose grid-col-fill grid-container margin-x-4">
+                  <h1>Design Principles</h1>
+                  <p class="usa-intro">The USWDS design principles form the foundation for building effective, user-centered digital experiences in government. These principles guide every design and development decision.</p>
+
+                  <p>For the full USWDS documentation, visit the <a class="usa-link usa-link--external" href="https://designsystem.digital.gov/design-principles/" target="_blank" rel="noopener noreferrer">USWDS Design Principles</a> page.</p>
+
+                  <hr>
+
+                  <!-- 1. Start with Real User Needs -->
+                  <h2>Start with Real User Needs</h2>
+                  <p><strong>Real user needs should inform product decisions.</strong></p>
+                  <p>Real people from target audiences must participate from the project's beginning. Teams should test assumptions and validate products with actual users to maintain focus on usefulness and importance.</p>
+
+                  <h3>Key Considerations</h3>
+                  <ul>
+                    <li>Access to research resources and identifying primary audiences</li>
+                    <li>Understanding user needs and audience segments</li>
+                    <li>Testing frequency with real people</li>
+                    <li>Identifying users facing greatest difficulty</li>
+                    <li>Research methods employed and findings documentation</li>
+                  </ul>
+
+                  <h3>Practical Actions</h3>
+                  <ul>
+                    <li>Begin projects with direct user engagement</li>
+                    <li>Employ varied qualitative and quantitative research approaches</li>
+                    <li>Use prototypes to validate assumptions in real-world contexts</li>
+                    <li>Document and distribute research findings among stakeholders</li>
+                    <li>Conduct ongoing testing during development</li>
+                  </ul>
+
+                  <hr>
+
+                  <!-- 2. Earn Trust -->
+                  <h2>Earn Trust</h2>
+                  <p><strong>Trust has to be earned every time.</strong></p>
+                  <p>Government websites cannot assume trust. It requires reliability, consistency, honesty, and stewardship of user data and time.</p>
+
+                  <h3>Key Considerations</h3>
+                  <ul>
+                    <li>User recognition of government identity</li>
+                    <li>Public expectations alignment</li>
+                    <li>Data privacy and protection measures</li>
+                    <li>System redundancy and failure prevention</li>
+                    <li>Content clarity and accessibility for limited-English audiences</li>
+                  </ul>
+
+                  <h3>Practical Actions</h3>
+                  <ul>
+                    <li>Clearly identify sites as federal government resources</li>
+                    <li>Apply modern development best practices</li>
+                    <li>Review content biannually for accuracy</li>
+                    <li>Employ .gov domains and HTTPS security</li>
+                    <li>Fix broken links and ensure straightforward communication</li>
+                    <li>Manage data according to agency records and privacy standards</li>
+                    <li>Publish open-source code and datasets when appropriate</li>
+                  </ul>
+
+                  <hr>
+
+                  <!-- 3. Embrace Accessibility -->
+                  <h2>Embrace Accessibility</h2>
+                  <p><strong>Accessibility affects everybody; build it into every decision.</strong></p>
+                  <p>Legal requirements form a foundation, but accessibility ultimately serves real people. It represents usability for the broadest possible audience.</p>
+
+                  <h3>Key Considerations</h3>
+                  <ul>
+                    <li>Keyboard navigation capabilities</li>
+                    <li>Screen reader compatibility</li>
+                    <li>Content comprehension and clarity</li>
+                    <li>Graphic element interpretation</li>
+                    <li>Task completion ease</li>
+                    <li>Testing with diverse user abilities</li>
+                    <li>Multilingual content availability</li>
+                  </ul>
+
+                  <h3>Practical Actions</h3>
+                  <ul>
+                    <li>Make accessibility concrete through real-world impact examples</li>
+                    <li>Engage agency accessibility teams</li>
+                    <li>Learn about assistive technologies</li>
+                    <li>Follow Revised 508 Standards and WCAG 2.1</li>
+                    <li>Write accessible code with manual and automated testing</li>
+                    <li>Use plain language with properly labeled headings, images, and links</li>
+                    <li>Ensure logical page layouts and adequate color contrast</li>
+                    <li>Test broadly throughout design and development</li>
+                    <li>Address accessibility issues promptly</li>
+                    <li>Incorporate accessibility into contracts</li>
+                  </ul>
+
+                  <hr>
+
+                  <!-- 4. Promote Continuity -->
+                  <h2>Promote Continuity</h2>
+                  <p><strong>Minimize disruption, and provide a consistent experience throughout services.</strong></p>
+                  <p>Consistency doesn't require conformity. Agencies may differ, but shared solutions and values create continuity across platforms, devices, and time.</p>
+
+                  <h3>Key Considerations</h3>
+                  <ul>
+                    <li>User understanding of government identity and page purpose</li>
+                    <li>Clear expectations for next steps</li>
+                    <li>Existing style guidance availability</li>
+                    <li>Testing shared solutions before creating new ones</li>
+                    <li>Service context within customer journeys</li>
+                    <li>Cross-agency collaboration opportunities</li>
+                    <li>Device and browser compatibility</li>
+                    <li>Related government services and ecosystem factors</li>
+                  </ul>
+
+                  <h3>Practical Actions</h3>
+                  <ul>
+                    <li>Consistently identify as government on every page</li>
+                    <li>Implement flexible style guides for content consistency</li>
+                    <li>Support mobile-friendly experiences across devices</li>
+                    <li>Test on actual mobile devices regularly</li>
+                    <li>Manage content moves or removals with proper notice</li>
+                    <li>Clarify multi-step processes with progress indicators</li>
+                    <li>Support multi-session task completion</li>
+                    <li>Enable data reuse through auto-population for returning users</li>
+                    <li>Participate in cross-government communities</li>
+                  </ul>
+
+                  <hr>
+
+                  <!-- 5. Listen -->
+                  <h2>Listen</h2>
+                  <p><strong>Evaluate and improve your product by listening to your audience.</strong></p>
+                  <p>Continuous feedback drives continuous improvement. Measure customer experience at all project stages through direct observation and analytics.</p>
+
+                  <h3>Key Considerations</h3>
+                  <ul>
+                    <li>Access to design, development, and research skills</li>
+                    <li>Key success metrics tied to user outcomes</li>
+                    <li>Metric performance over service lifetime</li>
+                    <li>System monitoring and issue response processes</li>
+                    <li>User behavior measurement tools</li>
+                    <li>Customer satisfaction assessment</li>
+                    <li>Customer experience maturity evaluation</li>
+                    <li>User feedback collection for bugs and issues</li>
+                  </ul>
+
+                  <h3>Practical Actions</h3>
+                  <ul>
+                    <li>Establish mechanisms for users to report bugs and issues</li>
+                    <li>Actively collect and address feedback through surveys and communication</li>
+                    <li>Implement Digital Analytics Program and agency-specific analytics</li>
+                    <li>Include search functionality and analyze search data</li>
+                    <li>Monitor social media platforms when present</li>
+                    <li>Share metrics internally and externally</li>
+                    <li>Conduct service design analysis for large projects</li>
+                    <li>Involve entire project teams in user research</li>
+                    <li>Observe users directly whenever possible</li>
+                    <li>Continuously test and retest with real users</li>
+                    <li>Share feedback and solutions back to internal and open-source projects</li>
+                  </ul>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/uswds/js/uswds.min.js"></script>
+  <script src="/site/scripts/search.js"></script>
+
+</html>
