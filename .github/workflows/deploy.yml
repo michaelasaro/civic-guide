@@ -41,10 +41,12 @@ permissions:
   pages: write
   id-token: write
 
-# Only allow one deployment at a time (don't queue up multiple deploys)
+# Only allow one deployment at a time
+# cancel-in-progress: true means if a newer push comes in, it cancels the
+# older deploy so only the latest code gets deployed (prevents stale deploys)
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
 
