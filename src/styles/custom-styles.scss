@@ -42,13 +42,3 @@ These are styles that do not have design tokens available.
   -webkit-font-feature-settings: "tnum" 1, "pnum" 0;
 }
 
-
-
-/* 
-The sidenav inherits what your standard link coloring is set to.
-There is no way to change the color of the current page link in the sidenav using the design tokens.
-So, if you want your sidenav current page link to be a different color, 
-you have to change the color of links everywhere.
-Which is what I did via the design tokens.
-*/
-
