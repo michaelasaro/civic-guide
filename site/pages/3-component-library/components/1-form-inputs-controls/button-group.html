@@ -325,7 +325,7 @@
                   <h2>Default Button Group</h2>
                   <p>The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically.</p>
 
-                  <h3 class="padding-bottom-2">Component Preview</h3>
+                  <p class="padding-bottom-2 font-heading-lg text-bold">Component Preview</p>
 
                   <ul class="usa-button-group">
                     <li class="usa-button-group__item">
@@ -338,7 +338,7 @@
 
                   <br>
 
-                  <h3 class="padding-bottom-2">Component Code</h3>
+                  <p class="padding-bottom-2 font-heading-lg text-bold">Component Code</h3>
 
                   <div class="usa-accordion usa-accordion--bordered">
                     <h4 class="usa-accordion__heading">
@@ -366,18 +366,18 @@
                   <h2 class="margin-top-4">Segmented Button Group</h2>
                   <p>Segmented button groups display a set of discrete buttons in a row as a single element.</p>
 
-                  <h3 class="padding-bottom-2">Component Preview</h3>
+                  <p class="padding-bottom-2 font-heading-lg text-bold">Component Preview</p>
 
-                  <p class="margin-bottom-1"><strong>Default</strong></p>
+                  <p class="margin-bottom-1"><strong>Primary</strong></p>
                   <ul class="usa-button-group usa-button-group--segmented margin-bottom-3">
                     <li class="usa-button-group__item">
                       <button type="button" class="usa-button">Map</button>
                     </li>
                     <li class="usa-button-group__item">
-                      <button type="button" class="usa-button usa-button--outline">Satellite</button>
+                      <button type="button" class="usa-button">Satellite</button>
                     </li>
                     <li class="usa-button-group__item">
-                      <button type="button" class="usa-button usa-button--outline">Hybrid</button>
+                      <button type="button" class="usa-button">Hybrid</button>
                     </li>
                   </ul>
 
@@ -474,20 +474,7 @@
                     </li>
                   </ul>
 
-                  <p class="margin-bottom-1"><strong>Unstyled</strong></p>
-                  <ul class="usa-button-group usa-button-group--segmented margin-bottom-3">
-                    <li class="usa-button-group__item">
-                      <button type="button" class="usa-button usa-button--unstyled">Map</button>
-                    </li>
-                    <li class="usa-button-group__item">
-                      <button type="button" class="usa-button usa-button--unstyled">Satellite</button>
-                    </li>
-                    <li class="usa-button-group__item">
-                      <button type="button" class="usa-button usa-button--unstyled">Hybrid</button>
-                    </li>
-                  </ul>
-
-                  <h3 class="padding-bottom-2">Component Code</h3>
+                  <p class="padding-bottom-2 font-heading-lg text-bold">Component Code</h3>
 
                   <div class="usa-accordion usa-accordion--bordered">
                     <h4 class="usa-accordion__heading">
@@ -496,16 +483,16 @@
                       </button>
                     </h4>
                     <div id="code-segmented" class="usa-accordion__content usa-prose">
-                      <pre><header></header><code class="language-html" data-lang="html">&lt;!-- Default Segmented --&gt;
+                      <pre><header></header><code class="language-html" data-lang="html">&lt;!-- Primary Segmented --&gt;
 &lt;ul class="usa-button-group usa-button-group--segmented"&gt;
   &lt;li class="usa-button-group__item"&gt;
     &lt;button type="button" class="usa-button"&gt;Map&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="usa-button-group__item"&gt;
-    &lt;button type="button" class="usa-button usa-button--outline"&gt;Satellite&lt;/button&gt;
+    &lt;button type="button" class="usa-button"&gt;Satellite&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="usa-button-group__item"&gt;
-    &lt;button type="button" class="usa-button usa-button--outline"&gt;Hybrid&lt;/button&gt;
+    &lt;button type="button" class="usa-button"&gt;Hybrid&lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -535,6 +522,58 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;!-- Accent Warm Segmented --&gt;
+&lt;ul class="usa-button-group usa-button-group--segmented"&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--accent-warm"&gt;Map&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Satellite&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Hybrid&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Base Segmented --&gt;
+&lt;ul class="usa-button-group usa-button-group--segmented"&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--base"&gt;Map&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Satellite&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Hybrid&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Outline Segmented --&gt;
+&lt;ul class="usa-button-group usa-button-group--segmented"&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Map&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Satellite&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline"&gt;Hybrid&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Outline Inverse Segmented (on dark background) --&gt;
+&lt;ul class="usa-button-group usa-button-group--segmented"&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Map&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Satellite&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="usa-button-group__item"&gt;
+    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Hybrid&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;!-- Big Segmented --&gt;
 &lt;ul class="usa-button-group usa-button-group--segmented"&gt;
   &lt;li class="usa-button-group__item"&gt;
@@ -545,19 +584,6 @@
   &lt;/li&gt;
   &lt;li class="usa-button-group__item"&gt;
     &lt;button type="button" class="usa-button usa-button--big usa-button--outline"&gt;Hybrid&lt;/button&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- Inverse Segmented (on dark background) --&gt;
-&lt;ul class="usa-button-group usa-button-group--segmented"&gt;
-  &lt;li class="usa-button-group__item"&gt;
-    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Map&lt;/button&gt;
-  &lt;/li&gt;
-  &lt;li class="usa-button-group__item"&gt;
-    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Satellite&lt;/button&gt;
-  &lt;/li&gt;
-  &lt;li class="usa-button-group__item"&gt;
-    &lt;button type="button" class="usa-button usa-button--outline usa-button--inverse"&gt;Hybrid&lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
