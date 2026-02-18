@@ -6,11 +6,11 @@ Problem: Tabular numerals class would not change the fonts.
 	○ Used a web converter to create the .woff and .woff2 files (https://fontsource.org/tools/converter)
 	○ Then to make them direct drop-ins (to test functionality only) I renamed the files to "SourceSansPro" just to see if they would work. And they did!
   ○ So, clearly the problem is with the font files themselves.
-	○ I also added custom CSS (see below) to fpac-style to make sure that we are using the modern font-variant-numeric and font-variant-proportional with appropriate fallbacks for old browsers.
+	○ I also added custom CSS (see below) to civic-starter to make sure that we are using the modern font-variant-numeric and font-variant-proportional with appropriate fallbacks for old browsers.
 
 Options moving forward:
 	§ Tell USWDS about the font issue I found (or submit a fix on GitHub) - update font files and CSS to use font-variant- rather than font-feature-
-	§ Update fpac-style to use SourceSans3 with a custom font family.
+	§ Update civic-starter to use SourceSans3 with a custom font family.
 	§ Download Merriweather, Roboto Mono, and Public Sans fonts to fix them.
 	§ There is also something called "variable fonts", which came in the download from Google, but I'm not sure how to apply those yet. I was just seeing if this fixed the problem and it did, so that would be a yet further upgrade.
 
