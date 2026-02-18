@@ -113,6 +113,7 @@
     // Hero banner with background image and call to action
 
 
+
 // -------------------------------------------------------------------------------------------------
 // 🧭 NAVIGATION
 // -------------------------------------------------------------------------------------------------
@@ -137,6 +138,9 @@
 // -------------------------------------------------------------------------------------------------
 // Components for displaying content: cards, tables, lists, etc.
 // -------------------------------------------------------------------------------------------------
+
+@forward "usa-accordion/src/styles";
+    // Expandable content sections with show/hide toggle buttons
 
 @forward "usa-card/src/styles";
     // Card containers for grouping related content
@@ -214,6 +218,7 @@
 
 @forward "usa-checklist/src/styles";
     // Password/validation checklist with pass/fail indicators
+
 
 
 // -------------------------------------------------------------------------------------------------
