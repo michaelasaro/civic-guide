@@ -205,7 +205,7 @@
                       </li>
 
                       <!-- Custom Configuration -->
-                        <li class="usa-sidenav__item"><a href="/site/pages/4-guidelines/4-custom-configuration/custom-configuration.html"><strong>Custom Configuration</strong></a>
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Custom Configuration</strong></a>
                           <ul class="usa-sidenav__sublist">
                             <li><a href="/site/pages/4-guidelines/4-custom-configuration/ds-configuration.html" class="usa-current">DS Configuration</a></li>
                             <li><a href="/site/pages/4-guidelines/4-custom-configuration/color-palettes.html">Color Palettes</a></li>
@@ -286,7 +286,7 @@
                         <p>Responsive breakpoints are the minimum widths at which your layout will change to accommodate different screen sizes.
                           These breakpoints are mobile-first, meaning that styles applied at a given breakpoint will also apply to all larger
                           breakpoints.</p>
-                        <p>By default, FPAC includes nine responsive breakpoints, but not all of them are always available: card, card-lg,
+                        <p>By default, Civic includes nine responsive breakpoints, but not all of them are always available: card, card-lg,
                           mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, widescreen, and widescreen.</p>
 
                       <h3>Available breakpoints</h3>
@@ -375,21 +375,18 @@
 
                         <h3>Output Availability</h3>
 
-
-
-
                         <p style="line-height: 1.5;">
                             Add a responsive breakpoint prefix separated with a <strong>:</strong> to target a utility at a responsive breakpoint and higher,
                             following a mobile-first methodology.
                         </p>
                         <p style="line-height: 1.5;">
                             Set up which breakpoints are available to utilities by setting the <strong>$theme-utility-breakpoints</strong> variable in your 
-                            <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration.
+                            advanced settings configuration.
                         </p>
                         <p style="line-height: 1.5;">
                             Set whether a utility family outputs with responsive variants by setting the value of
                             <strong>$[utility_family]-settings.responsive</strong> in your
-                            <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration. When
+                            advanced settings configuration. When
                             modifying settings stored as a map, undefined map elements will keep their default values.
                         </p>
                         <p>
@@ -442,7 +439,7 @@
                         <p style="line-height: 1.5;">
                             Set whether a utility outputs a specific state variant by setting the value of the
                             <strong>$[utility_family]-settings.[state]</strong> variable in your
-                            <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration. When
+                            advanced settings configuration. When
                             modifying settings stored as a map, undefined map elements will keep their default values.
                         </p>
 
@@ -505,7 +502,7 @@
                         </p>
                         <p style="line-height: 1.5;">
                             Control whether or not to output any utility family by setting the value of the <strong>$[utility_family]-settings.output</strong> variable in your
-                            <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration.
+                            advanced settings configuration.
                         </p>
                         <p style="line-height: 1.5;">
                             A value of <span class="usa-tag bg-primary">true</span>will output the utility family and any variants. A value of <span class="usa-tag bg-disabled">false</span>
@@ -548,7 +545,7 @@
                         <p style="line-height: 1.5;">
                             By default, utilities output the standard values listed in the standard output table. Customize and refine any
                             utility family's specific values by editing the <strong>$[utility_family]-manual-values</strong> and <strong>$[utility_family]-palettes</strong>
-                            variables in your <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration.
+                            variables in your advanced settings configuration.
                         </p>
                         <br>
 
@@ -561,7 +558,7 @@
                         <br>
                         <h3>Palettes</h3>
                         <p style="line-height: 1.5;">
-                            Palettes are predefined groups of values. Add palettes to the <strong>$[utility_family]-palettes</strong> list variable in your <a href="/site/pages/2-style-guide/advanced-settings/advanced-settings.html">Advanced Settings</a> configuration to add those values to the utility family.
+                            Palettes are predefined groups of values. Add palettes to the <strong>$[utility_family]-palettes</strong> list variable in your advanced settings configuration to add those values to the utility family.
                         </p>
 
                         <table class="usa-table usa-table--borderless" style="width:100%;">
