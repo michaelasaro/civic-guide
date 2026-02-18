@@ -1,3 +1,5 @@
+@use "uswds-core" as *;
+
 /*
 ------------------------------------------------------------------------------------------------------
 custom-styles.scss
@@ -5,16 +7,6 @@ These are custom styles for the Civic design system.
 These are styles that do not have design tokens available.
 ------------------------------------------------------------------------------------------------------
 */
-
-// Changes the color of the nav menu item link text
-.usa-nav__primary > .usa-nav__primary-item > a {
-  color: #2F2C2A;
-}
-
-// Changes the color of the nav sub-menu item link text (I think)
-.usa-nav__primary button {
-  color: #2F2C2A;
-}
 
 // Changes the color of the hero section title
 .usa-hero__heading {
@@ -40,5 +32,12 @@ These are styles that do not have design tokens available.
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1, "pnum" 0;
   -webkit-font-feature-settings: "tnum" 1, "pnum" 0;
+}
+
+// Card focus outline for linked cards (a > .usa-card__container pattern)
+// Uses the theme focus color so it updates automatically with the design tokens.
+a:focus .usa-card__container {
+  outline: units($theme-focus-width) solid color($theme-focus-color);
+  outline-offset: units($theme-focus-offset);
 }
 
